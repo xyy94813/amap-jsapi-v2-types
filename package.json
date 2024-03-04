@@ -1,0 +1,45 @@
+{
+  "name": "amap-jsapi-v2-types",
+  "version": "1.0.0",
+  "description": "A RRNL middleware for limit number of request",
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "rollup -c rollup.config.mjs --bundleConfigAsCjs --configOnly",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:es": "eslint .",
+    "format:es": "eslint . --fix",
+    "format:others": "prettier --write \"**/*.{md,mdx,xml,html,json,yaml,graphql}\"",
+    "format:all": "yarn format:others",
+    "commitlint": "commitlint --edit",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "Yiyuan Xing <xyy94813@sina.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xyy94813/js-lib-template-repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xyy94813/js-lib-template-repo/issues"
+  },
+  "homepage": "https://github.com/xyy94813/js-lib-template-repo#readme",
+  "packageManager": "yarn@4.0.2",
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-config-standard-with-typescript": "^43.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  }
+}
