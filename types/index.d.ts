@@ -2,6 +2,12 @@ import type { LngLat, LngLatLike } from './common/LngLat';
 import type Bounds from './common/Bounds';
 import type Pixel from './common/Pixel';
 import type Size from './common/Size';
+
+import type GeometryUtil from './utils/GeometryUtil';
+import type DomUtil from './utils/DomUtil';
+import type Browser from './utils/Browser';
+import type Util from './utils/Util';
+
 /**
  * 高德地图 JS API v2 类型声明
  */
@@ -13,6 +19,11 @@ declare namespace AMap {
     Bounds,
     Pixel,
     Size,
+    // 工具
+    GeometryUtil,
+    Browser,
+    Util,
+    DomUtil,
   };
 }
 
