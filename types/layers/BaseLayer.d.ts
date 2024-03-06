@@ -64,6 +64,13 @@ export declare class BaseLayer<
    * @param {Map} map
    */
   setMap(map: Map): void;
+  /**
+   * 获取绑定的 Map 实例
+   * 文档未提及。验证后存在。
+   *
+   * @param {Map} map
+   */
+  getMap(): Map;
 
   // event
   on(type: LayerEventType, fn: Function, ctx?: any, once?: boolean): this;

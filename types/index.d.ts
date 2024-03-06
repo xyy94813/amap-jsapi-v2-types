@@ -24,6 +24,19 @@ import type {
   DistrictLayerStyle,
   DistrictLayerOptions,
 } from './layers/DistrictLayer';
+import type { VectorLayer, VectorLayerOption } from './layers/VectorLayer';
+import type { CustomLayer, CustomLayerOption } from './layers/CustomLayer';
+import type { ImageLayer, ImageLayerOption } from './layers/ImageLayer';
+import type { CanvasLayer, CanvasLayerOption } from './layers/CanvasLayer';
+import type {
+  GLCustomLayer,
+  GLCustomLayerOption,
+} from './layers/GLCustomLayer';
+import type { HeatMap, HeatMapOption } from './layers/HeatMap';
+import type {
+  MapboxVTLayerOptions,
+  MapboxVectorTileLayer,
+} from './layers/MapboxVectorTileLayer';
 
 import type GeometryUtil from './utils/GeometryUtil';
 import type DomUtil from './utils/DomUtil';
@@ -59,6 +72,22 @@ declare namespace AMap {
     DistrictLayer,
     DistrictLayerStyle,
     DistrictLayerOptions,
+
+    // 自有数据图层
+    VectorLayer,
+    VectorLayerOption,
+    CustomLayer,
+    CustomLayerOption,
+    ImageLayer,
+    ImageLayerOption,
+    CanvasLayer,
+    CanvasLayerOption,
+    GLCustomLayer,
+    GLCustomLayerOption,
+    HeatMap,
+    HeatMapOption,
+    MapboxVectorTileLayer,
+    MapboxVTLayerOptions,
 
     // 工具
     GeometryUtil,
