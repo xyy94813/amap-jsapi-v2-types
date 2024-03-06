@@ -2,6 +2,28 @@ import type { LngLat, LngLatLike } from './common/LngLat';
 import type Bounds from './common/Bounds';
 import type Pixel from './common/Pixel';
 import type Size from './common/Size';
+import type { Event, MapsEvent } from './common/Event';
+
+import type {
+  TileLayer,
+  TileLayerOptions,
+  TrafficLayerOptions,
+  SatelliteLayerOptions,
+  RoadNetLayerOptions,
+  WMSLayerOptions,
+  WMTSLayerOptions,
+  FlexibleLayerOptions,
+} from './layers/TileLayer';
+import type {
+  Buildings,
+  BuildingsStyleOptions,
+  BuildingsLayerOptions,
+} from './layers/BuildingsLayer';
+import type {
+  DistrictLayer,
+  DistrictLayerStyle,
+  DistrictLayerOptions,
+} from './layers/DistrictLayer';
 
 import type GeometryUtil from './utils/GeometryUtil';
 import type DomUtil from './utils/DomUtil';
@@ -19,6 +41,25 @@ declare namespace AMap {
     Bounds,
     Pixel,
     Size,
+    Event,
+    MapsEvent,
+
+    // 官方图层
+    TileLayer,
+    TileLayerOptions,
+    TrafficLayerOptions,
+    SatelliteLayerOptions,
+    RoadNetLayerOptions,
+    WMSLayerOptions,
+    WMTSLayerOptions,
+    FlexibleLayerOptions,
+    Buildings,
+    BuildingsStyleOptions,
+    BuildingsLayerOptions,
+    DistrictLayer,
+    DistrictLayerStyle,
+    DistrictLayerOptions,
+
     // 工具
     GeometryUtil,
     Browser,
