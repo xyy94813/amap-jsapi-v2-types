@@ -38,6 +38,13 @@ import type {
   MapboxVectorTileLayer,
 } from './layers/MapboxVectorTileLayer';
 
+import type { Control, CommonControlConfig } from './controls/Control.d.ts';
+import type { ControlBar, ControlBarConfig } from './controls/ControlBar.d.ts';
+import type { HawkEye, HawkEyeOptions } from './controls/HawkEye.d.ts';
+import type { MapType, MapTypeOptions } from './controls/MapType.d.ts';
+import type { Scale, ScaleConfig } from './controls/Scale.d.ts';
+import type { ToolBar, ToolBarConfig } from './controls/ToolBar.d.ts';
+
 import type GeometryUtil from './utils/GeometryUtil';
 import type DomUtil from './utils/DomUtil';
 import type Browser from './utils/Browser';
@@ -88,6 +95,20 @@ declare namespace AMap {
     HeatMapOption,
     MapboxVectorTileLayer,
     MapboxVTLayerOptions,
+
+    // 地图控件
+    Control,
+    CommonControlConfig,
+    ControlBar,
+    ControlBarConfig,
+    HawkEye,
+    HawkEyeOptions,
+    MapType,
+    MapTypeOptions,
+    Scale,
+    ScaleConfig,
+    ToolBar,
+    ToolBarConfig,
 
     // 工具
     GeometryUtil,
