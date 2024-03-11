@@ -81,6 +81,37 @@ import type {
   MassMarkersStyleOption,
   MassMarkersDataOption,
 } from './overlays/MassMarks';
+import type {
+  Polygon,
+  PolygonEventType,
+  PolygonOptions,
+} from './overlays/Polygon';
+import type {
+  Polyline,
+  PolylineOptions,
+  PolylineEventType,
+} from './overlays/Polyline';
+import type {
+  BezierCurve,
+  BezierCurveOptions,
+  BezierCurveEventType,
+} from './overlays/BezierCurve';
+import type { Circle, CircleOptions, CircleEventType } from './overlays/Circle';
+import type {
+  CircleMarker,
+  CircleMarkerOptions,
+  CircleMarkerEventType,
+} from './overlays/CircleMarker';
+import type {
+  Ellipse,
+  EllipseOptions,
+  EllipseEventType,
+} from './overlays/Ellipse';
+import type {
+  Rectangle,
+  RectangleOptions,
+  RectangleEventType,
+} from './overlays/Rectangle';
 
 import type { Control, CommonControlConfig } from './controls/Control.d.ts';
 import type { ControlBar, ControlBarConfig } from './controls/ControlBar.d.ts';
@@ -177,6 +208,27 @@ declare namespace AMap {
     MassMarksEventType,
     MassMarkersStyleOption,
     MassMarkersDataOption,
+    Polygon,
+    PolygonEventType,
+    PolygonOptions,
+    Polyline,
+    PolylineOptions,
+    PolylineEventType,
+    BezierCurve,
+    BezierCurveOptions,
+    BezierCurveEventType,
+    Circle,
+    CircleOptions,
+    CircleEventType,
+    CircleMarker,
+    CircleMarkerOptions,
+    CircleMarkerEventType,
+    Ellipse,
+    EllipseOptions,
+    EllipseEventType,
+    Rectangle,
+    RectangleOptions,
+    RectangleEventType,
 
     // 地图控件
     Control,
