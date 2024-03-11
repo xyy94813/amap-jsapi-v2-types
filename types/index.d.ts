@@ -38,6 +38,50 @@ import type {
   MapboxVectorTileLayer,
 } from './layers/MapboxVectorTileLayer';
 
+import type {
+  MoveAnimation,
+  AnimationCallback,
+  EasingCallback,
+  MoveToOptions,
+  MoveAlongOptions,
+  MoveAlongObj,
+} from './animates/MoveAnimation';
+
+import type { Text, TextOptions, TextEventType } from './overlays/Text';
+import type { Icon, IconOptions, IconEventType } from './overlays/Icon';
+import type {
+  LabelMarker,
+  LabelMarkerOptions,
+  LabelMarkerEventType,
+  LabelMarkerTextOptions,
+  LabelMarkerIconOptions,
+} from './overlays/LabelMarker';
+import type {
+  Marker,
+  MarkerOptions,
+  MarkerLabelOptions,
+  MarkerEventType,
+} from './overlays/Marker';
+import type {
+  ElasticMarker,
+  ElasticMarkerOptions,
+  ElasticMarkerEventType,
+  ElasticStyle,
+} from './overlays/ElasticMarker';
+import type {
+  MarkerCluster,
+  MarkerClusterOptions,
+  MarkerClusterEventType,
+  MarkerClusterDataOption,
+} from './overlays/MarkerCluster';
+import type {
+  MassMarks,
+  MassMarkersOptions,
+  MassMarksEventType,
+  MassMarkersStyleOption,
+  MassMarkersDataOption,
+} from './overlays/MassMarks';
+
 import type { Control, CommonControlConfig } from './controls/Control.d.ts';
 import type { ControlBar, ControlBarConfig } from './controls/ControlBar.d.ts';
 import type { HawkEye, HawkEyeOptions } from './controls/HawkEye.d.ts';
@@ -95,6 +139,44 @@ declare namespace AMap {
     HeatMapOption,
     MapboxVectorTileLayer,
     MapboxVTLayerOptions,
+
+    // animate
+    MoveAnimation,
+    AnimationCallback,
+    EasingCallback,
+    MoveToOptions,
+    MoveAlongOptions,
+    MoveAlongObj,
+
+    // overlays
+    Text,
+    TextOptions,
+    TextEventType,
+    Icon,
+    IconOptions,
+    IconEventType,
+    LabelMarker,
+    LabelMarkerOptions,
+    LabelMarkerEventType,
+    LabelMarkerTextOptions,
+    LabelMarkerIconOptions,
+    Marker,
+    MarkerOptions,
+    MarkerLabelOptions,
+    MarkerEventType,
+    ElasticMarker,
+    ElasticMarkerOptions,
+    ElasticMarkerEventType,
+    ElasticStyle,
+    MarkerCluster,
+    MarkerClusterOptions,
+    MarkerClusterEventType,
+    MarkerClusterDataOption,
+    MassMarks,
+    MassMarkersOptions,
+    MassMarksEventType,
+    MassMarkersStyleOption,
+    MassMarkersDataOption,
 
     // 地图控件
     Control,
