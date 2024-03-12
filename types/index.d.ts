@@ -118,6 +118,7 @@ import type {
   OverlayGroup,
   OverlayGroupEventType,
 } from './overlays/OverlayGroup';
+import type { GeoJSON, GeoJSONOptions } from './overlays/GeoJSON';
 
 import type { Control, CommonControlConfig } from './controls/Control.d.ts';
 import type { ControlBar, ControlBarConfig } from './controls/ControlBar.d.ts';
@@ -241,6 +242,8 @@ declare namespace AMap {
     LayerGroupEventType,
     OverlayGroup,
     OverlayGroupEventType,
+    GeoJSON,
+    GeoJSONOptions,
 
     // 地图控件
     Control,
