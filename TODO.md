@@ -57,15 +57,15 @@
     - [x] ControlBar
     - [x] MapType
     - [x] HawkEye
-  - [ ] 工具类
-    - [ ] RangingTool
-    - [ ] MouseTool
-    - [ ] PolygonEditor
-    - [ ] PolylineEditor
-    - [ ] CircleEditor
-    - [ ] BezierCurveEditor
-    - [ ] EllipseEditor
-    - [ ] RectangleEditor
+  - [x] 工具类
+    - [x] RangingTool
+    - [x] MouseTool
+    - [x] PolygonEditor
+    - [x] PolylineEditor
+    - [x] CircleEditor
+    - [x] BezierCurveEditor
+    - [x] EllipseEditor
+    - [x] RectangleEditor
   - [x] 通用库
     - [x] GeometryUtil
     - [x] DomUtil

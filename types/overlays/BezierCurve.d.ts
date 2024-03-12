@@ -63,7 +63,7 @@ export type BezierCurveEventType =
  * 贝塞尔曲线
  * https://lbs.amap.com/api/javascript-api-v2/documentation#beziercurve
  */
-export declare class BezierCurve<ExtractData> extends Overlay<
+export declare class BezierCurve<ExtractData = any> extends Overlay<
   ExtractData,
   BezierCurveEventType
 > {

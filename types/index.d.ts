@@ -120,6 +120,43 @@ import type {
 } from './overlays/OverlayGroup';
 import type { GeoJSON, GeoJSONOptions } from './overlays/GeoJSON';
 
+import type {
+  RangingTool,
+  RangingToolOptions,
+  RangingToolEventType,
+} from './tools/RangingTool.d.ts';
+import type { MouseTool, MouseToolEventType } from './tools/MouseTool.d.ts';
+import type {
+  PolygonEditor,
+  PolygonEditorOptions,
+  PolygonEditorEventType,
+} from './tools/PolygonEditor';
+import type {
+  PolylineEditor,
+  PolylineEditorOptions,
+  PolylineEditorEventType,
+} from './tools/PolylineEditor';
+import type {
+  CircleEditor,
+  CircleEditorOptions,
+  CircleEditorEventType,
+} from './tools/CircleEditor';
+import type {
+  BezierCurveEditor,
+  BezierCurveEditorOptions,
+  BezierCurveEditorEventType,
+} from './tools/BezierCurveEditor';
+import type {
+  EllipseEditor,
+  EllipseEditorOptions,
+  EllipseEditorEventType,
+} from './tools/EllipseEditor';
+import type {
+  RectangleEditor,
+  RectangleEditorOptions,
+  RectangleEditorEventType,
+} from './tools/RectangleEditor';
+
 import type { Control, CommonControlConfig } from './controls/Control.d.ts';
 import type { ControlBar, ControlBarConfig } from './controls/ControlBar.d.ts';
 import type { HawkEye, HawkEyeOptions } from './controls/HawkEye.d.ts';
@@ -244,6 +281,31 @@ declare namespace AMap {
     OverlayGroupEventType,
     GeoJSON,
     GeoJSONOptions,
+
+    // tools
+    RangingTool,
+    RangingToolOptions,
+    RangingToolEventType,
+    MouseTool,
+    MouseToolEventType,
+    PolygonEditor,
+    PolygonEditorOptions,
+    PolygonEditorEventType,
+    PolylineEditor,
+    PolylineEditorOptions,
+    PolylineEditorEventType,
+    CircleEditor,
+    CircleEditorOptions,
+    CircleEditorEventType,
+    BezierCurveEditor,
+    BezierCurveEditorOptions,
+    BezierCurveEditorEventType,
+    EllipseEditor,
+    EllipseEditorOptions,
+    EllipseEditorEventType,
+    RectangleEditor,
+    RectangleEditorOptions,
+    RectangleEditorEventType,
 
     // 地图控件
     Control,
