@@ -114,6 +114,10 @@ import type {
 } from './overlays/Rectangle';
 
 import type { LayerGroup, LayerGroupEventType } from './layers/LayerGroup';
+import type {
+  OverlayGroup,
+  OverlayGroupEventType,
+} from './overlays/OverlayGroup';
 
 import type { Control, CommonControlConfig } from './controls/Control.d.ts';
 import type { ControlBar, ControlBarConfig } from './controls/ControlBar.d.ts';
@@ -235,6 +239,8 @@ declare namespace AMap {
     // group
     LayerGroup,
     LayerGroupEventType,
+    OverlayGroup,
+    OverlayGroupEventType,
 
     // 地图控件
     Control,

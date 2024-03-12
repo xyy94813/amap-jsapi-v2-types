@@ -33,7 +33,7 @@
       - [x] TileLayer.WMTS
       - [x] MapboxVectorTileLayer
     - [x] LayerGroup
-  - [ ] 覆盖物
+  - [x] 覆盖物
     - [x] Marker
     - [x] Text
     - [x] Icon
@@ -49,7 +49,7 @@
     - [x] Ellipse
     - [x] Rectangle
     - [x] GeoJSON
-    - [ ] OverlayGroup
+    - [x] OverlayGroup
   - [x] 地图控件
     - [x] Control
     - [x] Scale
