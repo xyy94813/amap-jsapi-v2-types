@@ -10,7 +10,7 @@
     - [x] Bounds
     - [x] Event
     - [ ] Map
-  - [ ] 图层
+  - [x] 图层
     - [x] 官方图层
       - [x] TileLayer
       - [x] TileLayer.Satellite
@@ -32,7 +32,7 @@
       - [x] TileLayer.WMS
       - [x] TileLayer.WMTS
       - [x] MapboxVectorTileLayer
-    - [ ] LayerGroup
+    - [x] LayerGroup
   - [ ] 覆盖物
     - [x] Marker
     - [x] Text

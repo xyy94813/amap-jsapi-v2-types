@@ -113,6 +113,8 @@ import type {
   RectangleEventType,
 } from './overlays/Rectangle';
 
+import type { LayerGroup, LayerGroupEventType } from './layers/LayerGroup';
+
 import type { Control, CommonControlConfig } from './controls/Control.d.ts';
 import type { ControlBar, ControlBarConfig } from './controls/ControlBar.d.ts';
 import type { HawkEye, HawkEyeOptions } from './controls/HawkEye.d.ts';
@@ -229,6 +231,10 @@ declare namespace AMap {
     Rectangle,
     RectangleOptions,
     RectangleEventType,
+
+    // group
+    LayerGroup,
+    LayerGroupEventType,
 
     // 地图控件
     Control,
