@@ -28,13 +28,9 @@
 - DefinitelyTyped/types/amap-js-sdk
 - @uiw/react-amap-types
 
-## 目标
+## 此项目目标？
 
-1. 完整同步高德 js api 文档，全量包含
-2. 包含 AMapUI、LUCA 等相关声明
-
-> 不考虑 deno/ts-node 使用场景，声明文件做作为开发阶段依赖项，没必要分开打包管理
-> 减少的下载优化成本远小于项目的管理成本
+[项目目标](./TODO.md)
 
 ## 如何贡献
 
