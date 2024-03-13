@@ -4,8 +4,6 @@
   "description": "A RRNL middleware for limit number of request",
   "typings": "types/index.d.ts",
   "scripts": {
-    "prebuild": "rm -rf dist",
-    "build": "rollup -c rollup.config.mjs --bundleConfigAsCjs --configOnly",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint:es": "eslint .",
     "format:es": "eslint . --fix",
