@@ -1,0 +1,10 @@
+**
+# output dir
+!types/**
+
+# package info
+!LICENSE
+!CHANGELOG.md
+!READNE.md
+!package.json
+#!package-lock.json
