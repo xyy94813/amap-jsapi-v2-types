@@ -38,6 +38,17 @@ export interface HawkEyeOptions {
  */
 export declare class HawkEye extends Control {
   constructor(options?: HawkEyeOptions);
+
+  /**
+   * 展开
+   * @warning 文档未提及但是存在
+   */
+  open(): void;
+  /**
+   * 收起
+   * @warning 文档未提及但是存在
+   */
+  close(): void;
 }
 
 export default HawkEye;
