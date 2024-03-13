@@ -42,7 +42,7 @@ export declare class RangingTool extends Event<RangingToolEventType> {
    * 关闭测距工具
    * @param {boolean} removeOverlays 是否删除测距过程产生的覆盖物
    */
-  turnOff(removeOverlays: boolean): void;
+  turnOff(removeOverlays?: boolean): void;
 }
 
 export default RangingTool;
