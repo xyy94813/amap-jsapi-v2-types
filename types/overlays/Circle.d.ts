@@ -63,7 +63,7 @@ export declare class Circle<ExtraData = any> extends Overlay<
   /** 获取圆点的半径 */
   getRadius(): number;
   /** 设置圆点的半径 */
-  setRaius(radius: number): void;
+  setRadius(radius: number): void;
   /**
    * 同时设置中心和半径
    * @warning 文档未提及，验证存在
