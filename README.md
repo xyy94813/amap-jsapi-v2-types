@@ -7,12 +7,10 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/xyy94813/amap-jsapi-v2-types?label=github%20%20stars)](https://github.com/xyy94813/amap-jsapi-v2-types)
 [![last commit (branch)](https://img.shields.io/github/last-commit/xyy94813/amap-jsapi-v2-types/main)](https://github.com/xyy94813/amap-jsapi-v2-types)
 
-<!--
 [![latest version](https://img.shields.io/npm/v/amap-jsapi-v2-types.svg?label=latest%20%20version)](https://www.npmjs.org/package/amap-jsapi-v2-types)
 [![License](https://img.shields.io/npm/l/amap-jsapi-v2-types?label=latest%20%20version%20%20license)](https://www.npmjs.org/package/amap-jsapi-v2-types)
 [![npm downloads](https://img.shields.io/npm/dm/amap-jsapi-v2-types.svg)](http://npmjs.com/amap-jsapi-v2-types)
 [![minimized gzipped size](https://img.shields.io/bundlejs/size/amap-jsapi-v2-types)](http://npmjs.com/amap-jsapi-v2-types)
--->
 
 ## 项目产生的原因
 
@@ -30,7 +28,7 @@
 
 ## 此项目目标？
 
-[项目目标](./TODO.md)
+[项目目标](https://github.com/xyy94813/amap-jsapi-v2-types/blob/main/TODO.md)
 
 ## 如何贡献
 
@@ -38,9 +36,9 @@
 
 希望承担此项目 Maintainer 的同学可邮箱联系我。
 
-<!-- ## Changelog -->
+## 变更日志
 
-<!-- TODO -->
+查看[变更日志](./CHANGELOG.md)
 
 ## License
 
