@@ -71,8 +71,8 @@
     - [x] DomUtil
     - [x] Browser
     - [x] Util
-  - [ ] 其它配置
-    - [ ] \_AMapSecurityConfig
+  - [x] 其它配置
+    - [x] \_AMapSecurityConfig
 - [ ] CI/CD 自动部署及 ChangeLog
 
 ## 里程碑 2

@@ -171,6 +171,8 @@ import type DomUtil from './utils/DomUtil';
 import type Browser from './utils/Browser';
 import type Util from './utils/Util';
 
+import type SecurityConfig from './SecurityConfig';
+
 /**
  * 高德地图 JS API v2 类型声明
  */
@@ -361,7 +363,14 @@ declare namespace AMap {
 declare global {
   interface Window {
     AMap: typeof AMap;
+    _AMapSecurityConfig?: SecurityConfig;
   }
 }
 
-export { AMap };
+// 非 AMap 上的类型
+// 通过声明顺序控制 window.AMap 将不带以下类型
+declare namespace AMap {
+  export { SecurityConfig };
+}
+
+export { AMap, SecurityConfig };
