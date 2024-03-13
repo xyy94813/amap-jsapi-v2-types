@@ -3,7 +3,7 @@
  *
  * https://lbs.amap.com/api/javascript-api-v2/documentation#size
  */
-export class Size {
+export declare class Size {
   className: string;
   width: number;
   height: number;

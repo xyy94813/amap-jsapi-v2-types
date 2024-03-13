@@ -5,7 +5,7 @@ import type Pixel from './Pixel';
  * JSAPI 的所有类型（地图、图层、覆盖物等）都实现了事件接口，用于给当前实例对象绑定、移除、清理事件回调
  * https://lbs.amap.com/api/javascript-api-v2/documentation#event
  */
-export abstract class Event<EventType = string> {
+export declare abstract class Event<EventType = string> {
   /**
    * 给实例绑定事件回调函数，同一个类型、同一个回调函数、同一个上下文只会绑定一次
    * @param type

@@ -3,7 +3,7 @@
  *
  * https://lbs.amap.com/api/javascript-api-v2/documentation#pixel
  */
-export class Pixel {
+export declare class Pixel {
   className: string;
   x: number;
   y: number;

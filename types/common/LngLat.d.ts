@@ -4,7 +4,7 @@
  * https://lbs.amap.com/api/javascript-api-v2/documentation#lnglat
  *
  */
-export class LngLat {
+export declare class LngLat {
   className: string;
 
   /**

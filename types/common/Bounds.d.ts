@@ -5,7 +5,7 @@ import { LngLat, LngLatLike } from './LngLat.d';
  * https://lbs.amap.com/api/javascript-api-v2/documentation#bounds
  *
  */
-export class Bounds {
+export declare class Bounds {
   className: string;
   southWest: LngLat;
   northEast: LngLat;
