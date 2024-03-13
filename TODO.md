@@ -9,7 +9,7 @@
     - [x] LngLat
     - [x] Bounds
     - [x] Event
-    - [ ] Map
+    - [x] Map
   - [x] 图层
     - [x] 官方图层
       - [x] TileLayer

@@ -3,6 +3,7 @@ import type Bounds from './common/Bounds';
 import type Pixel from './common/Pixel';
 import type Size from './common/Size';
 import type { Event, MapsEvent } from './common/Event';
+import type { MapOptions, MapEventType, Map } from './Map';
 
 import type {
   TileLayer,
@@ -181,7 +182,10 @@ declare namespace AMap {
     Pixel,
     Size,
     Event,
+    Map,
     MapsEvent,
+    MapOptions,
+    MapEventType,
 
     // 官方图层
     TileLayer,
