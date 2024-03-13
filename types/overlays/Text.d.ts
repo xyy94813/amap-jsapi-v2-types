@@ -51,7 +51,7 @@ export type TextEventType = MarkerEventType;
  * 验证后继成自 Marker
  * https://lbs.amap.com/api/javascript-api-v2/documentation#text
  */
-export declare class Text<ExtraData> extends Marker<ExtraData> {
+export declare class Text<ExtraData = any> extends Marker<ExtraData> {
   constructor(opts?: TextOptions<ExtraData>);
   /**
    * 获取文本内容

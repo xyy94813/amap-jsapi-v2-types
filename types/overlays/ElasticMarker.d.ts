@@ -59,7 +59,7 @@ export type ElasticMarkerEventType = MarkerEventType;
  * 验证后继成自 Marker
  * https://lbs.amap.com/api/javascript-api-v2/documentation#elasticmarker
  */
-export declare class ElasticMarker<ExtraData> extends Marker<ExtraData> {
+export declare class ElasticMarker<ExtraData = any> extends Marker<ExtraData> {
   constructor(opts?: ElasticMarkerOptions<ExtraData>);
 }
 
