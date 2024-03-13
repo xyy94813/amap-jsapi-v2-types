@@ -12,7 +12,12 @@
     "commitlint": "commitlint --edit",
     "prepare": "husky"
   },
-  "keywords": [],
+  "keywords": [
+    "Types",
+    "AMap",
+    "jsapi",
+    "jsapi v2"
+  ],
   "author": "Yiyuan Xing <xyy94813@sina.com>",
   "license": "MIT",
   "repository": {
