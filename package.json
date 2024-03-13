@@ -19,12 +19,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xyy94813/js-lib-template-repo.git"
+    "url": "git+https://github.com/xyy94813/amap-jsapi-v2-types.git"
   },
   "bugs": {
-    "url": "https://github.com/xyy94813/js-lib-template-repo/issues"
+    "url": "https://github.com/xyy94813/amap-jsapi-v2-types/issues"
   },
-  "homepage": "https://github.com/xyy94813/js-lib-template-repo#readme",
+  "homepage": "https://github.com/xyy94813/amap-jsapi-v2-types#readme",
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
