@@ -44,6 +44,13 @@ export type MarkerOptions<ExtraData = any> = {
    * offset 为偏移量（默认基准点为图标左上角），如设置了 direction，以 direction 方位为基准点进行偏移。相关示例
    */
   label?: MarkerLabelOptions;
+  /** 设置图标 */
+  icon?: Icon | string;
+  /**
+   * 设置尺寸
+   * @warning 文档未提及，但是存在
+   */
+  size?: SizeLike;
 };
 
 export type MarkerEventType =
@@ -94,7 +101,7 @@ export declare class Marker<ExtraData = any>
   /** 获取点标记是否支持鼠标单击事件Boolean */
   getClickable(): boolean;
   /** 设置点标记是支持鼠标单击事件clickable:Boolean */
-  setClickable(clickable: boolean): void;
+  setClickable(clickable?: boolean): void;
   /** 获取点标记对象是否可拖拽移动Boolean */
   getDraggable(): boolean;
   /** 设置点标记对象是否可拖拽移动draggable:Boolean */
@@ -123,10 +130,6 @@ export declare class Marker<ExtraData = any>
   getSize(): [number, number];
   /** 设置尺寸 */
   setSize(size: SizeLike): void;
-  /** 获取尺寸 */
-  getSize(): [number, number];
-  /** 设置尺寸 */
-  setSize(size: SizeLike): void;
   /** 获取点标记的叠加顺序 */
   getzIndex(): number | undefined;
   /** 设置点标记的叠加顺序，默认最先添加的点标记在最底层 */
@@ -134,7 +137,7 @@ export declare class Marker<ExtraData = any>
   /** 获取内容 */
   getContent(): string | HTMLElement | undefined;
   /** 设置点标记显示内容，可以是HTML要素字符串或者HTML DOM对象 */
-  setContent(content: HTMLElement | string): void;
+  setContent(content?: HTMLElement | string): void;
   /** 获取点标记范围 */
   getBounds(): Bounds;
   /** 移除点标记   */
