@@ -1,4 +1,4 @@
-import type Pixel from '../common/Pixel';
+import type { PixelLike } from '../common/Pixel';
 import type { SizeLike } from '../common/Size';
 import type { LngLatLike, LngLat } from '../common/LngLat';
 import type { MoveAnimation } from '../animates/MoveAnimation';
@@ -26,7 +26,7 @@ type TextStyleOptions = {
 export type LabelMarkerTextOptions = {
   content?: string;
   direction?: string;
-  offset?: [number, number] | Pixel;
+  offset?: PixelLike;
   zooms?: [number, number];
   style?: TextStyleOptions;
 };
@@ -34,13 +34,13 @@ export type LabelMarkerTextOptions = {
 export type LabelMarkerIconOptions = {
   image?: string;
   size?: SizeLike;
-  offset?: Pixel | [number, number];
-  anchor?: string | number[] | Pixel;
+  offset?: PixelLike;
+  anchor?: string | PixelLike;
   /**
    * 图标所在图片偏移位置，默认值: [0, 0]
    * @waring 未验证文档是否有误
    */
-  clipOrigin: [number, number] | Pixel;
+  clipOrigin: PixelLike;
   /**
    * 图标所在图片裁剪大小，若未设置，则使用图片大小
    * @waring 未验证文档是否有误

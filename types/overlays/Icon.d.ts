@@ -1,11 +1,11 @@
-import type { Pixel } from '../common/Pixel';
+import type { Pixel, PixelLike } from '../common/Pixel';
 import type { Size, SizeLike } from '../common/Size';
 
 export type IconOptions = {
   image?: string;
   size?: SizeLike;
   imageSize?: SizeLike;
-  imageOffset?: Pixel | [number, number];
+  imageOffset?: PixelLike;
 };
 
 export type IconEventType =
@@ -49,9 +49,9 @@ export declare class Icon {
   getSize(): Size | [number, number];
   /**
    * 设置图标图片偏移
-   * @param {Pixel} offset
+   * @param {PixelLike} offset
    */
-  setImageOffset(offset: Pixel): void;
+  setImageOffset(offset: PixelLike): void;
   /**
    * 获取图标取图偏移量。
    * 当 image 中指定了一个大图时，可通过 size 和 imageOffset 配合，显示图标的指定范围

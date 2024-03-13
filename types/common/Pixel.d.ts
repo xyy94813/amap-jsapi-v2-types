@@ -75,4 +75,6 @@ export declare class Pixel {
   toJSON(): [number, number];
 }
 
+export type PixelLike = Pixel | [number, number];
+
 export default Pixel;

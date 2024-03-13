@@ -1,5 +1,5 @@
 import type { LngLatLike } from '../common/LngLat';
-import type { Pixel } from '../common/Pixel';
+import type { PixelLike } from '../common/Pixel';
 import type Map from '../Map.d';
 import type { Marker, MarkerEventType } from './Marker';
 
@@ -17,7 +17,7 @@ export type TextOptions<ExtraData = any> = {
   /** 点标记的叠加顺序 */
   zIndex?: number;
   /** 点标记显示位置偏移量，默认值 [0, 0] 。 图解说明 */
-  offset?: [number, number] | Pixel;
+  offset?: PixelLike;
   /** 设置点标记锚点。默认值：'center'。可选值：'top-left'|'top-center'|'top-right'|'middle-left'|'center'|'middle-right'|'bottom-left'|'bottom-center'|'bottom-right' */
   anchor?: string | number[];
   /** 点标记的旋转角度。默认值：0 。注：angle属性是使用CSS3来实现的，支持IE9及以上版本 */

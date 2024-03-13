@@ -1,6 +1,6 @@
 import type Map from '../Map.d';
 import type { LngLatLike } from '../common/LngLat';
-import type Pixel from '../common/Pixel';
+import type { PixelLike } from '../common/Pixel';
 import type { Marker, MarkerEventType } from './Marker';
 
 export type ElasticStyle = {
@@ -10,7 +10,7 @@ export type ElasticStyle = {
     /** 图标显示大小 */
     size?: number[];
     /** 图标锚点 */
-    anchor?: string | number[] | Pixel;
+    anchor?: string | PixelLike;
     /** 图片偏移量 */
     imageOffset?: number[];
     /** 图片大小 */
@@ -41,7 +41,7 @@ export type ElasticMarkerOptions<ExtraData = any> = {
   position?: LngLatLike;
   visible?: boolean;
   zIndex?: number;
-  offset?: Pixel | [number, number];
+  offset?: PixelLike;
   clickable?: boolean;
   draggable?: boolean;
   bubble?: boolean;

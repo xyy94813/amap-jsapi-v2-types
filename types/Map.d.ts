@@ -1,6 +1,6 @@
 import type Bounds from './common/Bounds';
 import type Size from './common/Size';
-import type Pixel from './common/Pixel';
+import type { Pixel, PixelLike } from './common/Pixel';
 import type Event from './common/Event';
 import type { LngLat, LngLatLike } from './common/LngLat';
 import type BaseLayer from './layers/BaseLayer';
@@ -462,10 +462,10 @@ export declare class Map extends Event<MapEventType> {
    * 地图容器坐标转换成经纬度
    *
    * @exampleUrl https://lbs.amap.com/api/jsapi-v2/example/axis/transformate-between-coordinates-of-lnglat-and-map-container/
-   * @param {Pixel | [number, number]} pixel 容器像素坐标
+   * @param {PixelLike} pixel 容器像素坐标
    * @returns {LngLat} 转换成功的经纬度
    **/
-  containerToLngLat(pixel: Pixel | [number, number]): LngLat;
+  containerToLngLat(pixel: PixelLike): LngLat;
   /**
    * 莫卡托（单位：米）转成地图容器坐标
    * @param {[number, number]} coord 莫卡托坐标（单位：米）
@@ -476,18 +476,18 @@ export declare class Map extends Event<MapEventType> {
   /**
    * 地图容器坐标转成莫卡托（单位：米）
    *
-   * @param {Pixel | [number, number]} pixel 容器像素坐标
+   * @param {PixelLike} pixel 容器像素坐标
    * @returns {[number, number]} 莫卡托坐标（单位：米）
    **/
-  containerToCoord(pixel: Pixel | [number, number]): [number, number];
+  containerToCoord(pixel: PixelLike): [number, number];
   /**
    * 平面地图像素坐标转换为地图经纬度坐标
    *
-   * @param {Pixel | [number, number]} pixel 像素坐标
+   * @param {PixelLike} pixel 像素坐标
    * @param {number} zoom 某个地图级别
    * @returns {LngLat}
    **/
-  pixelToLngLat(pixel: Pixel | [number, number], zoom?: number): LngLat;
+  pixelToLngLat(pixel: PixelLike, zoom?: number): LngLat;
   /**
    * 经纬度坐标转换成平面地图像素坐标
    *
@@ -540,9 +540,9 @@ export declare class Map extends Event<MapEventType> {
    * 根据像素坐标获取海拔高度
    * @warning  文档提及，但是未验证其存在
    * @version v2.1Beta
-   * @param pixel
+   * @param {PixelLike} pixel
    **/
-  getAltitudeByContainer(pixel: Pixel | [number, number]): number;
+  getAltitudeByContainer(pixel: PixelLike): number;
 }
 
 export default Map;

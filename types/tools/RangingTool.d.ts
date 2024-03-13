@@ -1,4 +1,4 @@
-import type Pixel from '../common/Pixel';
+import type { PixelLike } from '../common/Pixel';
 import type Event from '../common/Event';
 import type { MarkerOptions } from '../overlays/Marker';
 import type { PolylineOptions } from '../overlays/Polyline';
@@ -22,11 +22,11 @@ export type RangingToolOptions = {
   /** 设置量测结束点处标签的文字内容，默认为当前量测结果值 */
   endLabelText?: string;
   /** 设置量测起始点标签的偏移量。默认值：Pixel(-6, 6) */
-  startLabelOffset?: Pixel | [number, number];
+  startLabelOffset?: PixelLike;
   /** 设置量测中间点标签的偏移量。默认值：Pixel(-6, 6) */
-  midLabelOffset?: Pixel | [number, number];
+  midLabelOffset?: PixelLike;
   /** 设置量测结束点标签的偏移量。默认值：Pixel(-6, 6) */
-  endLabelOffset?: Pixel | [number, number];
+  endLabelOffset?: PixelLike;
 };
 
 export type RangingToolEventType = 'addnode' | 'removenode' | 'end';

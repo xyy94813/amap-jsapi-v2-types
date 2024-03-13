@@ -1,5 +1,5 @@
 import type { LngLatLike, LngLat } from '../common/LngLat';
-import type { Pixel } from '../common/Pixel';
+import type { Pixel, PixelLike } from '../common/Pixel';
 import type { SizeLike } from '../common/Size';
 import type Overlay from './Overlay';
 import type { Icon } from './Icon';
@@ -13,7 +13,7 @@ export type MarkerLabelOptions = {
   /** 文本标注方位 可选值，默认值: `right`。 */
   direction?: 'top' | 'right' | 'bottom' | 'left' | 'center';
   /** 为偏移量。如设置了 direction，以 direction 方位为基准点进行偏移。 */
-  offset?: Pixel | [number, number];
+  offset?: PixelLike;
 };
 
 export type MarkerOptions<ExtraData = any> = {
@@ -23,7 +23,7 @@ export type MarkerOptions<ExtraData = any> = {
   title?: string;
   visible?: boolean;
   zIndex?: number;
-  offset?: Pixel | [number, number];
+  offset?: PixelLike;
   anchor?: string | [number, number];
   angle?: number;
   clickable?: boolean;
@@ -112,7 +112,7 @@ export declare class Marker<ExtraData = any>
   /** 设置信息窗体锚点 默认值：'bottom-center'。 */
   setAnchor(anchor: MarkerOptions['anchor']): void;
   /** 获取覆盖物偏移量 */
-  getOffset(): [number, number] | Pixel;
+  getOffset(): Pixel;
   /** 设置信息窗体偏移量 */
   setOffset(offset: MarkerOptions['offset']): void;
   /** 获取覆盖物旋转角度 */
