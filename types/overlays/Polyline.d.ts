@@ -56,6 +56,21 @@ export type PolylineOptions<ExtraData = any> = {
 
   /** 要显示该polygon的地图对象 */
   map?: Map;
+  
+  /**
+   * 设置方向箭头的颜色
+   * @warning 文档中未明确说明，成功验证其存在性
+   */
+  dirColor?: string;
+  /**
+   * 方向箭头的图片
+   * @warning 文档中未明确说明，成功验证其存在性
+   */
+  dirImg?: string | HTMLCanvasElement;
+  /**
+   * @warning 文档中未明确说明，成功验证其存在性
+   */
+  zooms?: [number, number];
 };
 
 export type PolylineEventType =
