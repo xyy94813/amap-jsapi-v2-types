@@ -38,4 +38,6 @@ export declare class Size {
   toArray(): [number, number];
 }
 
+export type SizeLike = Size | [number, number];
+
 export default Size;

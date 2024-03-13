@@ -1,10 +1,10 @@
 import type { Pixel } from '../common/Pixel';
-import type Size from '../common/Size';
+import type { Size, SizeLike } from '../common/Size';
 
 export type IconOptions = {
   image?: string;
-  size?: Size | [number, number];
-  imageSize?: Size | [number, number];
+  size?: SizeLike;
+  imageSize?: SizeLike;
   imageOffset?: Pixel | [number, number];
 };
 
@@ -30,18 +30,18 @@ export declare class Icon {
   constructor(opts: IconOptions);
   /**
    * 设置图标图片大小
-   * @param {Size | [number, number]} size
+   * @param {SizeLike} size
    */
-  setImageSize(size: Size | [number, number]): void;
+  setImageSize(size: SizeLike): void;
   /**
    * 获取图标图片大小
    */
   getImageSize(): [number, number];
   /**
    * 设置图标尺寸，默认值(36,36)
-   * @param size
+   * @param {SizeLike} size
    */
-  setSize(size: Size | [number, number]): void;
+  setSize(size: SizeLike): void;
   /**
    * 获取图标尺寸
    * @returns {Size | [number, number]} 经验证，返回类型取决于上一次 setSize 的传入值
@@ -72,7 +72,7 @@ export declare class Icon {
    * @deprecated
    * @param size
    */
-  setOriginSize(size: Size | [number, number]): void;
+  setOriginSize(size: SizeLike): void;
   /**
    * 获取原始尺寸
    * @warning 文档提及，未验证其存在

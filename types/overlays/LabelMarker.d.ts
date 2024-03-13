@@ -1,5 +1,5 @@
 import type Pixel from '../common/Pixel';
-import type Size from '../common/Size';
+import type { SizeLike } from '../common/Size';
 import type { LngLatLike, LngLat } from '../common/LngLat';
 import type { MoveAnimation } from '../animates/MoveAnimation';
 import type { Overlay } from './Overlay';
@@ -33,7 +33,7 @@ export type LabelMarkerTextOptions = {
 
 export type LabelMarkerIconOptions = {
   image?: string;
-  size?: Size | [number, number];
+  size?: SizeLike;
   offset?: Pixel | [number, number];
   anchor?: string | number[] | Pixel;
   /**
@@ -45,7 +45,7 @@ export type LabelMarkerIconOptions = {
    * 图标所在图片裁剪大小，若未设置，则使用图片大小
    * @waring 未验证文档是否有误
    */
-  clipSize: [number, number] | Size;
+  clipSize: SizeLike;
 };
 
 export type LabelMarkerOptions<ExtraData = any> = {

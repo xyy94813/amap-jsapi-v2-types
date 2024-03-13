@@ -1,6 +1,6 @@
 import type { LngLatLike } from '../common/LngLat';
 import type Pixel from '../common/Pixel';
-import type Size from '../common/Size';
+import type { SizeLike } from '../common/Size';
 import type Event from '../common/Event';
 import type Map from '../Map';
 
@@ -8,7 +8,7 @@ export type MassMarkersStyleOption = {
   /** 图标 url */
   url?: string;
   /** 图标显示大小 */
-  size?: [number, number] | Size;
+  size?: SizeLike;
   /** 锚点位置 */
   anchor?: Pixel;
   /** 点展示优先级，默认为使用样式的索引值。 */

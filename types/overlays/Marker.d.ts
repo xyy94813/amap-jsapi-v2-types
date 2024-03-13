@@ -1,6 +1,6 @@
 import type { LngLatLike, LngLat } from '../common/LngLat';
 import type { Pixel } from '../common/Pixel';
-import type Size from '../common/Size';
+import type { SizeLike } from '../common/Size';
 import type Overlay from './Overlay';
 import type { Icon } from './Icon';
 import type Map from '../Map';
@@ -122,11 +122,11 @@ export declare class Marker<ExtraData = any>
   /** 如设置了尺寸，获取设置的尺寸 */
   getSize(): [number, number];
   /** 设置尺寸 */
-  setSize(size: [number, number] | Size): void;
+  setSize(size: SizeLike): void;
   /** 获取尺寸 */
   getSize(): [number, number];
   /** 设置尺寸 */
-  setSize(size: [number, number] | Size): void;
+  setSize(size: SizeLike): void;
   /** 获取点标记的叠加顺序 */
   getzIndex(): number | undefined;
   /** 设置点标记的叠加顺序，默认最先添加的点标记在最底层 */
