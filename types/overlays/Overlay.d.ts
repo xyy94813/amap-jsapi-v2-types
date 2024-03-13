@@ -1,5 +1,5 @@
-import type { Event } from '../common/Event.d.ts';
-import type { Map } from '../Map.d.ts';
+import type { Event } from '../common/Event';
+import type { Map } from '../Map';
 
 export declare class Overlay<
   ExtraData = any,

@@ -1,4 +1,4 @@
-import Pixel from '../common/Pixel.d';
+import Pixel from '../common/Pixel';
 /**
  * DOM 辅助工具
  *

@@ -1,11 +1,11 @@
-import type { LngLat, LngLatLike } from '../common/LngLat.d';
+import type { LngLat, LngLatLike } from '../common/LngLat';
 import type {
   Position,
   Line,
   Ring,
   PolygonCoords,
   MultiPolygonCoords,
-} from '../common/Geometry.d';
+} from '../common/Geometry';
 
 export interface GeometryUtil {
   /**

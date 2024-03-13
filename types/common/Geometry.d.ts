@@ -1,4 +1,4 @@
-import type { LngLatLike } from './LngLat.d';
+import type { LngLatLike } from './LngLat';
 
 export type Position = LngLatLike;
 export type Line = Position[];

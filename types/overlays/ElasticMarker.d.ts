@@ -1,4 +1,4 @@
-import type Map from '../Map.d';
+import type Map from '../Map';
 import type { LngLatLike } from '../common/LngLat';
 import type { PixelLike } from '../common/Pixel';
 import type { Marker, MarkerEventType } from './Marker';

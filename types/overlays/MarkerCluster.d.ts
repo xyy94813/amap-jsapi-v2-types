@@ -1,9 +1,9 @@
 import type { LngLatLike } from '../common/LngLat.js';
 import type Pixel from '../common/Pixel.js';
 import type Size from '../common/Size';
-import type { Event } from '../common/Event.d.ts';
-import type { Map } from '../Map.d.ts';
-import type Marker from './Marker.d.ts';
+import type { Event } from '../common/Event';
+import type { Map } from '../Map';
+import type Marker from './Marker';
 
 /** 需要进行聚合显示的点数据结构 */
 export type MarkerClusterDataOption = Record<string | number | symbol, any> & {

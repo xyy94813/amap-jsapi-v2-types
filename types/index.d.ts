@@ -126,8 +126,8 @@ import type {
   RangingTool,
   RangingToolOptions,
   RangingToolEventType,
-} from './tools/RangingTool.d.ts';
-import type { MouseTool, MouseToolEventType } from './tools/MouseTool.d.ts';
+} from './tools/RangingTool';
+import type { MouseTool, MouseToolEventType } from './tools/MouseTool';
 import type {
   PolygonEditor,
   PolygonEditorOptions,
@@ -159,12 +159,12 @@ import type {
   RectangleEditorEventType,
 } from './tools/RectangleEditor';
 
-import type { Control, CommonControlConfig } from './controls/Control.d.ts';
-import type { ControlBar, ControlBarConfig } from './controls/ControlBar.d.ts';
-import type { HawkEye, HawkEyeOptions } from './controls/HawkEye.d.ts';
-import type { MapType, MapTypeOptions } from './controls/MapType.d.ts';
-import type { Scale, ScaleConfig } from './controls/Scale.d.ts';
-import type { ToolBar, ToolBarConfig } from './controls/ToolBar.d.ts';
+import type { Control, CommonControlConfig } from './controls/Control';
+import type { ControlBar, ControlBarConfig } from './controls/ControlBar';
+import type { HawkEye, HawkEyeOptions } from './controls/HawkEye';
+import type { MapType, MapTypeOptions } from './controls/MapType';
+import type { Scale, ScaleConfig } from './controls/Scale';
+import type { ToolBar, ToolBarConfig } from './controls/ToolBar';
 
 import type GeometryUtil from './utils/GeometryUtil';
 import type DomUtil from './utils/DomUtil';

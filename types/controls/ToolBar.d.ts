@@ -1,4 +1,4 @@
-import type { Control, CommonControlConfig } from './Control.d.ts';
+import type { Control, CommonControlConfig } from './Control';
 
 export type ToolBarConfig = CommonControlConfig;
 
