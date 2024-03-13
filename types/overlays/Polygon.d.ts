@@ -33,6 +33,10 @@ export type PolygonOptions<ExtraData = any> = {
    * - 点画线：[10,2,10], [10,2,10] 表示10个像素的实线和2个像素的空白 + 10个像素的实线和10个像素的空白 （如此反复）组成的虚线
    */
   strokeDasharray?: Array<number>;
+  /**
+   * @warning 文档未提及，但是有效
+   */
+  zooms?: [number, number];
 
   // 以下为 3D mode 下生效
   /** 设置 polygon 是否离地绘制，默认值为0 。  */
