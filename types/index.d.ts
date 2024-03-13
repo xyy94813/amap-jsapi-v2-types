@@ -5,6 +5,7 @@ import type { Size, SizeLike } from './common/Size';
 import type { Event, MapsEvent } from './common/Event';
 import type { MapOptions, MapEventType, Map } from './Map';
 
+import type BaseLayer from './layers/BaseLayer';
 import type {
   TileLayer,
   TileLayerOptions,
@@ -334,6 +335,27 @@ declare namespace AMap {
     Util,
     DomUtil,
   };
+
+  export const version: string;
+
+  /** 默认图层. NebulaLayer??? */
+  export const createDefaultLayer: (opts?: any) => BaseLayer | any;
+
+  /** 加载插件 */
+  export function plugin(pluginName: string, cb: () => void): void;
+  export function plugin(pluginNames: string[], cb: () => void): void;
+
+  /**
+   * 为坐标转换类，支持将其他坐标系的坐标点转换为高德坐标系。坐标转换方法
+   * @param {LngLatLike} lnglat
+   * @param {string} type
+   * @param {Function} callBack
+   */
+  export function convertFrom(
+    lnglat: LngLatLike,
+    type: 'gps' | 'baidu' | 'mapbar',
+    callBack: (status: string, result: any) => void,
+  ): void;
 }
 
 declare global {
