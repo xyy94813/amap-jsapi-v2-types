@@ -1,5 +1,5 @@
 import type { LngLat, LngLatLike } from './common/LngLat';
-import type Bounds from './common/Bounds';
+import type { Bounds, BoundsLike } from './common/Bounds';
 import type { Pixel, PixelLike } from './common/Pixel';
 import type { Size, SizeLike } from './common/Size';
 import type { Event, MapsEvent } from './common/Event';
@@ -179,6 +179,7 @@ declare namespace AMap {
     LngLat,
     LngLatLike,
     Bounds,
+    BoundsLike,
     Pixel,
     PixelLike,
     Size,

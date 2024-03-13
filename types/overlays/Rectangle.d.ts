@@ -1,11 +1,11 @@
-import type Bounds from '../common/Bounds';
+import type { Bounds, BoundsLike } from '../common/Bounds';
 import type { LngLat, LngLatLike } from '../common/LngLat';
 import type Map from '../Map';
 import type Overlay from './Overlay';
 
 export type RectangleOptions<ExtraData = any> = {
   /** 矩形的范围 */
-  bounds?: Bounds | [number, number, number, number];
+  bounds?: BoundsLike;
   /** (default 10) 矩形覆盖物的叠加顺序。地图上存在多个矩形覆盖物叠加时，通过该属性使级别较高的矩形覆盖物在上层显示 */
   zIndex?: number;
   /** (default false) 是否将覆盖物的鼠标或touch等事件冒泡到地图上（自v1.3 新增） */
@@ -71,7 +71,7 @@ export declare class Rectangle<ExtraData = any> extends Overlay<
   /** 获取矩形的范围对象。  */
   getBounds(): Bounds;
   /** 设置矩形的范围 */
-  setBounds(bounds: Bounds | [number, number, number, number]): void;
+  setBounds(bounds: BoundsLike): void;
   /** 销毁内存-多边形 */
   destroy(): void;
   /** 获取矩形的中心点 */

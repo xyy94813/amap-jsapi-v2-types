@@ -1,11 +1,11 @@
-import type Bounds from '../common/Bounds';
+import type { Bounds, BoundsLike } from '../common/Bounds';
 import type { BaseLayer, CommonLayerOptions } from './BaseLayer';
 
 export type ImageLayerOption = CommonLayerOptions & {
   /** 图片地址链接 */
   url: string;
   /** 图片的范围大小经纬度，如果传递数字数组类型: [minlng,minlat,maxlng,maxlat] */
-  bounds?: Bounds | [number, number, number, number];
+  bounds?: BoundsLike;
 };
 
 export type ImageLayerEventType = 'complete' | string;

@@ -1,4 +1,4 @@
-import type Bounds from './common/Bounds';
+import type { Bounds, BoundsLike } from './common/Bounds';
 import type Size from './common/Size';
 import type { Pixel, PixelLike } from './common/Pixel';
 import type Event from './common/Event';
@@ -127,9 +127,9 @@ export declare class Map extends Event<MapEventType> {
   getBounds(): Bounds;
   /**
    * 指定当前地图显示范围，参数 bounds 为指定的范围
-   * @param {Bounds | [number, number, number, number]} bounds 经纬度范围
+   * @param {BoundsLike} bounds 经纬度范围
    **/
-  setBounds(bounds: Bounds | [number, number, number, number]): void;
+  setBounds(bounds: BoundsLike): void;
   /**
    * 获取Map的限制区域
    * @returns {Bounds | undefined}
@@ -139,9 +139,9 @@ export declare class Map extends Event<MapEventType> {
    * 设置 Map 的限制区域，设定区域限制后，传入参数为限制的 Bounds。
    * 地图仅在区域内可拖拽
    * @exampleUrl https://lbs.amap.com/api/jsapi-v2/example/map/limit-map-show-range
-   * @param {Bounds | [number, number, number, number]} bounds
+   * @param {BoundsLike} bounds
    **/
-  setLimitBounds(bounds: Bounds | [number, number, number, number]): void;
+  setLimitBounds(bounds: BoundsLike): void;
   /**
    * 清除 Map 的限制区域
    **/
@@ -249,13 +249,13 @@ export declare class Map extends Event<MapEventType> {
   /**
    * 根据 bounds 计算出合适的中心点和 zoom 级别
    *
-   * @param {(number[] | Bounds)} bounds 需要计算的范围
+   * @param {BoundsLike} bounds 需要计算的范围
    * @param {number[]} avoid 四周边距，上、下、左、右
    * @param {number} maxZoom 最大 zoom 级别
    * @returns {[number, LngLat]} [zoom , 中心点经纬度]
    **/
   getFitZoomAndCenterByBounds(
-    bounds: number[] | Bounds,
+    bounds: BoundsLike,
     avoid?: number[],
     maxZoom?: number,
   ): [number, LngLat] | undefined;

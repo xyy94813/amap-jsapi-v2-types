@@ -87,4 +87,6 @@ export declare class Bounds {
   // static fromMultiPolygon(originPath?: LngLatLike[][][]): Bounds | undefined;
 }
 
+export type BoundsLike = Bounds | [number, number, number, number];
+
 export default Bounds;
