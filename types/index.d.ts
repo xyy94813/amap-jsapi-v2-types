@@ -339,8 +339,8 @@ declare global {
     export function createDefaultLayer(opts?: any): BaseLayer | any;
 
     /** 加载插件 */
-    export function plugin(pluginName: string, cb: () => void): void;
-    export function plugin(pluginNames: string[], cb: () => void): void;
+    export function plugin(pluginName: string, cb: Function): void;
+    export function plugin(pluginNames: string[], cb: Function): void;
 
     /**
      * 为坐标转换类，支持将其他坐标系的坐标点转换为高德坐标系。坐标转换方法

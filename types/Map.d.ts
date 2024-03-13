@@ -521,8 +521,8 @@ export declare class Map extends Event<MapEventType> {
   setLabelRejectMask(reject?: boolean): void;
 
   /** 加载插件 */
-  plugin(pluginName: string, cb: () => void): any;
-  plugin(pluginNames: string[], cb: () => void): any;
+  plugin(pluginName: string, cb: Function): any;
+  plugin(pluginNames: string[], cb: Function): any;
 
   /**
    * 重新计算容器大小
