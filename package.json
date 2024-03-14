@@ -1,7 +1,7 @@
 {
   "name": "amap-jsapi-v2-types",
   "version": "1.0.0",
-  "description": "A RRNL middleware for limit number of request",
+  "description": "高德 JSAPI v2 类型声明文件",
   "typings": "types/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
