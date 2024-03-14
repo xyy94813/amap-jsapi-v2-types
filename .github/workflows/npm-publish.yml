@@ -40,6 +40,6 @@ jobs:
       #     path: |
       #       dist
       # - run: npm ci
-      - run: yarn publish
+      - run: yarn npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
