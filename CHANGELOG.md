@@ -1,0 +1,37 @@
+# Changelog
+
+## 1.0.0 (2024-03-14)
+
+
+### Features
+
+* **HawkEye:** 完善 HawkEye 文档中未提及的方法 ([c81d447](https://github.com/xyy94813/amap-jsapi-v2-types/commit/c81d4479d75d1cbf74954132e69fa1f9942487c0))
+* **Marker:** 完善类型声明 ([9647f0c](https://github.com/xyy94813/amap-jsapi-v2-types/commit/9647f0ce842d49b1202ab784f34fb44790b76ac7))
+* **Polygon:** 完善文档中未提及的可配置项 zooms ([eea0961](https://github.com/xyy94813/amap-jsapi-v2-types/commit/eea09611ab0b158972ac3869cdc7435c6e4fe8aa))
+* **Polyline:** 完善文档中未提及的可配置项 ([04ad266](https://github.com/xyy94813/amap-jsapi-v2-types/commit/04ad26607acd52ee8da51737c2c2790b28b2b384))
+* **RangingTool:** turnOff 方法支持传入 undefined ([19f4ca3](https://github.com/xyy94813/amap-jsapi-v2-types/commit/19f4ca35f99f030768f9b123bf63d82ffb9c8398))
+* 完善 AMap 声明 ([2a6ce5d](https://github.com/xyy94813/amap-jsapi-v2-types/commit/2a6ce5d25aee0b61b8d62a09cb12a92ac904b661))
+* 完善 SecurityConfig 声明 ([a1a9e00](https://github.com/xyy94813/amap-jsapi-v2-types/commit/a1a9e001b0defd8761bbc390f18ce1189fed843f))
+* 完成 GeoJSON 相关声明 ([ec6ac48](https://github.com/xyy94813/amap-jsapi-v2-types/commit/ec6ac486d40d325b46e72914f2999b2ec4780220))
+* 完成 LayerGroup 相关声明 ([2f8aed9](https://github.com/xyy94813/amap-jsapi-v2-types/commit/2f8aed9611ee1ba1aa28630134f0a0b741469442))
+* 完成 Map 相关声明 ([ab6653b](https://github.com/xyy94813/amap-jsapi-v2-types/commit/ab6653bc35ec19c177b944daa4969236903629c7))
+* 完成 OverlayGroup 相关声明 ([8c825fc](https://github.com/xyy94813/amap-jsapi-v2-types/commit/8c825fc04d23bb5ef319cb9657546d76962c79ab))
+* 完成地图控件类型声明 ([1e26a57](https://github.com/xyy94813/amap-jsapi-v2-types/commit/1e26a57aafdc02624fae3cdd637fd0e1a1f1df1f))
+* 完成基础类型的类型声明 ([45d6362](https://github.com/xyy94813/amap-jsapi-v2-types/commit/45d6362c16e43a1f9a5d98d529f1f9b67d096c8f))
+* 完成工具类型声明 ([e648524](https://github.com/xyy94813/amap-jsapi-v2-types/commit/e6485244e43beca53d221a62f91e5ca5f3ecbd67))
+* 完成工具类型的类型声明 ([3a667ec](https://github.com/xyy94813/amap-jsapi-v2-types/commit/3a667ec6a602c69aa6d6ed394f59478b3c6ffd03))
+* 完成点标记类型声明 ([68652dc](https://github.com/xyy94813/amap-jsapi-v2-types/commit/68652dcb3227fced1dbba653c8f392ad6e70206e))
+* 完成矢量图形覆盖物相关声明 ([70c9f48](https://github.com/xyy94813/amap-jsapi-v2-types/commit/70c9f48944b76f17a105b2f0674d634c13eeaa17))
+* 完成自有数据图层类型声明 ([3d02630](https://github.com/xyy94813/amap-jsapi-v2-types/commit/3d02630766cf4dbb1a817c08e06864c7f295e7d9))
+* 弱化 AMap.plugin 和 map.plugin 类型 ([68fcea4](https://github.com/xyy94813/amap-jsapi-v2-types/commit/68fcea4d82b99475c1ca701776260cacfe5d25b1))
+* 抽象出 BoundsLike 类型 ([a37d5f9](https://github.com/xyy94813/amap-jsapi-v2-types/commit/a37d5f9e571340dfb0cfbbf6cb73f6cf73047488))
+* 抽象出 PixelLike 类型 ([cb0a235](https://github.com/xyy94813/amap-jsapi-v2-types/commit/cb0a235bb3b7ef898856d2d56f0154b6a9dfa172))
+* 抽象出 SizeLike 类型 ([f502465](https://github.com/xyy94813/amap-jsapi-v2-types/commit/f502465e06838ac2f672800afa8b855cecb418a4))
+* 核心的官方图层声明 ([94974c2](https://github.com/xyy94813/amap-jsapi-v2-types/commit/94974c274a4507c35db741677a8bf61c09559cc9))
+* 调整默认输出 ([eccec8e](https://github.com/xyy94813/amap-jsapi-v2-types/commit/eccec8e89560ed483a3b300d96a5def996409d6e))
+
+
+### Bug Fixes
+
+* **Circle:** setRadius 方法名错误 ([e2a2c82](https://github.com/xyy94813/amap-jsapi-v2-types/commit/e2a2c8207d4e0c2de82f1545bf6a6ef0789fa826))
+* 部分 overlay 范型不应必填 ([9d2dac7](https://github.com/xyy94813/amap-jsapi-v2-types/commit/9d2dac7813a5a80f2e176f1d27032a11b632ddfe))
