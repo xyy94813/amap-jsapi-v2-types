@@ -1,0 +1,23 @@
+name: release-please
+
+on:
+  push:
+    branches:
+      - main
+
+# permissions:
+#   contents: write # to create release commit (google-github-actions/release-please-action)
+#   pull-requests: write # to create release PR (google-github-actions/release-please-action)
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v4
+        id: release
+        with:
+          # 使用个人 TOKEN 才能触发其它 workflow 工作
+          # token 至少包含权限 `contents: write` 和 `pull-requests: write`
+          token: ${{ secrets.MY_GIT_HUB_TOKEN }}
+          release-type: node
+          package-name: amap-jsapi-v2-types
