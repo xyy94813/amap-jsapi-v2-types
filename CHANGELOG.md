@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.0.0...v1.1.0) (2024-03-15)
+
+
+### Features
+
+* 完成 ContextMenu 相关声明 ([4cdd8aa](https://github.com/xyy94813/amap-jsapi-v2-types/commit/4cdd8aa625ec64a36702a9e6c69022e2713d7341))
+* 完成 InfoWindow 相关声明 ([ae2f967](https://github.com/xyy94813/amap-jsapi-v2-types/commit/ae2f96746dad4771cbe50f01980b7376af51f8a2))
+
 ## 1.0.0 (2024-03-14)
 
 
