@@ -34,12 +34,17 @@ jobs:
         with:
           node-version-file: '.nvmrc'
           registry-url: https://registry.npmjs.org/
+      - name: Setup .yarnrc.yml
+        run: |
+          yarn config set npmRegistryServer "https://registry.npmjs.org/"
+          yarn config set npmAlwaysAuth true
+          yarn config set npmAuthToken $NODE_AUTH_TOKEN
       # - uses: actions/download-artifact@v3
       #   with:
       #     name: output
       #     path: |
       #       dist
       # - run: npm ci
-      - run: yarn npm publish
+      - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
