@@ -108,6 +108,11 @@ import {
   ContextMenuOptions,
   ContextMenuEventType,
 } from './overlays/ContextMenu';
+import {
+  InfoWindow,
+  InfoWindowOptions,
+  InfoWindowEventType,
+} from './overlays/InfoWindow';
 
 import { LayerGroup, LayerGroupEventType } from './layers/LayerGroup';
 import { OverlayGroup, OverlayGroupEventType } from './overlays/OverlayGroup';
@@ -283,6 +288,9 @@ declare global {
       ContextMenu,
       ContextMenuOptions,
       ContextMenuEventType,
+      InfoWindow,
+      InfoWindowOptions,
+      InfoWindowEventType,
 
       // group
       LayerGroup,
@@ -316,7 +324,6 @@ declare global {
       RectangleEditor,
       RectangleEditorOptions,
       RectangleEditorEventType,
-
 
       // 地图控件
       Control,
