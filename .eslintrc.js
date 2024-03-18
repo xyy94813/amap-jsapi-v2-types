@@ -8,7 +8,7 @@ module.exports = {
   ],
   overrides: [
     {
-      files: ['src/**/*'],
+      files: ['types/**/*'],
       extends: 'standard-with-typescript',
       env: {
         browser: true,
@@ -19,6 +19,19 @@ module.exports = {
         sourceType: 'module',
       },
       rules: {
+        semi: 'off',
+        '@typescript-eslint/semi': ['error', 'always'],
+        'space-before-function-paren': 'off',
+        '@typescript-eslint/space-before-function-paren': ['error', 'never'],
+        '@typescript-eslint/member-delimiter-style': ['error', {
+          multiline: { delimiter: 'semi', requireLast: true },
+          singleline: { delimiter: 'semi', requireLast: false },
+          multilineDetection: 'brackets',
+        }],
+        '@typescript-eslint/consistent-type-imports': 'off', // Event/Map
+        '@typescript-eslint/method-signature-style': ['error', 'method'],
+        '@typescript-eslint/ban-types': 'off',
+        '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
         '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
       },
     },
