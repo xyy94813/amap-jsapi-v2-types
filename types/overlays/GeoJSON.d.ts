@@ -10,9 +10,9 @@ type GeoJSONFeatureCollection = Record<string, any>;
 export type GeoJSONOptions = {
   /** 目前只支持 GeoJSON.FeatureCollection */
   geoJSON?: GeoJSONFeatureCollection;
-  getMarker?: (geojsonFeature: GeoJSONFeature, coords: any) => Marker;
-  getPolyline?: (geojsonFeature: GeoJSONFeature, coords: any) => Polyline;
-  getPolygon?: (geojsonFeature: GeoJSONFeature, coords: any) => Polygon;
+  getMarker?(geojsonFeature: GeoJSONFeature, coords: any): Marker;
+  getPolyline?(geojsonFeature: GeoJSONFeature, coords: any): Polyline;
+  getPolygon?(geojsonFeature: GeoJSONFeature, coords: any): Polygon;
 };
 
 /**

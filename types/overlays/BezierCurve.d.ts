@@ -64,8 +64,8 @@ export type BezierCurveEventType =
  * https://lbs.amap.com/api/javascript-api-v2/documentation#beziercurve
  */
 export declare class BezierCurve<ExtractData = any> extends Overlay<
-  ExtractData,
-  BezierCurveEventType
+ExtractData,
+BezierCurveEventType
 > {
   constructor(opts?: BezierCurveOptions<ExtractData>);
 
@@ -90,7 +90,7 @@ export declare class BezierCurve<ExtractData = any> extends Overlay<
   setPath(path?: number[][] | number[][][]): void;
   /** 判断坐标是否在曲线内 */
   contains(point: LngLatLike): void;
-  /** 获取曲线的总长度（单位：米）*/
+  /** 获取曲线的总长度（单位：米） */
   getLength(): number;
   /** 获取当前折线的矩形范围对象 */
   getBounds(): Bounds | undefined;

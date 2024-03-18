@@ -4,7 +4,7 @@ import Pixel from '../common/Pixel';
  *
  * https://lbs.amap.com/api/javascript-api-v2/documentation#domutil
  */
-export interface DomUtil {
+export type DomUtil = {
   /**
    * 获取 DOM 元素的大小
    * @param obj [width, height]
@@ -137,6 +137,6 @@ export interface DomUtil {
    * 文档中未提及，但是存在。暂不清楚其功能。
    */
   watchSize2(el: HTMLElement, fn: Function, event: any): any;
-}
+};
 
 export default DomUtil;

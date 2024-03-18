@@ -29,7 +29,7 @@ export type PolylineOptions<ExtraData = any> = {
    * - 虚线：[10,10], [10,10] 表示10个像素的实线和10个像素的空白（如此反复）组成的虚线
    * - 点画线：[10,2,10], [10,2,10] 表示10个像素的实线和2个像素的空白 + 10个像素的实线和10个像素的空白 （如此反复）组成的虚线
    */
-  strokeDasharray?: Array<number>;
+  strokeDasharray?: number[];
   /** 是否显示描边,默认 `false` */
   isOutline?: boolean;
   /** 描边的宽度，默认为 `1` */
@@ -56,7 +56,7 @@ export type PolylineOptions<ExtraData = any> = {
 
   /** 要显示该polygon的地图对象 */
   map?: Map;
-  
+
   /**
    * 设置方向箭头的颜色
    * @warning 文档中未明确说明，成功验证其存在性
@@ -97,8 +97,8 @@ export type PolylineEventType =
  * @warning 目前 Polyline 对 GeoJSON.MultiPolyline.coordinates 的支持非常不稳定。谨慎使用。
  */
 export declare class Polyline<ExtraData = any> extends Overlay<
-  ExtraData,
-  PolylineEventType
+ExtraData,
+PolylineEventType
 > {
   constructor(opts?: PolylineOptions<ExtraData>);
   /**

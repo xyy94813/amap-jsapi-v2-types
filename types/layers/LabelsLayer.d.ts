@@ -1,7 +1,7 @@
-import type { VectorOverlay } from "../overlays/VectorOverlay";
-import type { LabelMarker } from "../overlays/LabelMarker";
+import type { VectorOverlay } from '../overlays/VectorOverlay';
+import type { LabelMarker } from '../overlays/LabelMarker';
 
-import type { BaseLayer, CommonLayerOptions } from "./BaseLayer";
+import type { BaseLayer, CommonLayerOptions } from './BaseLayer';
 
 export type LabelsLayerOption = CommonLayerOptions & {
   /** 标注层内的标注是否避让 */

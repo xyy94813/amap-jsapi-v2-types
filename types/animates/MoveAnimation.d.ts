@@ -48,7 +48,7 @@ export type MoveAlongObj = any;
  * MoveAnimation无需单独声明或初始化，Marker、Text、LabelMarker均已继承了 MoveAnimation的实现。
  * https://lbs.amap.com/api/javascript-api-v2/documentation#moveanimation
  */
-export interface MoveAnimation {
+export type MoveAnimation = {
   /**
    * 以给定时间移动点标记到指定位置，加载 AMap.MoveAnimation 后可以使用
    * @param targetPosition
@@ -77,6 +77,6 @@ export interface MoveAnimation {
    * 重新启动点标记动画，加载 AMap.MoveAnimation 后可以使用
    */
   resumeMove(): void;
-}
+};
 
 export default MoveAnimation;

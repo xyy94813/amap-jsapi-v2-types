@@ -78,8 +78,7 @@ export type MarkerEventType =
  */
 export declare class Marker<ExtraData = any>
   extends Overlay<ExtraData, MarkerEventType>
-  implements MoveAnimation
-{
+  implements MoveAnimation {
   CLASS_NAME: string;
   constructor(opts: MarkerOptions);
   /** 获取位置 */

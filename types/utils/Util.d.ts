@@ -3,7 +3,7 @@
  *
  * https://lbs.amap.com/api/javascript-api-v2/documentation#util
  */
-export interface Util {
+export type Util = {
   /**
    * 判断参数是否为DOM元素
    * @param {any} obj
@@ -113,6 +113,6 @@ export interface Util {
    * @param id
    */
   cancelAnimFrame(id: number): void;
-}
+};
 
 export default Util;

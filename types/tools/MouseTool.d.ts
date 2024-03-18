@@ -23,7 +23,6 @@ export declare class MouseTool extends Event<MouseToolEventType> {
   polyline(options?: PolylineOptions): void;
   /** 开启鼠标画多边形模式。 */
   polygon(options?: PolygonOptions): void;
-  ////////
   /** 开启面积量测模式。鼠标在地图上单击绘制量测区域，鼠标左键双击或右键单击结束当前量测操作，并显示本次量测结果。 */
   measureArea(opts?: PolygonOptions): void;
   /** 开启距离量测模式。 */

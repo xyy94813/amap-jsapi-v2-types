@@ -19,19 +19,19 @@ export type ElasticStyle = {
     fitZoom?: number;
     /** 地图放大一级的缩放比例系数 */
     scaleFactor?: number;
-    /**	最大放大比例 */
+    /** 最大放大比例 */
     maxScale?: number;
-    /**	最小放大比例 */
+    /** 最小放大比例 */
     minScale?: number;
   };
   label?: {
-    /**	文本内容. 文档未说明 */
+    /** 文本内容. 文档未说明 */
     content?: any;
     /** 文本位置相对于图标的基准点，可选值：BL、BM、BR、ML、MR、TL、TM、TR分别代表左下角、底部中央、右下角、左侧中央、右侧中央、左上角、顶部中央、右上角 */
     position?: 'BL' | 'BM' | 'BR' | 'ML' | 'MR' | 'TL' | 'TM' | 'TR';
     /** 相对position的偏移量。文档未说明 */
     offset?: any;
-    /** label的最小显示级别。文档未说明*/
+    /** label的最小显示级别。文档未说明 */
     minZoom?: any;
   };
 };

@@ -7,7 +7,7 @@ import type {
   MultiPolygonCoords,
 } from '../common/Geometry';
 
-export interface GeometryUtil {
+export type GeometryUtil = {
   /**
    * 计算两个经纬度点之间的实际距离。单位：米
    *
@@ -292,6 +292,6 @@ export interface GeometryUtil {
    * @returns {number}
    */
   distanceToLine(p: Position, line: Line): number;
-}
+};
 
 export default GeometryUtil;

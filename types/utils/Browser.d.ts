@@ -3,7 +3,7 @@
  *
  * https://lbs.amap.com/api/javascript-api-v2/documentation#browser
  */
-export interface Browser {
+export type Browser = {
   ua: string;
   mobile: boolean;
   plat: string;
@@ -53,7 +53,7 @@ export interface Browser {
   isWorker: boolean;
   isWebsocket: boolean;
   isWebGL: boolean;
-  checkWebGL: () => boolean;
-}
+  checkWebGL(): boolean;
+};
 
 export default Browser;

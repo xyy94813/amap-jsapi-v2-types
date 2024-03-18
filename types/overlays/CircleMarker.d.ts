@@ -60,8 +60,8 @@ export type CircleMarkerEventType =
  * https://lbs.amap.com/api/javascript-api-v2/documentation#circlemarker
  */
 export declare class CircleMarker<ExtraData = any> extends Overlay<
-  ExtraData,
-  CircleMarkerEventType
+ExtraData,
+CircleMarkerEventType
 > {
   constructor(opts?: CircleMarkerOptions<ExtraData>);
 

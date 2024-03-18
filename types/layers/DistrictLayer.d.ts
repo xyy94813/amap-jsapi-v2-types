@@ -13,7 +13,7 @@ export type DistrictLayerStyle = {
 };
 
 export type DistrictLayerOptions = CommonLayerOptions & {
-  /**	行政区的编码 adcode与省市行政区对照表 */
+  /** 行政区的编码 adcode与省市行政区对照表 */
   adcode?: string;
   /** (default 'CHN') 设定显示的国家 SOC 国家代码、名称、Bounds对照表下载 */
   SOC?: string;

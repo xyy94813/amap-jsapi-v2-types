@@ -64,8 +64,8 @@ export type RectangleEventType =
  *
  */
 export declare class Rectangle<ExtraData = any> extends Overlay<
-  ExtraData,
-  RectangleEventType
+ExtraData,
+RectangleEventType
 > {
   constructor(opt?: RectangleOptions<ExtraData>);
   /** 获取矩形的范围对象。  */

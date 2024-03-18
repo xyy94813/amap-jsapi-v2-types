@@ -32,7 +32,7 @@ export type PolygonOptions<ExtraData = any> = {
    * - 虚线：[10,10], [10,10] 表示10个像素的实线和10个像素的空白（如此反复）组成的虚线
    * - 点画线：[10,2,10], [10,2,10] 表示10个像素的实线和2个像素的空白 + 10个像素的实线和10个像素的空白 （如此反复）组成的虚线
    */
-  strokeDasharray?: Array<number>;
+  strokeDasharray?: number[];
   /**
    * @warning 文档未提及，但是有效
    */
@@ -76,8 +76,8 @@ export type PolygonEventType =
  * @warning 目前 Polygon 对 GeoJSON.MultiPolygon.coordinates 的支持非常不稳定。谨慎使用。
  */
 export declare class Polygon<ExtraData = any> extends Overlay<
-  ExtraData,
-  PolygonEventType
+ExtraData,
+PolygonEventType
 > {
   constructor(opts?: PolygonOptions<ExtraData>);
   /** 获取多边形轮廓线节点数组。其中lat和lng是经纬度参数。 */

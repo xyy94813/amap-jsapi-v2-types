@@ -10,7 +10,7 @@ export type InfoWindowOptions = {
   /** 是否自动调整窗体到视野内（当信息窗体超出视野范围时，通过该属性设置是否自动平移地图，使信息窗体完全显示） */
   autoMove?: boolean;
   /** autoMove 为 true 时，自动平移到视野内后的上右下左的避让宽度。默认值： [20, 20, 20, 20] */
-  avoid?: Array<number>;
+  avoid?: number[];
   /** 控制是否在鼠标点击地图后关闭信息窗体，默认false，鼠标点击地图后不关闭信息窗体 */
   closeWhenClickMap?: boolean;
   /** 显示内容，可以是HTML要素字符串或者HTMLElement对象，自定义窗体示例 */
@@ -22,16 +22,16 @@ export type InfoWindowOptions = {
    * @default 'bottom-center' 默认值
    */
   anchor?:
-    | 'top-left'
-    | 'top-center'
-    | 'top-right'
-    | 'middle-left'
-    | 'center'
-    | 'middle-right'
-    | 'bottom-left'
-    | 'bottom-center'
-    | 'bottom-right'
-    | string;
+  | 'top-left'
+  | 'top-center'
+  | 'top-right'
+  | 'middle-left'
+  | 'center'
+  | 'middle-right'
+  | 'bottom-left'
+  | 'bottom-center'
+  | 'bottom-right'
+  | string;
   /** 信息窗体显示位置偏移量。默认基准点为信息窗体的底部中心（若设置了anchor，则以anchor值为基准点）。 */
   offset?: PixelLike;
   /** 信息窗体显示基点位置 （自v1.2 新增） */

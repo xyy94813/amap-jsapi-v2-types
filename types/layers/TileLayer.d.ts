@@ -46,12 +46,12 @@ export declare class TileLayer extends BaseLayer<TileLayerEventType> {
 }
 
 export type TrafficLayerOptions = CommonLayerOptions &
-  Pick<TileLayerOptions, 'tileSize'> & {
-    /** 是否自动更新数据，默认开启 */
-    autoRefresh?: boolean;
-    /** 自动更新数据的间隔毫秒数，默认 180ms */
-    interval?: number;
-  };
+Pick<TileLayerOptions, 'tileSize'> & {
+  /** 是否自动更新数据，默认开启 */
+  autoRefresh?: boolean;
+  /** 自动更新数据的间隔毫秒数，默认 180ms */
+  interval?: number;
+};
 
 /**
  * 切片图层类，该类为基础类。
@@ -69,7 +69,7 @@ declare class TrafficLayer extends TileLayer {
 }
 
 export type SatelliteLayerOptions = CommonLayerOptions &
-  Pick<TileLayerOptions, 'tileSize'>;
+Pick<TileLayerOptions, 'tileSize'>;
 
 /**
  * 卫星图层类
@@ -82,7 +82,7 @@ declare class SatelliteLayer extends TileLayer {
 }
 
 export type RoadNetLayerOptions = CommonLayerOptions &
-  Pick<TileLayerOptions, 'tileSize'>;
+Pick<TileLayerOptions, 'tileSize'>;
 
 /**
  * 路网图层，展示道路信息
@@ -149,10 +149,10 @@ declare class WMTSLayer extends WMSLayer {
 }
 
 export type FlexibleLayerOptions = CommonLayerOptions &
-  Pick<TileLayerOptions, 'tileSize'> & {
-    /** 缓存贴图的数量 */
-    cacheSize?: number;
-    /**
+Pick<TileLayerOptions, 'tileSize'> & {
+  /** 缓存贴图的数量 */
+  cacheSize?: number;
+  /**
      * 由开发者实现，由API自动调用，xyz分别为切片横向纵向编号和层级，切片大小 256。
      * 文档未明确说明。
      * @param x
@@ -161,14 +161,14 @@ export type FlexibleLayerOptions = CommonLayerOptions &
      * @param success
      * @param fail
      */
-    createTile?(
-      x: number,
-      y: number,
-      z: number,
-      success: () => void,
-      fail: () => void,
-    ): any;
-  };
+  createTile?(
+    x: number,
+    y: number,
+    z: number,
+    success: () => void,
+    fail: () => void,
+  ): any;
+};
 
 declare class FlexibleLayer extends TileLayer {
   constructor(options?: FlexibleLayerOptions);

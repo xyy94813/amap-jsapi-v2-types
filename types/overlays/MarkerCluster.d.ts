@@ -44,13 +44,13 @@ export type MarkerClusterOptions = {
    * 1. count: 当前聚合点下聚合的 Marker 的数量
    * 2. marker: 当前聚合点显示的 Marker
    */
-  renderClusterMarker?: (opts: { count: number; marker: Marker }) => any;
+  renderClusterMarker?(opts: { count: number; marker: Marker }): any;
   /**
    * 该方法用来实现非聚合点的自定义绘制，由开发者自己实现，API 将在绘制每个非聚合点的时候调用这个方法
    * 该函数的入参为一个Object，包含如下属性：
    * - marker: 非聚合点 Marker 对象
    */
-  renderMarker?: (opts: { marker: Marker }) => any;
+  renderMarker?(opts: { marker: Marker }): any;
 };
 
 export type MarkerClusterEventType = string;

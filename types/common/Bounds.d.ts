@@ -1,4 +1,4 @@
-import { LngLat, LngLatLike } from './LngLat';
+import type { LngLat, LngLatLike } from './LngLat';
 /**
  * 地物对象的经纬度矩形范围。
  *

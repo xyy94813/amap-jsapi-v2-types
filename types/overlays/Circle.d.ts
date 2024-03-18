@@ -8,7 +8,7 @@ export type CircleOptions<ExtraData = any> = {
   radius?: number;
   /** 多边形覆盖物的叠加顺序。地图上存在多个多边形覆盖物叠加时，通过该属性使级别较高的多边形覆盖物在上层显示 */
   zIndex?: number;
-  /** 是否将覆盖物的鼠标或touch等事件冒泡到地图上*/
+  /** 是否将覆盖物的鼠标或touch等事件冒泡到地图上 */
   bubble?: boolean;
   /** 指定鼠标悬停时的鼠标样式，自定义cursor，IE仅支持cur/ani/ico格式，Opera不支持自定义cursor */
   cursor?: string;
@@ -25,7 +25,7 @@ export type CircleOptions<ExtraData = any> = {
    * - 实线： [0,0,0] 虚线： [10,10],[10,10] 表示10个像素的实线和10个像素的空白（如此反复）组成的虚线
    * - 点画线： [10,2,10],[10,2,10] 表示10个像素的实线和2个像素的空白 + 10个像素的实线和10个像素的空白 （如此反复）组成的虚线
    */
-  strokeDasharray?: Array<number>;
+  strokeDasharray?: number[];
   /** 多边形填充颜色，使用16进制颜色代码赋值，如：#00B2D5 */
   fillColor?: string;
   /** 多边形填充透明度，取值范围 [0,1]，0表示完全透明，1表示不透明。默认为0.5 */
@@ -51,8 +51,8 @@ export type CircleEventType =
   | 'touchend';
 
 export declare class Circle<ExtraData = any> extends Overlay<
-  ExtraData,
-  CircleEventType
+ExtraData,
+CircleEventType
 > {
   constructor(opt?: CircleOptions<ExtraData>);
 

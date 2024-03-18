@@ -47,8 +47,8 @@ export type EllipseEventType = 'hide' | 'show' | 'click' | 'dblclick';
  * https://lbs.amap.com/api/javascript-api-v2/documentation#ellipse
  */
 export declare class Ellipse<ExtraData = any> extends Overlay<
-  ExtraData,
-  EllipseEventType
+ExtraData,
+EllipseEventType
 > {
   constructor(opt?: EllipseOptions<ExtraData>);
   /** 获取矩形的中心点 */

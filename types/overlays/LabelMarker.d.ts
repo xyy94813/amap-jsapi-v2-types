@@ -51,7 +51,7 @@ export type LabelMarkerIconOptions = {
 export type LabelMarkerOptions<ExtraData = any> = {
   /** 标注名称，作为标注标识，并非最终在地图上显示的文字内容，显示文字内容请设置 opts.text.content */
   name?: string;
-  /** 	标注位置 */
+  /** 标注位置 */
   position?: LngLatLike;
   /** 标注显示级别范围， 可选值： [2,20] */
   zooms?: [number, number];
@@ -87,8 +87,7 @@ export type LabelMarkerEventType =
  */
 export declare class LabelMarker<ExtraData = any>
   extends Overlay<ExtraData, LabelMarkerEventType>
-  implements MoveAnimation
-{
+  implements MoveAnimation {
   constructor(options: LabelMarkerOptions<ExtraData>);
   /**
    * 获取标注的名称，作为标注标识，并非最终在地图上显示的文字内容

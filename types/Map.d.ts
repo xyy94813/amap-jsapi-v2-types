@@ -38,9 +38,9 @@ export type MapOptions = Partial<MapStates> & {
   rotation?: number;
   /**  俯仰角度，默认 0，最大值根据地图当前 zoom 级别不断增大，2D地图下无效。 */
   pitch?: number;
-  /** 地图视图模式, 默认为‘2D’，可选’3D’，选择‘3D’会显示 3D 地图效果。*/
+  /** 地图视图模式, 默认为‘2D’，可选’3D’，选择‘3D’会显示 3D 地图效果。 */
   viewMode?: '2D' | '3D';
-  /** 设置地图上显示的元素种类, 支持'bg'（地图背景）、'point'（POI点）、'road'（道路）、'building'（建筑物）*/
+  /** 设置地图上显示的元素种类, 支持'bg'（地图背景）、'point'（POI点）、'road'（道路）、'building'（建筑物） */
   features?: string[];
   /**
    * 地图图层数组，数组可以是图层中的一个或多个，默认为普通二维地图。
@@ -50,7 +50,7 @@ export type MapOptions = Partial<MapStates> & {
   layers?: BaseLayer[];
   /** 地图显示的缩放级别范围, 默认为 [2, 20] ，取值范围 [2 ~ 20] */
   zooms?: [number, number];
-  /** 是否展示地图文字和 POI 信息。*/
+  /** 是否展示地图文字和 POI 信息。 */
   showLabel?: boolean;
   /** 地图默认鼠标样式。参数 defaultCursor 应符合 CSS 的 cursor 属性规范。 */
   defaultCursor?: string;

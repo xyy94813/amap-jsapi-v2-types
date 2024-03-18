@@ -1,7 +1,7 @@
 import type { Control } from './Control';
 
 /** 鹰眼的初始化参数 */
-export interface HawkEyeOptions {
+export type HawkEyeOptions = {
   /** 是否随主图视口变化移动 */
   autoMove?: boolean;
   /** 是否显示视口矩形 */
@@ -30,7 +30,7 @@ export interface HawkEyeOptions {
   borderWidth?: string;
   /** 箭头按钮的像素尺寸，同CSS，如'12px' */
   buttonSize?: string;
-}
+};
 
 /**
  * 鹰眼控件，用于显示缩略地图，显示于地图右下角，可以随主图的视口变化而变化，也可以配置成固定位置实现类似于南海附图的效果
