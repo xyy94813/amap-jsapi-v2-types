@@ -1,6 +1,6 @@
 **
-# output dir
-!types/**
+# 排除 types 目录下非 .test-d.ts 结尾的 .ts 文件
+!types/**/!(*.test-d.ts)
 
 # package info
 !./LICENSE
