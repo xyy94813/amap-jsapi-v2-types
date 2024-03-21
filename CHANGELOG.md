@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.2](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.1.1...v1.1.2) (2024-03-21)
+
+
+### Bug Fixes
+
+* **HeatMap:** setOptions 参数声明错误 ([d77a59e](https://github.com/xyy94813/amap-jsapi-v2-types/commit/d77a59e5bc9b1b81f1f922bdd6bdde98dbc52834))
+* **HeatMap:** setzIndex 返回类型错误 ([12dd22e](https://github.com/xyy94813/amap-jsapi-v2-types/commit/12dd22e2d47d840ba95375077ed8dbdb611d78c5))
+* **LayerGroup:** removeLayers 参数类型错误 ([f54af8e](https://github.com/xyy94813/amap-jsapi-v2-types/commit/f54af8ec5018a76978edbd12991cee0ae07e545b))
+* **MapboxVectorTileLayer:** 构造参数重的 dataZooms 的类型错误 ([5ab4133](https://github.com/xyy94813/amap-jsapi-v2-types/commit/5ab41337aa3cf37a7fc2a1f5afd78cde08adad42))
+
 ## [1.1.1](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.1.0...v1.1.1) (2024-03-21)
 
 
