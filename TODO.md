@@ -73,7 +73,7 @@
     - [x] Util
   - [x] 其它配置
     - [x] \_AMapSecurityConfig
-- [ ] CI/CD 自动部署及 ChangeLog
+- [x] CI/CD 自动部署及 ChangeLog
 
 ## 里程碑 2
 
