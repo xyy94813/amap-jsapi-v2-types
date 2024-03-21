@@ -19,7 +19,7 @@ export declare class BaseLayer<
    * 设置图层层级，数字越大图层层级越高
    * @param {number} zIndex
    */
-  setzIndex(zIndex: number): number;
+  setzIndex(zIndex: number): void;
   /**
    * 获取图层层级
    * @returns {number}
@@ -30,7 +30,7 @@ export declare class BaseLayer<
    * @param opacity 范围 [0 ~ 1]
    * @returns {number}
    */
-  setOpacity(opacity: number): number;
+  setOpacity(opacity: number): void;
   /**
    * 获取图层透明度
    * @returns {number}
