@@ -6,7 +6,7 @@ export type TileLayerOptions = CommonLayerOptions & {
   tileSize?: number;
 };
 
-type TileLayerEventType = 'complete' | string;
+export type TileLayerEventType = 'complete' | string;
 
 /**
  * 切片图层类，该类为基础类。
