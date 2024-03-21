@@ -24,7 +24,7 @@ export declare class LayerGroup<
   /** 从集合中删除传入的图层实例 */
   removeLayer(layer: Layer): this;
   /** 从集合中删除传入的图层实例 */
-  removeLayers(layers: Layer): void;
+  removeLayers(layers: Layer[]): void;
   /** 获取组里所有对象，包括图层和覆盖物 */
   getLayers(): Layer[];
   /** 清空图层 */
