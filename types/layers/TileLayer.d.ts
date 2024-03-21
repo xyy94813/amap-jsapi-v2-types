@@ -27,22 +27,13 @@ export declare class TileLayer extends BaseLayer<TileLayerEventType> {
    * */
   reload(): void;
 
-  // setzIndex // BaseLayer 里声明
-  // getzIndex // BaseLayer 里声明
-  // setOpacity // BaseLayer 里声明
-  // getOpacity // BaseLayer 里声明
-  // getOptions // BaseLayer 里声明
-  // getZooms // BaseLayer 里声明
-  // setZooms // BaseLayer 里声明
-  // destroy // BaseLayer 里声明
-
   // static property
-  static Traffic: TrafficLayer;
-  static Satellite: SatelliteLayer;
-  static RoadNet: RoadNetLayer;
-  static WMS: WMSLayer;
-  static WMTS: WMTSLayer;
-  static Flexible: FlexibleLayer;
+  static Traffic: typeof TrafficLayer;
+  static Satellite: typeof SatelliteLayer;
+  static RoadNet: typeof RoadNetLayer;
+  static WMS: typeof WMSLayer;
+  static WMTS: typeof WMTSLayer;
+  static Flexible: typeof FlexibleLayer;
 }
 
 export type TrafficLayerOptions = CommonLayerOptions &
