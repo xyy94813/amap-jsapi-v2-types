@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.1](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.1.0...v1.1.1) (2024-03-21)
+
+
+### Bug Fixes
+
+* **BaseLayer:** 部分方法返回值类型错误 ([dbc2f81](https://github.com/xyy94813/amap-jsapi-v2-types/commit/dbc2f81ffa9bd7b752c290411f7710e392250fc3))
+* **DistrictLayer:** 静态属性声明错误 ([c67c013](https://github.com/xyy94813/amap-jsapi-v2-types/commit/c67c0135552f3a1501aa486b3accd2e5dca992ad))
+* **TileLayer:** 静态属性声明错误 ([d71d337](https://github.com/xyy94813/amap-jsapi-v2-types/commit/d71d33786cc6d048b958d01fa30c20efc25ff8f1))
+
 ## [1.1.0](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.0.0...v1.1.0) (2024-03-15)
 
 
