@@ -81,9 +81,10 @@ export declare class HeatMap extends Event {
   getzIndex(): number;
   /**
    * 获取图层参数信息
-   * @returns {Object}
+   * @param {HeatMapOption} options
+   * @returns {void}
    * */
-  setOptions(): Object;
+  setOptions(options: HeatMapOption): void;
   /**
    * 获取图层参数信息
    * @returns {Object}
