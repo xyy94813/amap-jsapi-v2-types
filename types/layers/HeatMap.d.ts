@@ -73,7 +73,7 @@ export declare class HeatMap extends Event {
    * 设置图层层级，数字越大图层层级越高
    * @param {number} zIndex
    */
-  setzIndex(zIndex: number): number;
+  setzIndex(zIndex: number): void;
   /**
    * 获取图层层级
    * @returns {number}
