@@ -69,9 +69,9 @@ export declare class DistrictLayer extends TileLayer {
    */
   getStyle(): DistrictLayerStyle | undefined;
 
-  static Word: WordLayer;
-  static Country: CountryLayer;
-  static Province: ProvinceLayer;
+  static Word: typeof WordLayer;
+  static Country: typeof CountryLayer;
+  static Province: typeof ProvinceLayer;
 }
 
 declare class WordLayer extends DistrictLayer {}
