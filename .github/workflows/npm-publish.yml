@@ -45,6 +45,6 @@ jobs:
       #     path: |
       #       dist
       - run: yarn # 不安装依赖 CI 会报错
-      - run: yarn publish
+      - run: yarn npm publish # yarn v4 发布至 npm 需要此命令
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
