@@ -42,7 +42,7 @@ export type MapboxVTLayerOptions = CommonLayerOptions & {
   /** MVT 数据的链接地址 */
   url?: string;
   /** 瓦片数据等级范围，超过范围会使用最大/最小等级的数据 */
-  dataZooms?: string;
+  dataZooms?: [number, number];
   /** 验证后为必填 */
   styles: MapboxVTLayerStyle;
 };
