@@ -44,7 +44,7 @@ jobs:
       #     name: output
       #     path: |
       #       dist
-      # - run: npm ci
+      - run: yarn # 不安装依赖 CI 会报错
       - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
