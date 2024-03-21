@@ -71,13 +71,6 @@ export declare class BaseLayer<
    * @param {Map} map
    */
   getMap(): Map;
-
-  // event
-  on(type: LayerEventType, fn: Function, ctx?: any, once?: boolean): this;
-  off(type: LayerEventType, fn?: Function, ctx?: any): this;
-  emit(type: LayerEventType, ...args: any[]): this;
-  hasEvents(type: LayerEventType): boolean;
-  clearEvents(type: LayerEventType): this;
 }
 
 export default BaseLayer;
