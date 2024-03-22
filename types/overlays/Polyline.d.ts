@@ -104,7 +104,7 @@ PolylineEventType
   /**
    * 获取折线路径的节点数组。
    */
-  getPath(): LngLat[] | LngLat[][] | LngLat[][][];
+  getPath(): LngLat[] | LngLat[][];
   /**
    * 获取折线路径的节点数组。
    */
