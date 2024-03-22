@@ -28,6 +28,6 @@ jobs:
           yarn config set npmAuthToken $NODE_AUTH_TOKEN
           yarn npm whoami
           yarn npm publish
-          yarn unset set npmAuthToken
+          yarn config unset npmAuthToken
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
