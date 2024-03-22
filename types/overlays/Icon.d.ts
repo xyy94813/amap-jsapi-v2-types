@@ -8,17 +8,6 @@ export type IconOptions = {
   imageOffset?: PixelLike;
 };
 
-export type IconEventType =
-  | 'click'
-  | 'mousemove'
-  | 'mouseover'
-  | 'mouseout'
-  | 'mousedown'
-  | 'mouseup'
-  | 'touchstart'
-  | 'touchmove'
-  | 'touchend';
-
 /**
  * Icon类 表示点标记的图标 用于添加复杂点标记，即在普通点标记的基础上，
  * 添加Icon类，通过在Icon表示的大图上截取其中一部分作为标注的图标

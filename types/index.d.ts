@@ -47,7 +47,7 @@ import {
 } from './animates/MoveAnimation';
 
 import { Text, TextOptions, TextEventType } from './overlays/Text';
-import { Icon, IconOptions, IconEventType } from './overlays/Icon';
+import { Icon, IconOptions } from './overlays/Icon';
 import {
   LabelMarker,
   LabelMarkerOptions,
@@ -242,7 +242,6 @@ declare global {
       type TextEventType,
       Icon,
       type IconOptions,
-      type IconEventType,
       LabelMarker,
       type LabelMarkerOptions,
       type LabelMarkerEventType,
