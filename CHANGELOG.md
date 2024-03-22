@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.4](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.1.3...v1.1.4) (2024-03-22)
+
+
+### Bug Fixes
+
+* **MarkerCluster:** 数据结构的 lnglat 类型声明错误 ([3bfea53](https://github.com/xyy94813/amap-jsapi-v2-types/commit/3bfea535747f91915a3938b4e4577d83d4cc7517))
+* **MassMarker:** 数据结构的 lnglat 类型声明错误 ([fc7bea4](https://github.com/xyy94813/amap-jsapi-v2-types/commit/fc7bea468cd876db7cf93876fc79d6cbe92eac1f))
+
 ## [1.1.3](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.1.2...v1.1.3) (2024-03-22)
 
 
