@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.3](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.1.2...v1.1.3) (2024-03-22)
+
+
+### Bug Fixes
+
+* **BezierCurve:** 方法类型声明错误 ([fd5ef0b](https://github.com/xyy94813/amap-jsapi-v2-types/commit/fd5ef0b7e6dd69ea87e30a5adcfab7fd92eba975))
+* **CircleMarker:** 方法类型声明错误 ([790bbdf](https://github.com/xyy94813/amap-jsapi-v2-types/commit/790bbdf7c3fab9184f7c7473d4bbad19c0ee22d6))
+* **InfoWindow:** 方法 setSize 参数声明错误 ([38dace0](https://github.com/xyy94813/amap-jsapi-v2-types/commit/38dace08418c5e6d88f216f3d11603cf1a429d18))
+* **Polyline:** 方法 getPath 返回值错误 ([e69daed](https://github.com/xyy94813/amap-jsapi-v2-types/commit/e69daede28e15a9d9774a085f9341cfb87165acb))
+* **Rectangle:** 方法 contains 返回值类型错误 ([2279053](https://github.com/xyy94813/amap-jsapi-v2-types/commit/227905385792c053d5c76c578006641fe46b36c2))
+* **Text:** 样式类型声明错误 ([22c5f92](https://github.com/xyy94813/amap-jsapi-v2-types/commit/22c5f92242846b1ddad5336b5683e90322442838))
+
 ## [1.1.2](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.1.1...v1.1.2) (2024-03-21)
 
 
