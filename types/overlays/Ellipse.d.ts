@@ -40,7 +40,19 @@ export type EllipseOptions<ExtraData = any> = {
   extData?: ExtraData;
 };
 
-export type EllipseEventType = 'hide' | 'show' | 'click' | 'dblclick';
+export type EllipseEventType =
+| 'hide'
+| 'show'
+| 'click'
+| 'dblclick'
+| 'rightclick'
+| 'mousedown'
+| 'mouseup'
+| 'mouseover'
+| 'mouseout'
+| 'touchstart'
+| 'touchmove'
+| 'touchend';
 
 /**
  * 构造多边形对象，通过 EllipseOptions 指定多边形样式
