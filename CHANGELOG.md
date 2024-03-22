@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.1.4...v1.2.0) (2024-03-22)
+
+
+### Features
+
+* **Ellipse:** 补全 Ellipse 的事件类型 ([5ba9f86](https://github.com/xyy94813/amap-jsapi-v2-types/commit/5ba9f86162c9607fac4182e4267e4bea092c3738))
+* **Icon:** 移除不存在的类型 ([cf549c1](https://github.com/xyy94813/amap-jsapi-v2-types/commit/cf549c1af5fdc136b5fcfa074a995b726045d8fb))
+
 ## [1.1.4](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.1.3...v1.1.4) (2024-03-22)
 
 
