@@ -77,7 +77,7 @@ RectangleEventType
   /** 获取矩形的中心点 */
   getCenter(): LngLat;
   /** 判断坐标是否在矩形内 */
-  contains(point: LngLatLike): void;
+  contains(point: LngLatLike): boolean;
   /**   * 获取多边形的面积（单位：平方米）   **/
   getArea(): number;
   /** 获取离地多边形平面绝对海拔高度值 （此方法适用于 JSAPI v2.1Beta 及以上版本） */
