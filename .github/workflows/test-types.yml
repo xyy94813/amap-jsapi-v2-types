@@ -1,0 +1,22 @@
+name: test-types
+
+on:
+  push:
+    branches:
+      - main
+
+# permissions:
+#   contents: write # to create release commit (google-github-actions/release-please-action)
+#   pull-requests: write # to create release PR (google-github-actions/release-please-action)
+
+jobs:
+  test-types:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          registry-url: https://registry.npmjs.org/
+      - run: yarn
+      - run: yarn test
