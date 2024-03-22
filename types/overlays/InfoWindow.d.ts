@@ -56,7 +56,7 @@ export declare class InfoWindow extends Event<InfoWindowEventType> {
   /** 获取信息窗体大小 */
   getSize(): [number, number];
   /** 设置信息窗体大小（isCustom为false时有效） */
-  setSize(): SizeLike;
+  setSize(size: SizeLike): void;
   /** 获取渲染内容 */
   getContent(): string | HTMLElement;
   /** 设置内容 */
