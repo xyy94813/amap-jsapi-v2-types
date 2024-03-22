@@ -37,7 +37,7 @@ export type TextOptions<ExtraData = any> = {
   /** 用户自定义属性 ，支持JavaScript API任意数据类型，如 Marker的id等。可将自定义数据保存在该属性上，方便后续操作使用。 */
   extData?: ExtraData;
   /** 设置文本样式，Object 同 css 样式表，如:{'background-color':'red'} */
-  style?: CSSStyleDeclaration;
+  style?: Partial<CSSStyleDeclaration>;
   // 文本标注的内容，该属性为直接显示在标注上的文本内容。
   content?: HTMLElement | string;
   // 文本标注方位。若设置了 icon，则 direction 是以 icon 为中心的偏移，若未设置 icon，则相对 position 偏移。 可选值：'top' | 'right' | 'bottom' | 'left' | 'center'。默认值: right
@@ -66,5 +66,5 @@ export declare class Text<ExtraData = any> extends Marker<ExtraData> {
    * 修改文本标记样式。Object同css样式表，
    * @param {CSSStyleDeclaration} style
    */
-  setStyle(style: CSSStyleDeclaration): void;
+  setStyle(style: Partial<CSSStyleDeclaration>): void;
 }
