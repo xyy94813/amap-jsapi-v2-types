@@ -72,14 +72,14 @@ CircleMarkerEventType
   /** 获取圆点的半径 */
   getRadius(): number;
   /** 设置圆点的半径 */
-  setRaius(radius: number): void;
+  setRadius(radius: number): void;
   /** 判断指定点坐标是否在圆内 */
   contains(point: LngLatLike): boolean;
   /** 销毁内存-CircleMarker */
   destroy(): void;
 
   /** 获取当前CircleMarker 的绝对高度 */
-  getCurAltitude(): boolean;
+  getCurAltitude(): number;
 
   /**
    * @warning 文档中未明确说明，且未成功验证其存在性
