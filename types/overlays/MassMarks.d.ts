@@ -29,8 +29,8 @@ export type MassMarkersOptions = {
 };
 
 export type MassMarkersDataOption = Record<string | number | symbol, any> & {
-  lnglat: LngLatLike[];
-  weight?: number;
+  lnglat: LngLatLike;
+  style?: number;
 };
 
 export type MassMarksEventType =
