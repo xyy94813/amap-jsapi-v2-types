@@ -99,7 +99,7 @@ BezierCurveEventType
   /** 设置贝塞尔曲线离地高度 （此方法和相关属性 height 适用于 JSAPI v2.1Beta 及以上版本） */
   setHeight(height: number): void;
   /** 获取当前贝塞尔曲线离地高度值 （此方法适用于 JSAPI 2.1Beta 及以上版本） */
-  getPolylineHeight(height: number): void;
+  getPolylineHeight(): number;
   /**
    * @warning 文档中未明确说明，且未成功验证其存在性
    **/
