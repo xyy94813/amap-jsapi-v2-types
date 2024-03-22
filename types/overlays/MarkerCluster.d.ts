@@ -7,7 +7,7 @@ import type Marker from './Marker';
 
 /** 需要进行聚合显示的点数据结构 */
 export type MarkerClusterDataOption = Record<string | number | symbol, any> & {
-  lnglat: LngLatLike[];
+  lnglat: LngLatLike;
   weight?: number;
 };
 
@@ -59,11 +59,11 @@ export type MarkerClusterEventType = string;
  * 用于展示大量点标记，将点标记按照距离进行聚合，以提高绘制性能。点聚合支持用户自定义样式，以插件形式调用。
  * https://lbs.amap.com/api/javascript-api-v2/documentation#markercluster
  */
-export declare class MarkerCluster extends Event<string> {
+export declare class MarkerCluster extends Event<MarkerClusterEventType> {
   constructor(
     map?: Map,
     dataOptions?: MarkerClusterDataOption[],
-    MarkerClusterOptions?: MarkerClusterOptions,
+    opts?: MarkerClusterOptions,
   );
   /** 在原数据基础上添加数据，格式同 dataOptions */
   addData(dataOptions: MarkerClusterDataOption[]): void;
