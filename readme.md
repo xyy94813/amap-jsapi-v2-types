@@ -127,6 +127,8 @@ class Bounds{
 +getHeight() number
 +from() Bounds
         }
+Bounds  --  LngLat
+Bounds  --  LngLat
 class Event~EventType~{
             
             +on() this
@@ -143,6 +145,8 @@ class MapsEvent~EventType~ {
 +target?: any
             
         }
+MapsEvent~EventType~  --  Pixel
+MapsEvent~EventType~  --  LngLat
 class LngLat{
             +className: string
 +lat: number*
@@ -212,6 +216,8 @@ class CommonControlConfig {
             
         }
 Event~EventType~<|--Control
+Control  --  Map
+CommonControlConfig  --  ControlPositionObject
 class ControlBar{
             +_config: ControlBarConfig
 +_container: HTMLDivElement
@@ -225,6 +231,7 @@ class ControlBar{
             
         }
 Control<|--ControlBar
+ControlBar  --  CommonControlConfig
 class HawkEye{
             
             +open() void
@@ -411,6 +418,7 @@ class HeatMapDataSet {
             
         }
 Event~EventType~<|--HeatMap~DataSet~
+HeatMapOption  --  HeatMap3DOptions
 class ImageLayer{
             
             +getImageUrl() string
@@ -490,6 +498,10 @@ class MapboxVTLayerStyle {
             
         }
 BaseLayer~LayerEventType~<|--MapboxVectorTileLayer
+MapboxVTLayerStyle  --  CommonStyleOption
+MapboxVTLayerStyle  --  CommonStyleOption
+MapboxVTLayerStyle  --  CommonStyleOption
+MapboxVTLayerStyle  --  CommonStyleOption
 class TileLayer{
             +Traffic: typeof TrafficLayer
 +Satellite: typeof SatelliteLayer
@@ -612,6 +624,7 @@ class CircleOptions~ExtraData~ {
             
         }
 Overlay~ExtraData,EventType~<|--Circle~ExtraData~
+CircleOptions~ExtraData~  --  LngLat
 class CircleMarker~ExtraData~{
             
             +getCenter() LngLat
@@ -640,6 +653,7 @@ class CircleMarkerOptions~ExtraData~ {
             
         }
 Overlay~ExtraData,EventType~<|--CircleMarker~ExtraData~
+CircleMarkerOptions~ExtraData~  --  LngLat
 class ContextMenu{
             
             +open() void
@@ -656,6 +670,7 @@ class ContextMenuOptions {
             
         }
 Event~EventType~<|--ContextMenu
+ContextMenuOptions  --  LngLat
 class ElasticMarker~ExtraData~{
             
             
@@ -705,6 +720,13 @@ class ElasticMarkerOptions~ExtraData~ {
             
         }
 Marker~ExtraData~<|--ElasticMarker~ExtraData~
+ElasticStyleIconStyle  --  Pixel
+ElasticStyle  --  ElasticStyleIconStyle
+ElasticStyle  --  ElasticStyleLabelStyle
+ElasticMarkerOptions~ExtraData~  --  Map
+ElasticMarkerOptions~ExtraData~  --  LngLat
+ElasticMarkerOptions~ExtraData~  --  Pixel
+ElasticMarkerOptions~ExtraData~  -- "0..*" ElasticStyle
 class Ellipse~ExtraData~{
             
             +getCenter() LngLat
@@ -736,6 +758,7 @@ class EllipseOptions~ExtraData~ {
             
         }
 Overlay~ExtraData,EventType~<|--Ellipse~ExtraData~
+EllipseOptions~ExtraData~  --  LngLat
 class GeoJSON{
             
             +importData() void
@@ -770,6 +793,9 @@ class IconOptions {
 +imageOffset?: PixelLike
             
         }
+IconOptions  --  Size
+IconOptions  --  Size
+IconOptions  --  Pixel
 class InfoWindow{
             
             +open() void
@@ -796,6 +822,9 @@ class InfoWindowOptions {
             
         }
 Event~EventType~<|--InfoWindow
+InfoWindowOptions  --  Size
+InfoWindowOptions  --  Pixel
+InfoWindowOptions  --  LngLat
 class LabelMarker~ExtraData~{
             +moveTo: (targetPosition: LngLatLike, opts?: MoveToOptions) =~ void
 +moveAlong: (path: Line, opts?: MoveAlongOptions) =~ void
@@ -871,6 +900,16 @@ class LabelMarkerOptions~ExtraData~ {
         }
 Overlay~ExtraData,EventType~<|--LabelMarker~ExtraData~
 MoveAnimation<|..LabelMarker~ExtraData~
+LabelMarkerTextOptions  --  Pixel
+LabelMarkerTextOptions  --  TextStyleOptions
+LabelMarkerIconOptions  --  Size
+LabelMarkerIconOptions  --  Pixel
+LabelMarkerIconOptions  --  Pixel
+LabelMarkerIconOptions  --  Pixel
+LabelMarkerIconOptions  --  Size
+LabelMarkerOptions~ExtraData~  --  LngLat
+LabelMarkerOptions~ExtraData~  --  LabelMarkerIconOptions
+LabelMarkerOptions~ExtraData~  --  LabelMarkerTextOptions
 class Marker~ExtraData~{
             +CLASS_NAME: string
 +moveTo: (targetPosition: LngLatLike, opts?: MoveToOptions) =~ void
@@ -948,6 +987,13 @@ class MarkerOptions~ExtraData~ {
         }
 Overlay~ExtraData,EventType~<|--Marker~ExtraData~
 MoveAnimation<|..Marker~ExtraData~
+MarkerLabelOptions  --  Pixel
+MarkerOptions~ExtraData~  --  Map
+MarkerOptions~ExtraData~  --  LngLat
+MarkerOptions~ExtraData~  --  Pixel
+MarkerOptions~ExtraData~  --  MarkerLabelOptions
+MarkerOptions~ExtraData~  --  Icon
+MarkerOptions~ExtraData~  --  Size
 class MarkerCluster{
             
             +addData() void
@@ -985,6 +1031,10 @@ class MarkerClusterOptions {
 +renderMarker() any
         }
 Event~EventType~<|--MarkerCluster
+MarkerClusterStyle  --  Size
+MarkerClusterStyle  --  Pixel
+MarkerClusterStyle  --  Pixel
+MarkerClusterOptions  -- "0..*" MarkerClusterStyle
 class MassMarks{
             
             +getMap() Map
@@ -1019,6 +1069,10 @@ class MassMarkersOptions {
             
         }
 Event~EventType~<|--MassMarks
+MassMarkersStyleOption  --  Size
+MassMarkersStyleOption  --  Pixel
+MassMarkersOptions  -- "0..*" MassMarkersStyleOption
+MassMarkersOptions  -- "0..*" MassMarkersStyleOption
 class Overlay~ExtraData,EventType~{
             
             +getMap() Map
@@ -1085,6 +1139,10 @@ class PolygonOptions~ExtraData~ {
             
         }
 Overlay~ExtraData,EventType~<|--Polygon~ExtraData~
+PolygonOptions~ExtraData~  --  LngLat
+PolygonOptions~ExtraData~  --  LngLat
+PolygonOptions~ExtraData~  --  LngLat
+PolygonOptions~ExtraData~  --  Map
 class Polyline~ExtraData~{
             
             +getPath() LngLat[] | LngLat[][]
@@ -1126,6 +1184,9 @@ class PolylineOptions~ExtraData~ {
             
         }
 Overlay~ExtraData,EventType~<|--Polyline~ExtraData~
+PolylineOptions~ExtraData~  -- "0..*" LngLat
+PolylineOptions~ExtraData~  -- "0..*" LngLat
+PolylineOptions~ExtraData~  --  Map
 class Rectangle~ExtraData~{
             
             +getBounds() Bounds
@@ -1157,6 +1218,8 @@ class RectangleOptions~ExtraData~ {
             
         }
 Overlay~ExtraData,EventType~<|--Rectangle~ExtraData~
+RectangleOptions~ExtraData~  --  Bounds
+RectangleOptions~ExtraData~  --  Map
 class Text~ExtraData~{
             
             +getText() string
@@ -1187,6 +1250,9 @@ class TextOptions~ExtraData~ {
             
         }
 Marker~ExtraData~<|--Text~ExtraData~
+TextOptions~ExtraData~  --  Map
+TextOptions~ExtraData~  --  LngLat
+TextOptions~ExtraData~  --  Pixel
 class BezierCurveEditor{
             
             +setTarget() void
@@ -1309,6 +1375,9 @@ class RangingToolOptions {
             
         }
 Event~EventType~<|--RangingTool
+RangingToolOptions  --  Pixel
+RangingToolOptions  --  Pixel
+RangingToolOptions  --  Pixel
 class RectangleEditor{
             
             +setTarget() void
