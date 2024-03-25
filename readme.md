@@ -9,7 +9,7 @@
 
 > mermaid DSL 在 gh pages 上未生效
 
-{% mermaid %}
+```mermaid
 
 classDiagram
 
@@ -1526,4 +1526,4 @@ class Util {
 +requestAnimFrame() number
 +cancelAnimFrame() void
         }
-{% endmermaid %}
+```
