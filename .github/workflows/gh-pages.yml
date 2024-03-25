@@ -35,9 +35,9 @@ jobs:
 
           > mermaid DSL 在 gh pages 上未生效
 
-          \`\`\`mermaid
+          {% mermaid %}
           $(<uml.mermaid.dsl)
-          \`\`\`
+          {% endmermaid %}
           EOF
       - name: Copy deploy files
         run: |
