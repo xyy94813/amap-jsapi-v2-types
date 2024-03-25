@@ -22,7 +22,7 @@ expectError<void>(overlay2.setExtData({ a: 1 }));
 
 expectType<any>(overlay1.getExtData());
 // TODO: 返回值类型需要修改？
-expectType<Record<string, string> | {}>(overlay2.getExtData());
+expectType<Record<string, string>>(overlay2.getExtData());
 
 expectType<void>(overlay1.setOptions({}));
 

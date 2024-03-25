@@ -22,7 +22,7 @@ export declare class Overlay<
   /**
    * 获取自定义数据
    */
-  getExtData(): ExtraData | {};
+  getExtData(): ExtraData;
   /**
    * OverlayGroup 类用来包装其它覆盖物类的实例，对实例集合做整体操作
    * 其中能够批量 setOptions 大概率该方法是现在抽象的类别里
