@@ -1,6 +1,3 @@
----
-mermaid: true
----
 # UML
 
 > 以下 UML 的生成步骤：
@@ -1530,3 +1527,11 @@ class Util {
 +cancelAnimFrame() void
         }
 ```
+
+<script type="module" defer>
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.0.2/+esm';
+mermaid.initialize({ startOnLoad: false });
+await mermaid.run({
+  querySelector: '.language-mermaid',
+});
+</script>
