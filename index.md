@@ -1,9 +1,13 @@
 # UML
 
-## DSL 格式
-
 > 以下 UML 的生成步骤：
 > tsuml2 -> mermaid dsl -> UML
+
+![UML](./uml.svg)
+
+---
+
+> mermaid DSL 在 gh pages 上未生效
 
 ```mermaid
 
@@ -1454,7 +1458,3 @@ class Util {
 +cancelAnimFrame() void
         }
 ```
-
-## Svg 图片
-![UML](./uml.svg)
-
