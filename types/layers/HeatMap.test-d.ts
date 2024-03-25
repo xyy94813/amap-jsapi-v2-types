@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-confusing-void-expression */
 /* eslint-disable @typescript-eslint/no-invalid-void-type */
-import { expectAssignable, expectType } from 'tsd';
+import { expectAssignable, expectError, expectType } from 'tsd';
 import Event from '../common/Event';
 import Map from '../Map';
 import {
@@ -33,6 +33,7 @@ expectAssignable<HeatMapOption['renderOnZooming']>(true);
 // expectType<HeatMapDataSet['data']>([{}]);
 
 const layer = new HeatMap({} as any as Map);
+const layer2 = new HeatMap<{ max: number; data: number[]; other: string }>({} as any as Map);
 expectType<HeatMap>(layer);
 expectType<HeatMap>(new HeatMap({} as any as Map, {} as any as HeatMapOption));
 expectAssignable<Event>(layer);
@@ -43,8 +44,11 @@ expectType<string>(layer.CLASS_NAME);
 // methods
 expectType<void>(layer.setDataSet({ max: 100 }));
 expectType<void>(layer.setDataSet({ data: [], max: 100 }));
+expectType<void>(layer2.setDataSet({ max: 100, data: [1], other: '1' }));
+expectError<void>(layer2.setDataSet({ max: 100, data: [1] }));
 
-expectType<{ max: number; data?: any[] | undefined }>(layer.getDataSet());
+expectType<{ max: number; data?: any[] }>(layer.getDataSet());
+expectType<{ max: number; data: number[]; other: string }>(layer2.getDataSet());
 
 expectType<void>(layer.show());
 expectType<void>(layer.hide());

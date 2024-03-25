@@ -23,6 +23,11 @@ export type HeatMapOption = {
   renderOnZooming?: boolean;
 };
 
+export type HeatMapDataSet = {
+  max: number;
+  data?: any[];
+};
+
 /**
  * 热力图，基于第三方heatmap.js实现，以特殊高亮的形式显示数据密集程度。
  * 根据密集程度的不同，图上会呈现不同的颜色，以直观的形式展现数据密度。
@@ -39,19 +44,19 @@ export type HeatMapOption = {
  *   heatmap = new AMap.HeatMap(map, opts: HeatMapOptions)
  * })
  */
-export declare class HeatMap extends Event {
+export declare class HeatMap<DataSet extends HeatMapDataSet = HeatMapDataSet> extends Event {
   CLASS_NAME: string;
   constructor(map: Map, options?: HeatMapOption);
   /**
    * 设置热力图展现的数据集，dataset数据集格式为： { max: Number 权重的最大值, data: Array 坐标数据集 }
-   * @param {{ max: number; data?: any[] }} dataset
+   * @param {HeatMapDataSet} dataset
    */
-  setDataSet(dataset: { max: number; data?: any[] }): void;
+  setDataSet(dataset: DataSet): void;
   /**
    * 输出热力图的数据集，数据结构同setDataSet中的数据集
-   * @returns {{ max: number; data?: any[] }}
+   * @returns {HeatMapDataSet}
    */
-  getDataSet(): Parameters<typeof this.setDataSet>[0];
+  getDataSet(): DataSet;
   /**
    * 向热力图数据集中添加坐标点，count不填写时默认：1
    * @param longitude
