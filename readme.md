@@ -1,3 +1,6 @@
+---
+mermaid: true
+---
 # UML
 
 > 以下 UML 的生成步骤：
