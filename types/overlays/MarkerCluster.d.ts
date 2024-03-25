@@ -5,6 +5,21 @@ import type { Event } from '../common/Event';
 import type { Map } from '../Map';
 import type Marker from './Marker';
 
+type MarkerClusterStyle = {
+  /** 图标显示图片的url地址 */
+  url: string;
+  /** 图标显示图片的大小（必选） */
+  size: Size;
+  /** 图标定位在地图上的位置相对于图标左上角的偏移值。默认为(0,0),不偏移（可选） */
+  offset?: Pixel;
+  /** 图片相对于可视区域的偏移值，此功能的作用等同CSS中的background-position属性。默认为(0,0)，不偏移（可选） */
+  imageOffset?: Pixel;
+  /** 文字的颜色，默认为"#000000"（可选） */
+  textColor?: string;
+  /** 文字的大小，默认为10（可选） */
+  textSize?: number;
+};
+
 /** 需要进行聚合显示的点数据结构 */
 export type MarkerClusterDataOption = Record<string | number | symbol, any> & {
   lnglat: LngLatLike;
@@ -24,20 +39,7 @@ export type MarkerClusterOptions = {
    * 指定聚合后的点标记的图标样式，可缺省，缺省时为默认样式数据元素分别对应聚合量在1-10,11-100,101-1000…的聚合点的样式；
    * 当用户设置聚合样式少于实际叠加的点数，未设置部分按照系统默认样式显示；
    * */
-  styles?: Array<{
-    /** 图标显示图片的url地址 */
-    url: string;
-    /** 图标显示图片的大小（必选） */
-    size: Size;
-    /** 图标定位在地图上的位置相对于图标左上角的偏移值。默认为(0,0),不偏移（可选） */
-    offset?: Pixel;
-    /** 图片相对于可视区域的偏移值，此功能的作用等同CSS中的background-position属性。默认为(0,0)，不偏移（可选） */
-    imageOffset?: Pixel;
-    /** 文字的颜色，默认为"#000000"（可选） */
-    textColor?: string;
-    /** 文字的大小，默认为10（可选） */
-    textSize?: number;
-  }>;
+  styles?: MarkerClusterStyle[];
   /**
    * 该方法用来实现聚合点的自定义绘制，由开发者自己实现，API 将在绘制每个聚合点的时候调用这个方法，可以实现聚合点样式的灵活设定，指定了 renderClusterMarker 后 styles 无效。
    * 该函数的入参为一个Object，包含如下属性：
@@ -80,9 +82,9 @@ export declare class MarkerCluster extends Event<MarkerClusterEventType> {
   /** 设置地图中点标记的最大聚合级别 */
   setMaxZoom(zoom: number): void;
   /** 获取样式 */
-  getStyles(): MarkerClusterOptions['styles'];
+  getStyles(): MarkerClusterStyle[];
   /** 设置样式聚合点，格式同 opts.styles */
-  setStyles(styles: MarkerClusterOptions['styles']): void;
+  setStyles(styles: MarkerClusterStyle[]): void;
   /** 获取地图对象 */
   getMap(): Map | undefined;
   /** 设置地图对象 */
