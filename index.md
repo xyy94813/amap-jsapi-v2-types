@@ -1,5 +1,7 @@
 # UML
 
+## DSL 格式
+
 > 以下 UML 的生成步骤：
 > tsuml2 -> mermaid dsl -> UML
 
@@ -1452,3 +1454,7 @@ class Util {
 +cancelAnimFrame() void
         }
 ```
+
+## Svg 图片
+![UML](./uml.svg)
+
