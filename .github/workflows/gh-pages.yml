@@ -3,7 +3,7 @@ name: deploy-to-gh-pages
 on:
   push:
     branches:
-      - main
+      - feature/uml
 
 permissions:
   contents: write
@@ -24,6 +24,9 @@ jobs:
       - name: Generate uml.md 🔧
         run: |
           cat >uml.md <<EOF
+          ---
+          mermaid: true
+          ---
           # UML
 
           > 以下 UML 的生成步骤：
