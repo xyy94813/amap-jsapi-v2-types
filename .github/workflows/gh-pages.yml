@@ -52,6 +52,12 @@ jobs:
           mkdir uml-static
           mv uml.md uml-static/readme.md
           mv uml.svg uml-static/uml.svg
+      - name: Jekyll config
+        run: |
+          cat >uml-static/_config.yml <<EOF
+          plugins: 
+            - jekyll-mermaid
+          EOF
       - name: Deploy to Github Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
