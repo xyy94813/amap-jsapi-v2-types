@@ -38,12 +38,6 @@ jobs:
           \`\`\`mermaid
           $(<uml.mermaid.dsl)
           \`\`\`
-
-          ---
-
-          {% mermaid %}
-          $(<uml.mermaid.dsl)
-          {% endmermaid %}
           EOF
       - name: Copy deploy files
         run: |
