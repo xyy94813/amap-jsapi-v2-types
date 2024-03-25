@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.2.0...v1.3.0) (2024-03-25)
+
+
+### Features
+
+* **HeatMap:** 支持范型控制 dataset 的具体类型 ([f7f93ba](https://github.com/xyy94813/amap-jsapi-v2-types/commit/f7f93bac80cee30d36714f4e0fa415f8c564115e))
+* **Overlay:** getExtData 返回类型调整 ([7f1e727](https://github.com/xyy94813/amap-jsapi-v2-types/commit/7f1e727e520c522399d072113f1ae4cb0738103a))
+
 ## [1.2.0](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.1.4...v1.2.0) (2024-03-22)
 
 
