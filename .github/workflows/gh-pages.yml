@@ -1,0 +1,50 @@
+name: deploy-to-gh-pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+jobs:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+      - name: Generate UML mermaid dsl 🔧
+        # Generate UML mermaid dsl by `tsuml2`
+        # https://yarnpkg.com/package?q=tsuml2&name=tsuml2
+        run: yarn dlx tsuml2 -m true --glob './types/**/!(*.test-d|*.spec).ts' -o 'uml.svg' --outMermaidDsl  'uml.mermaid.dsl'
+      - name: Generate uml.md 🔧
+        run: |
+          cat >uml.md <<EOF
+          # UML
+
+          > 以下 UML 的生成步骤：
+          > tsuml2 -> mermaid dsl -> UML
+
+          ![UML](./uml.svg)
+
+          ---
+
+          > mermaid DSL 在 gh pages 上未生效
+
+          \`\`\`mermaid
+          $(<uml.mermaid.dsl)
+          \`\`\`
+          EOF
+      - name: Copy deploy files
+        run: |
+          mkdir uml-static
+          mv uml.md uml-static/readme.md
+          mv uml.svg uml-static/uml.svg
+      - name: Deploy to Github Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: uml-static # The folder the action should deploy.

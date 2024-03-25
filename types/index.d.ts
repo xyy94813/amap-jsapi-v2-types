@@ -46,6 +46,7 @@ import {
   MoveAlongObj,
 } from './animates/MoveAnimation';
 
+import { Overlay } from './overlays/Overlay';
 import { Text, TextOptions, TextEventType } from './overlays/Text';
 import { Icon, IconOptions } from './overlays/Icon';
 import {
@@ -237,6 +238,7 @@ declare global {
       type MoveAlongObj,
 
       // overlays
+      Overlay, // 仅为了生成更合理的 UML
       Text,
       type TextOptions,
       type TextEventType,
