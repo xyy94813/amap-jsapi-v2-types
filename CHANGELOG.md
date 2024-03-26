@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.3.0...v1.3.1) (2024-03-26)
+
+
+### Bug Fixes
+
+* **DistrictLayer:** 静态属性命名错误 ([0724a7f](https://github.com/xyy94813/amap-jsapi-v2-types/commit/0724a7fd62f5092dc0ce9d2832ef5757f4670441)), closes [#9](https://github.com/xyy94813/amap-jsapi-v2-types/issues/9)
+
 ## [1.3.0](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.2.0...v1.3.0) (2024-03-25)
 
 
