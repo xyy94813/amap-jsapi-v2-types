@@ -333,7 +333,7 @@ class CustomLayer{
         }
 BaseLayer~LayerEventType~<|--CustomLayer
 class DistrictLayer{
-            +Word: typeof WordLayer
+            +World: typeof WorldLayer
 +Country: typeof CountryLayer
 +Province: typeof ProvinceLayer
             +setSOC() void
@@ -343,7 +343,7 @@ class DistrictLayer{
 +setStyles() void
 +getStyle() DistrictLayerStyle
         }
-class WordLayer{
+class WorldLayer{
             
             
         }
@@ -368,7 +368,7 @@ class DistrictLayerStyle {
             
         }
 TileLayer<|--DistrictLayer
-DistrictLayer<|--WordLayer
+DistrictLayer<|--WorldLayer
 DistrictLayer<|--CountryLayer
 DistrictLayer<|--ProvinceLayer
 class GLCustomLayer{
