@@ -77,8 +77,8 @@ expectType<void>(layer.setStyles({} as any as DistrictLayerStyle));
 expectType<DistrictLayerStyle | undefined>(layer.getStyle());
 
 // Sub class
-const wordLayer = new DistrictLayer.Word({});
-expectAssignable<DistrictLayer>(wordLayer);
+const worldLayer = new DistrictLayer.World({});
+expectAssignable<DistrictLayer>(worldLayer);
 
 const countryLayer = new DistrictLayer.Country({});
 expectAssignable<DistrictLayer>(countryLayer);
