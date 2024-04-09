@@ -10,7 +10,6 @@
 [![latest version](https://img.shields.io/npm/v/amap-jsapi-v2-types.svg?label=latest%20%20version)](https://www.npmjs.org/package/amap-jsapi-v2-types)
 [![License](https://img.shields.io/npm/l/amap-jsapi-v2-types?label=latest%20%20version%20%20license)](https://www.npmjs.org/package/amap-jsapi-v2-types)
 [![npm downloads](https://img.shields.io/npm/dm/amap-jsapi-v2-types.svg)](http://npmjs.com/amap-jsapi-v2-types)
-[![minimized gzipped size](https://img.shields.io/bundlejs/size/amap-jsapi-v2-types)](http://npmjs.com/amap-jsapi-v2-types)
 
 ## 如何使用
 
@@ -26,7 +25,7 @@ yarn add amap-jsapi-v2-types -D
 ```ts
 // 将声明文件通过 include/import/typeRoots 等方式引入
 // in amap.d.ts
-import 'amap-jsapi-v2-types';
+import "amap-jsapi-v2-types";
 
 declare global {
   // ts namespace/interface 会合并声明
@@ -44,7 +43,7 @@ declare global {
 
   // 对 amap type 做扩展
   namespace AMapUI {
-    export type SimpleMarkerOptions = Omit<AMap.MarkerOptions, 'content'> & {
+    export type SimpleMarkerOptions = Omit<AMap.MarkerOptions, "content"> & {
       iconTheme?: string;
       iconStyle?: string | object;
       iconLabel?: string | object;
