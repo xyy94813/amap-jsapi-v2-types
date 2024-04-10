@@ -14,7 +14,7 @@
 classDiagram
 
 class Map{
-            
+
             +getCenter() LngLat
 +setCenter() void
 +getBounds() Bounds
@@ -88,7 +88,7 @@ class MoveToOptions {
 +speed?: number | AnimationCallback
 +easing: EasingCallback
 +autoRotation?: boolean
-            
+
         }
 class MoveAlongOptions {
             <<type>>
@@ -99,11 +99,11 @@ class MoveAlongOptions {
 +delay?: number | AnimationCallback
 +aniInterval: number
 +autoRotation?: boolean
-            
+
         }
 class MoveAnimation {
             <<type>>
-            
+
             +moveTo() void
 +moveAlong() void
 +startMove() void
@@ -130,7 +130,7 @@ class Bounds{
 Bounds  --  LngLat
 Bounds  --  LngLat
 class Event~EventType~{
-            
+
             +on() this
 +off() this
 +emit() this
@@ -143,7 +143,7 @@ class MapsEvent~EventType~ {
 +pixel?: Pixel
 +lnglat?: LngLat
 +target?: any
-            
+
         }
 MapsEvent~EventType~  --  Pixel
 MapsEvent~EventType~  --  LngLat
@@ -207,13 +207,13 @@ class ControlPositionObject {
 +left?: string
 +right?: string
 +bottom?: string
-            
+
         }
 class CommonControlConfig {
             <<type>>
             +position?: ControlPosition
 +offset?: [number, number]
-            
+
         }
 Event~EventType~<|--Control
 Control  --  Map
@@ -228,12 +228,12 @@ class ControlBar{
 +_pointers: HTMLDivElement
 +_rotateLeft: HTMLDivElement
 +_rotateRight: HTMLDivElement
-            
+
         }
 Control<|--ControlBar
 ControlBar  --  CommonControlConfig
 class HawkEye{
-            
+
             +open() void
 +close() void
         }
@@ -253,7 +253,7 @@ class HawkEyeOptions {
 +borderRadius?: string
 +borderWidth?: string
 +buttonSize?: string
-            
+
         }
 Control<|--HawkEye
 class MapType{
@@ -269,24 +269,24 @@ class MapTypeLayerInfo {
 +type: "base" | "overlay"
 +layer: BaseLayer~string~
 +show: boolean
-            
+
         }
 class MapTypeOptions {
             <<type>>
             +defaultType?: number
 +showTraffic?: boolean
 +showRoad?: boolean
-            
+
         }
 Control<|--MapType
 class Scale{
             +_container: HTMLElement
-            
+
         }
 Control<|--Scale
 class ToolBar{
             +_container: HTMLElement
-            
+
         }
 Control<|--ToolBar
 class BaseLayer~LayerEventType~{
@@ -310,16 +310,16 @@ class CommonLayerOptions {
 +opacity?: number
 +visible?: boolean
 +zIndex?: number
-            
+
         }
 Event~EventType~<|--BaseLayer~LayerEventType~
 class Buildings{
-            
+
             +setStyle() void
         }
 BaseLayer~LayerEventType~<|--Buildings
 class CanvasLayer{
-            
+
             +setCanvas() void
 +getElement() HTMLCanvasElement
 +getBounds() Bounds
@@ -328,8 +328,8 @@ class CanvasLayer{
         }
 BaseLayer~LayerEventType~<|--CanvasLayer
 class CustomLayer{
-            
-            
+
+
         }
 BaseLayer~LayerEventType~<|--CustomLayer
 class DistrictLayer{
@@ -344,16 +344,16 @@ class DistrictLayer{
 +getStyle() DistrictLayerStyle
         }
 class WorldLayer{
-            
-            
+
+
         }
 class CountryLayer{
-            
-            
+
+
         }
 class ProvinceLayer{
-            
-            
+
+
         }
 class DistrictLayerStyle {
             <<type>>
@@ -365,15 +365,15 @@ class DistrictLayerStyle {
 +city-stroke?: string | Function | string[]
 +county-stroke?: string | Function | string[]
 +fill?: string | Function | string[]
-            
+
         }
 TileLayer<|--DistrictLayer
 DistrictLayer<|--WorldLayer
 DistrictLayer<|--CountryLayer
 DistrictLayer<|--ProvinceLayer
 class GLCustomLayer{
-            
-            
+
+
         }
 BaseLayer~LayerEventType~<|--GLCustomLayer
 class HeatMap~DataSet~{
@@ -395,7 +395,7 @@ class HeatMap3DOptions {
             +heightScale?: number
 +heightBezier?: number[]
 +gridSize?: number
-            
+
         }
 class HeatMapOption {
             <<type>>
@@ -409,18 +409,18 @@ class HeatMapOption {
 +blur?: number
 +rejectMapMask?: boolean
 +renderOnZooming?: boolean
-            
+
         }
 class HeatMapDataSet {
             <<type>>
             +max: number
 +data?: any[]
-            
+
         }
 Event~EventType~<|--HeatMap~DataSet~
 HeatMapOption  --  HeatMap3DOptions
 class ImageLayer{
-            
+
             +getImageUrl() string
 +setImageUrl() void
 +getBounds() Bounds
@@ -428,7 +428,7 @@ class ImageLayer{
         }
 BaseLayer~LayerEventType~<|--ImageLayer
 class IndoorMap{
-            
+
             +showIndoorMap() void
 +showFloor() void
 +showFloorBar() void
@@ -444,11 +444,11 @@ class IndoorMapLayerOptions {
 +opacity?: number
 +cursor?: string
 +hideFloorBar?: boolean
-            
+
         }
 BaseLayer~LayerEventType~<|--IndoorMap
 class LabelsLayer{
-            
+
             +getCollision() boolean
 +setCollision() void
 +getAllowCollision() boolean
@@ -460,7 +460,7 @@ class LabelsLayer{
         }
 BaseLayer~LayerEventType~<|--LabelsLayer
 class LayerGroup~Layer~{
-            
+
             +setMap() this
 +hasLayer() boolean
 +addLayer() void
@@ -477,7 +477,7 @@ class LayerGroup~Layer~{
         }
 Event~EventType~<|--LayerGroup~Layer~
 class MapboxVectorTileLayer{
-            
+
             +setStyles() void
 +getStyles() MapboxVTLayerStyle
 +filterByRect() any[]
@@ -487,7 +487,7 @@ class CommonStyleOption {
             +sourceLayer?: string
 +injection?: Function | any[]
 +visible?: boolean | Function
-            
+
         }
 class MapboxVTLayerStyle {
             <<type>>
@@ -495,7 +495,7 @@ class MapboxVTLayerStyle {
 +line?: LineStyle
 +point?: PointStyle
 +polyhedron?: PolyhedronStyle
-            
+
         }
 BaseLayer~LayerEventType~<|--MapboxVectorTileLayer
 MapboxVTLayerStyle  --  CommonStyleOption
@@ -513,31 +513,31 @@ class TileLayer{
 +reload() void
         }
 class TrafficLayer{
-            
+
             +stopFresh() void
         }
 class SatelliteLayer{
-            
-            
+
+
         }
 class RoadNetLayer{
-            
-            
+
+
         }
 class WMSLayer{
-            
+
             +setParams() void
 +getParams() Object
 +setUrl() void
 +getUrl() string
         }
 class WMTSLayer{
-            
-            
+
+
         }
 class FlexibleLayer{
-            
-            
+
+
         }
 BaseLayer~LayerEventType~<|--TileLayer
 TileLayer<|--TrafficLayer
@@ -547,7 +547,7 @@ TileLayer<|--WMSLayer
 WMSLayer<|--WMTSLayer
 TileLayer<|--FlexibleLayer
 class VectorLayer{
-            
+
             +add() void
 +remove() void
 +setOptions() void
@@ -560,11 +560,11 @@ class VectorLayerOption {
             <<type>>
             +visible?: boolean
 +zIndex?: number
-            
+
         }
 BaseLayer~LayerEventType~<|--VectorLayer
 class BezierCurve~ExtractData~{
-            
+
             +getPath() number[][] | number[][][]
 +setPath() void
 +contains() void
@@ -590,11 +590,11 @@ class BezierCurveOptions~ExtraData~ {
 +outlineColor?: string
 +draggable?: boolean
 +extData?: ExtraData
-            
+
         }
 Overlay~ExtraData,EventType~<|--BezierCurve~ExtractData~
 class Circle~ExtraData~{
-            
+
             +getCenter() LngLat
 +setCenter() void
 +getRadius() number
@@ -621,12 +621,12 @@ class CircleOptions~ExtraData~ {
 +fillOpacity?: number
 +draggable?: boolean
 +extData?: ExtraData
-            
+
         }
 Overlay~ExtraData,EventType~<|--Circle~ExtraData~
 CircleOptions~ExtraData~  --  LngLat
 class CircleMarker~ExtraData~{
-            
+
             +getCenter() LngLat
 +setCenter() void
 +getRadius() number
@@ -650,12 +650,12 @@ class CircleMarkerOptions~ExtraData~ {
 +fillOpacity?: number
 +draggable?: boolean
 +extData?: ExtraData
-            
+
         }
 Overlay~ExtraData,EventType~<|--CircleMarker~ExtraData~
 CircleMarkerOptions~ExtraData~  --  LngLat
 class ContextMenu{
-            
+
             +open() void
 +close() void
 +addItem() void
@@ -667,13 +667,13 @@ class ContextMenuOptions {
             <<type>>
             +position?: LngLatLike
 +content?: string | HTMLElement
-            
+
         }
 Event~EventType~<|--ContextMenu
 ContextMenuOptions  --  LngLat
 class ElasticMarker~ExtraData~{
-            
-            
+
+
         }
 class ElasticStyleIconStyle {
             <<type>>
@@ -686,7 +686,7 @@ class ElasticStyleIconStyle {
 +scaleFactor?: number
 +maxScale?: number
 +minScale?: number
-            
+
         }
 class ElasticStyleLabelStyle {
             <<type>>
@@ -694,13 +694,13 @@ class ElasticStyleLabelStyle {
 +position?: "BL" | "BM" | "BR" | "ML" | "MR" | "TL" | "TM" | "TR"
 +offset?: any
 +minZoom?: any
-            
+
         }
 class ElasticStyle {
             <<type>>
             +icon?: ElasticStyleIconStyle
 +label?: ElasticStyleLabelStyle
-            
+
         }
 class ElasticMarkerOptions~ExtraData~ {
             <<type>>
@@ -717,7 +717,7 @@ class ElasticMarkerOptions~ExtraData~ {
 +zoomStyleMapping?: Record~string, number~
 +extData?: ExtraData
 +styles?: ElasticStyle[]
-            
+
         }
 Marker~ExtraData~<|--ElasticMarker~ExtraData~
 ElasticStyleIconStyle  --  Pixel
@@ -728,7 +728,7 @@ ElasticMarkerOptions~ExtraData~  --  LngLat
 ElasticMarkerOptions~ExtraData~  --  Pixel
 ElasticMarkerOptions~ExtraData~  -- "0..*" ElasticStyle
 class Ellipse~ExtraData~{
-            
+
             +getCenter() LngLat
 +setCenter() void
 +getRadius() number
@@ -755,12 +755,12 @@ class EllipseOptions~ExtraData~ {
 +fillOpacity?: number
 +draggable?: boolean
 +extData?: ExtraData
-            
+
         }
 Overlay~ExtraData,EventType~<|--Ellipse~ExtraData~
 EllipseOptions~ExtraData~  --  LngLat
 class GeoJSON{
-            
+
             +importData() void
 +toGeoJSON() Record~string, any~
         }
@@ -791,13 +791,13 @@ class IconOptions {
 +size?: SizeLike
 +imageSize?: SizeLike
 +imageOffset?: PixelLike
-            
+
         }
 IconOptions  --  Size
 IconOptions  --  Size
 IconOptions  --  Pixel
 class InfoWindow{
-            
+
             +open() void
 +close() void
 +getIsOpen() boolean
@@ -819,7 +819,7 @@ class InfoWindowOptions {
 +anchor?: string
 +offset?: PixelLike
 +position?: LngLatLike
-            
+
         }
 Event~EventType~<|--InfoWindow
 InfoWindowOptions  --  Size
@@ -863,7 +863,7 @@ class TextStyleOptions {
 +borderColor?: string
 +borderWidth?: number
 +fold?: boolean
-            
+
         }
 class LabelMarkerTextOptions {
             <<type>>
@@ -872,7 +872,7 @@ class LabelMarkerTextOptions {
 +offset?: PixelLike
 +zooms?: [number, number]
 +style?: TextStyleOptions
-            
+
         }
 class LabelMarkerIconOptions {
             <<type>>
@@ -882,7 +882,7 @@ class LabelMarkerIconOptions {
 +anchor?: string | PixelLike
 +clipOrigin: PixelLike
 +clipSize: SizeLike
-            
+
         }
 class LabelMarkerOptions~ExtraData~ {
             <<type>>
@@ -896,7 +896,7 @@ class LabelMarkerOptions~ExtraData~ {
 +extData?: ExtraData
 +icon?: LabelMarkerIconOptions
 +text?: LabelMarkerTextOptions
-            
+
         }
 Overlay~ExtraData,EventType~<|--LabelMarker~ExtraData~
 MoveAnimation<|..LabelMarker~ExtraData~
@@ -959,7 +959,7 @@ class MarkerLabelOptions {
             +content?: string | HTMLElement
 +direction?: "center" | "top" | "right" | "bottom" | "left"
 +offset?: PixelLike
-            
+
         }
 class MarkerOptions~ExtraData~ {
             <<type>>
@@ -983,7 +983,7 @@ class MarkerOptions~ExtraData~ {
 +label?: MarkerLabelOptions
 +icon?: string | Icon
 +size?: SizeLike
-            
+
         }
 Overlay~ExtraData,EventType~<|--Marker~ExtraData~
 MoveAnimation<|..Marker~ExtraData~
@@ -995,7 +995,7 @@ MarkerOptions~ExtraData~  --  MarkerLabelOptions
 MarkerOptions~ExtraData~  --  Icon
 MarkerOptions~ExtraData~  --  Size
 class MarkerCluster{
-            
+
             +addData() void
 +setData() void
 +getClustersCount() number
@@ -1018,7 +1018,7 @@ class MarkerClusterStyle {
 +imageOffset?: Pixel
 +textColor?: string
 +textSize?: number
-            
+
         }
 class MarkerClusterOptions {
             <<type>>
@@ -1036,7 +1036,7 @@ MarkerClusterStyle  --  Pixel
 MarkerClusterStyle  --  Pixel
 MarkerClusterOptions  -- "0..*" MarkerClusterStyle
 class MassMarks{
-            
+
             +getMap() Map
 +setMap() void
 +addData() void
@@ -1058,7 +1058,7 @@ class MassMarkersStyleOption {
 +anchor?: Pixel
 +zIndex?: number
 +rotation?: number
-            
+
         }
 class MassMarkersOptions {
             <<type>>
@@ -1066,7 +1066,7 @@ class MassMarkersOptions {
 +opacity?: number
 +zooms?: [number, number]
 +style?: MassMarkersStyleOption | MassMarkersStyleOption[]
-            
+
         }
 Event~EventType~<|--MassMarks
 MassMarkersStyleOption  --  Size
@@ -1074,7 +1074,7 @@ MassMarkersStyleOption  --  Pixel
 MassMarkersOptions  -- "0..*" MassMarkersStyleOption
 MassMarkersOptions  -- "0..*" MassMarkersStyleOption
 class Overlay~ExtraData,EventType~{
-            
+
             +getMap() Map
 +setMap() void
 +setExtData() void
@@ -1088,7 +1088,7 @@ class Overlay~ExtraData,EventType~{
         }
 Event~EventType~<|--Overlay~ExtraData,EventType~
 class OverlayGroup~OverlayType~{
-            
+
             +setMap() this
 +addOverlay() void
 +addOverlays() void
@@ -1104,7 +1104,7 @@ class OverlayGroup~OverlayType~{
         }
 Event~EventType~<|--OverlayGroup~OverlayType~
 class Polygon~ExtraData~{
-            
+
             +getPath() LngLat[] | LngLat[][] | LngLat[][][]
 +setPath() void
 +getExtrusionHeight() number
@@ -1136,7 +1136,7 @@ class PolygonOptions~ExtraData~ {
 +wallColor?: string | Function | string[]
 +extData?: ExtraData
 +map?: Map
-            
+
         }
 Overlay~ExtraData,EventType~<|--Polygon~ExtraData~
 PolygonOptions~ExtraData~  --  LngLat
@@ -1144,7 +1144,7 @@ PolygonOptions~ExtraData~  --  LngLat
 PolygonOptions~ExtraData~  --  LngLat
 PolygonOptions~ExtraData~  --  Map
 class Polyline~ExtraData~{
-            
+
             +getPath() LngLat[] | LngLat[][]
 +setPath() void
 +destroy() void
@@ -1181,14 +1181,14 @@ class PolylineOptions~ExtraData~ {
 +dirColor?: string
 +dirImg?: string | HTMLCanvasElement
 +zooms?: [number, number]
-            
+
         }
 Overlay~ExtraData,EventType~<|--Polyline~ExtraData~
 PolylineOptions~ExtraData~  -- "0..*" LngLat
 PolylineOptions~ExtraData~  -- "0..*" LngLat
 PolylineOptions~ExtraData~  --  Map
 class Rectangle~ExtraData~{
-            
+
             +getBounds() Bounds
 +setBounds() void
 +destroy() void
@@ -1215,13 +1215,13 @@ class RectangleOptions~ExtraData~ {
 +extData?: ExtraData
 +map?: Map
 +height?: number
-            
+
         }
 Overlay~ExtraData,EventType~<|--Rectangle~ExtraData~
 RectangleOptions~ExtraData~  --  Bounds
 RectangleOptions~ExtraData~  --  Map
 class Text~ExtraData~{
-            
+
             +getText() string
 +setText() void
 +setStyle() void
@@ -1247,14 +1247,14 @@ class TextOptions~ExtraData~ {
 +style?: Partial~CSSStyleDeclaration~
 +content?: string | HTMLElement
 +direction?: "center" | "top" | "right" | "bottom" | "left"
-            
+
         }
 Marker~ExtraData~<|--Text~ExtraData~
 TextOptions~ExtraData~  --  Map
 TextOptions~ExtraData~  --  LngLat
 TextOptions~ExtraData~  --  Pixel
 class BezierCurveEditor{
-            
+
             +setTarget() void
 +getTarget() BezierCurve~any~
 +open() void
@@ -1268,11 +1268,11 @@ class BezierCurveEditorOptions {
 +midControlPoint?: MarkerOptions
 +bezierControlPoint?: MarkerOptions
 +bezierControlLine?: PolylineOptions
-            
+
         }
 Event~EventType~<|--BezierCurveEditor
 class CircleEditor{
-            
+
             +setTarget() void
 +getTarget() Circle~any~
 +open() void
@@ -1284,11 +1284,11 @@ class CircleEditorOptions {
 +editOptions?: CircleOptions
 +movePoint?: MarkerOptions
 +resizePoint?: MarkerOptions
-            
+
         }
 Event~EventType~<|--CircleEditor
 class EllipseEditor{
-            
+
             +setTarget() void
 +getTarget() Ellipse~any~
 +open() void
@@ -1301,11 +1301,11 @@ class EllipseEditorOptions {
 +movePoint?: MarkerOptions
 +resizeXPoint?: MarkerOptions
 +resizeYPoint?: MarkerOptions
-            
+
         }
 Event~EventType~<|--EllipseEditor
 class MouseTool{
-            
+
             +marker() void
 +circle() void
 +rectangle() void
@@ -1319,7 +1319,7 @@ class MouseTool{
         }
 Event~EventType~<|--MouseTool
 class PolygonEditor{
-            
+
             +setTarget() void
 +getTarget() Polygon~any~
 +setAdsorbPolygons() void
@@ -1335,11 +1335,11 @@ class PolygonEditorOptions {
 +editOptions?: PolygonOptions
 +controlPoint?: CircleMarkerOptions
 +midControlPoint?: CircleMarkerOptions
-            
+
         }
 Event~EventType~<|--PolygonEditor
 class PolylineEditor{
-            
+
             +setTarget() void
 +getTarget() Polyline~any~
 +open() void
@@ -1351,11 +1351,11 @@ class PolylineEditorOptions {
 +editOptions?: PolylineOptions
 +controlPoint?: CircleMarkerOptions
 +midControlPoint?: CircleMarkerOptions
-            
+
         }
 Event~EventType~<|--PolylineEditor
 class RangingTool{
-            
+
             +turnOn() void
 +turnOff() void
         }
@@ -1372,14 +1372,14 @@ class RangingToolOptions {
 +startLabelOffset?: PixelLike
 +midLabelOffset?: PixelLike
 +endLabelOffset?: PixelLike
-            
+
         }
 Event~EventType~<|--RangingTool
 RangingToolOptions  --  Pixel
 RangingToolOptions  --  Pixel
 RangingToolOptions  --  Pixel
 class RectangleEditor{
-            
+
             +setTarget() void
 +getTarget() Rectangle~any~
 +open() void
@@ -1391,7 +1391,7 @@ class RectangleEditorOptions {
 +editOptions?: RectangleOptions
 +southWestPoint?: MarkerOptions
 +northEastPoint?: MarkerOptions
-            
+
         }
 Event~EventType~<|--RectangleEditor
 class Browser {
@@ -1449,7 +1449,7 @@ class Browser {
         }
 class DomUtil {
             <<type>>
-            
+
             +getViewport() [number, number]
 +getViewportOffset() [number, number]
 +create() HTMLElement
@@ -1473,7 +1473,7 @@ class DomUtil {
         }
 class GeometryUtil {
             <<type>>
-            
+
             +distance() number
 +ringArea() number
 +ringAreaByAltitude() number
@@ -1509,7 +1509,7 @@ class GeometryUtil {
         }
 class Util {
             <<type>>
-            
+
             +isDOM() boolean
 +colorNameToHex() string
 +rgbHex2Rgba() string
@@ -1527,3 +1527,5 @@ class Util {
 +cancelAnimFrame() void
         }
 ```
+
+<script type="module" src="./mermaid-plugin.mjs" defer></script>
