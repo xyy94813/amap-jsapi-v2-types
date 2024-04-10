@@ -7,7 +7,10 @@
 
 ---
 
-> mermaid DSL 在 gh pages 上未生效
+> mermaid DSL 目前默认在 gh pages 上未生效
+> 
+> 基于 Jekyll 嵌入了脚本，参考自
+> https://github.com/xyy94813/github-pages-mermaid-plugin
 
 ```mermaid
 
