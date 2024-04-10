@@ -1527,5 +1527,3 @@ class Util {
 +cancelAnimFrame() void
         }
 ```
-
-<script type="module" src="./mermaid-plugin.mjs" defer></script>
