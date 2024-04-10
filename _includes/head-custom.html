@@ -7,5 +7,9 @@
 <!-- link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" -->
 
 <!-- Setup mermaid -->
-<script type="module" src="https://github.com/xyy94813/github-pages-mermaid-plugin/tree/main/mermaid-plugin.mjs" crossorigin="anonymous" defer></script>
+<script type="module" crossorigin="anonymous" defer>
+    document.addEventListener('load', () => {
+        import('https://github.com/xyy94813/github-pages-mermaid-plugin/tree/main/mermaid-plugin.mjs') 
+    })
+</script>
 <!-- end custom head snippets -->
