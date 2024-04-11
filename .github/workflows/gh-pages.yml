@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: ".nvmrc"
       - name: Generate UML mermaid dsl 🔧
         # Generate UML mermaid dsl by `tsuml2`
         # https://yarnpkg.com/package?q=tsuml2&name=tsuml2
@@ -24,7 +24,7 @@ jobs:
       - name: Generate uml.md 🔧
         run: |
           cat >uml.md <<EOF
-          # UML
+          # UML 类图
 
           > 以下 UML 的生成步骤：
           > tsuml2 -> mermaid dsl -> UML
@@ -34,16 +34,35 @@ jobs:
           ---
 
           > mermaid DSL 在 gh pages 上未生效
+          > 
+          > 基于 Jekyll 嵌入了脚本方式支持 mermaid，参考自
+          > https://github.com/xyy94813/github-pages-mermaid-plugin
+          >
+          > 支持缩放和拖动查看
+
+          浏览器兼容插件时，通过此处查看[mermaid DSL](./uml.mermaid.dsl)
 
           \`\`\`mermaid
           $(<uml.mermaid.dsl)
           \`\`\`
+
           EOF
       - name: Copy deploy files
         run: |
           mkdir uml-static
           mv uml.md uml-static/readme.md
           mv uml.svg uml-static/uml.svg
+          mv uml.mermaid.dsl uml-static/uml.mermaid.dsl
+      - name: Add site js plugin
+        run: |
+          mkdir uml-static/_includes
+          cat > uml-static/_includes/head-custom.html <<EOF
+          <script
+            type="module"
+            src="https://cdn.jsdelivr.net/npm/github-pages-mermaid-plugin@1/libs/gh-pages-mermaid.mjs"
+            defer
+          ></script>
+          EOF
       - name: Deploy to Github Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
