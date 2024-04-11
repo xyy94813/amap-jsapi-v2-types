@@ -1,22 +1,3 @@
-# UML 类图
-
-> 以下 UML 的生成步骤：
-> tsuml2 -> mermaid dsl -> UML
-
-![UML](./uml.svg)
-
----
-
-> mermaid DSL 在 gh pages 上未生效
-> 
-> 基于 Jekyll 嵌入了脚本方式支持 mermaid，参考自
-> https://github.com/xyy94813/github-pages-mermaid-plugin
->
-> 支持缩放和拖动查看
-
-浏览器兼容插件时，通过此处查看[mermaid DSL](./uml.mermaid.dsl)
-
-```mermaid
 
 classDiagram
 
@@ -1533,5 +1514,3 @@ class Util {
 +requestAnimFrame() number
 +cancelAnimFrame() void
         }
-```
-
