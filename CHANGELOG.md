@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.3.2](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.3.1...v1.3.2) (2024-04-17)
+
+
+### Bug Fixes
+
+* **Map:** mask 的数据类型有误 ([26f3faa](https://github.com/xyy94813/amap-jsapi-v2-types/commit/26f3faa052782957c6ade7bda50e669899d028e9))
+* **Map:** 方法 plugin 返回类型错误 ([c2f3d3d](https://github.com/xyy94813/amap-jsapi-v2-types/commit/c2f3d3dd6bcc5bc2d52363918168b3888745c717))
+* **Map:** 方法 setRotation 返回类型错误 ([90ccfba](https://github.com/xyy94813/amap-jsapi-v2-types/commit/90ccfba6c36e926f7839f91b39ab0b3d0d4d9aa8))
+* **window.AMap:** 工具相关的 API 不存在 window.AMap.GeometryUtil 类型上 ([bd894e1](https://github.com/xyy94813/amap-jsapi-v2-types/commit/bd894e1567b5a3a0488344020c363ce152f08333))
+* 未导出 LabelsLayer ([39a14cf](https://github.com/xyy94813/amap-jsapi-v2-types/commit/39a14cf42dc5c8cab1c389daa8c44fcdc7f11351))
+
 ## [1.3.1](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.3.0...v1.3.1) (2024-03-26)
 
 
