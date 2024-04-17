@@ -66,8 +66,13 @@ export type MapOptions = Partial<MapStates> & {
   showIndoorMap?: boolean;
   /** 天空颜色，3D 模式下带有俯仰角时会显示 */
   skyColor?: string | number[];
-  /** 为 Map 实例指定掩模的路径，各图层将只显示路径范围内图像，3D视图下有效。 格式为一个经纬度的一维、二维或三维数组。 */
-  mask?: number[];
+  /**
+   * 为 Map 实例指定掩模的路径，各图层将只显示路径范围内图像，3D视图下有效。 格式为一个经纬度的一维、二维或三维数组。
+   *
+   * @waring 经验证后，实际能工作的数据类型并不与官方文档描述一致。
+   * 以下验证有效 `LngLatLike[][][]`，`[number, number][][]`，`LngLat[][][]`
+   **/
+  mask?: LngLatLike[][][] | LngLatLike[][] | LngLatLike[];
 };
 
 export type MapEventType =
@@ -510,9 +515,13 @@ export declare class Map extends Event<MapEventType> {
   /**
    * 设置掩模范围
    *
-   * @param {number[][]} maskPath 掩模范围
+   * @param {LngLatLike[][][] | LngLatLike[][] | LngLatLike[]} maskPath 掩模范围
+   *
+   * @waring 经验证后，实际能工作的数据类型并不与官方文档描述一致。
+   *
+   * 以下验证有效 `LngLatLike[][][]`，`[number, number][][]`，`LngLat[][][]`。
    **/
-  setMask(maskPath: number[][]): void;
+  setMask(maskPath: LngLatLike[][][] | LngLatLike[][] | LngLatLike[]): void;
   /**
    * 设置文字是否拒绝掩模，true：不进行掩模，false：掩模
    *
