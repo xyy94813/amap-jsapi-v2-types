@@ -345,14 +345,19 @@ declare global {
       type ToolBarConfig,
 
       // 工具
-      type GeometryUtil,
-      type Browser,
-      type Util,
-      type DomUtil,
+      // type GeometryUtil,
+      // type Browser,
+      // type Util,
+      // type DomUtil,
 
       // others
       type SecurityConfig,
     };
+
+    export const GeometryUtil: GeometryUtil;
+    export const Browser: Browser;
+    export const Util: Util;
+    export const DomUtil: DomUtil;
 
     export const version: string;
 
