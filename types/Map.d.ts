@@ -278,15 +278,15 @@ export declare class Map extends Event<MapEventType> {
   getRotation(): number;
   /**
    * 设置地图顺时针旋转角度, 旋转原点为地图容器中心点, 取值范围: [0 ~ 360]
-   * @param {}number rotation 旋转角度
-   * @param {}boolean immediately 是否立即过渡到目标位置
-   * @param {}number duration 动画过度的时长控制，单位 ms，默认值是内部自动计算的一个动态值。
+   * @param {number} rotation 旋转角度
+   * @param {boolean} immediately 是否立即过渡到目标位置
+   * @param {number} duration 动画过度的时长控制，单位 ms，默认值是内部自动计算的一个动态值。
    **/
   setRotation(
     rotation: number,
     immediately?: boolean,
     duration?: number,
-  ): number;
+  ): void;
   /**
    * 获取当前地图状态信息，包括是否可鼠标拖拽移动地图、地图是否可缩放、地图是否可旋转（rotateEnable）、 是否可双击放大地图、是否可以通过键盘控制地图旋转（keyboardEnable）等
    * @returns {MapStates} 地图状态信息映射集合
