@@ -27,6 +27,7 @@ import {
   DistrictLayerOptions,
 } from './layers/DistrictLayer';
 import { VectorLayer, VectorLayerOption } from './layers/VectorLayer';
+import { LabelsLayer, LabelsLayerOption } from './layers/LabelsLayer';
 import { CustomLayer, CustomLayerOption } from './layers/CustomLayer';
 import { ImageLayer, ImageLayerOption } from './layers/ImageLayer';
 import { CanvasLayer, CanvasLayerOption } from './layers/CanvasLayer';
@@ -216,6 +217,8 @@ declare global {
       // 自有数据图层
       VectorLayer,
       type VectorLayerOption,
+      LabelsLayer,
+      type LabelsLayerOption,
       CustomLayer,
       type CustomLayerOption,
       ImageLayer,
