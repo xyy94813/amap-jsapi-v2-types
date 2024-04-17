@@ -2,7 +2,7 @@
 <desc >#.interface: fill=lightblue
 #.enumeration: fill=lightgreen
 #.type: fill=lightgray
-[Map||+getCenter(): LngLat;+setCenter(): void;+getBounds(): Bounds;+setBounds(): void;+getLimitBounds(): Bounds;+setLimitBounds(): void;+clearLimitBounds(): void;+getContainer(): HTMLElement;+getSize(): Size;+getZooms(): \[number, number\];+setZooms(): void;+getZoom(): number;+setZoom(): void;+setZoomAndCenter(): void;+zoomIn(): void;+zoomOut(): void;+setFitView(): Bounds;+getFitZoomAndCenterByOverlays(): \[number, LngLat\];+getFitZoomAndCenterByBounds(): \[number, LngLat\];+getPitch(): number;+setPitch(): void;+getRotation(): number;+setRotation(): number;+getStatus(): MapStates;+setStatus(): void;+getDefaultCursor(): string;+setDefaultCursor(): void;+getMapStyle(): string;+setMapStyle(): void;+getCity(): void;+setCity(): void;+getScale(): number;+addLayer(): void;+removeLayer(): void;+getLayers(): BaseLayer&lt;string&gt;\[\];+setLayers(): void;+add(): void;+remove(): void;+addControl(): void;+removeControl(): void;+getAllOverlays(): any\[\];+getFeatures(): string \| string\[\];+setFeatures(): void;+clearMap(): void;+clearInfoWindow(): void;+destroy(): void;+panTo(): void;+panBy(): void;+lngLatToCoords(): \[number, number\];+coordsToLngLat(): LngLat;+lngLatToContainer(): Pixel;+containerToLngLat(): LngLat;+coordToContainer(): \[number, number\];+containerToCoord(): \[number, number\];+pixelToLngLat(): LngLat;+lngLatToPixel(): Pixel;+getResolution(): number;+getMapApprovalNumber(): any;+setMask(): void;+setLabelRejectMask(): void;+plugin(): any;+plugin(): any;+resize(): void;+getAltitude(): number;+getAltitudeByContainer(): number]
+[Map||+getCenter(): LngLat;+setCenter(): void;+getBounds(): Bounds;+setBounds(): void;+getLimitBounds(): Bounds;+setLimitBounds(): void;+clearLimitBounds(): void;+getContainer(): HTMLElement;+getSize(): Size;+getZooms(): \[number, number\];+setZooms(): void;+getZoom(): number;+setZoom(): void;+setZoomAndCenter(): void;+zoomIn(): void;+zoomOut(): void;+setFitView(): Bounds;+getFitZoomAndCenterByOverlays(): \[number, LngLat\];+getFitZoomAndCenterByBounds(): \[number, LngLat\];+getPitch(): number;+setPitch(): void;+getRotation(): number;+setRotation(): void;+getStatus(): MapStates;+setStatus(): void;+getDefaultCursor(): string;+setDefaultCursor(): void;+getMapStyle(): string;+setMapStyle(): void;+getCity(): void;+setCity(): void;+getScale(): number;+addLayer(): void;+removeLayer(): void;+getLayers(): BaseLayer&lt;string&gt;\[\];+setLayers(): void;+add(): void;+remove(): void;+addControl(): void;+removeControl(): void;+getAllOverlays(): any\[\];+getFeatures(): string \| string\[\];+setFeatures(): void;+clearMap(): void;+clearInfoWindow(): void;+destroy(): void;+panTo(): void;+panBy(): void;+lngLatToCoords(): \[number, number\];+coordsToLngLat(): LngLat;+lngLatToContainer(): Pixel;+containerToLngLat(): LngLat;+coordToContainer(): \[number, number\];+containerToCoord(): \[number, number\];+pixelToLngLat(): LngLat;+lngLatToPixel(): Pixel;+getResolution(): number;+getMapApprovalNumber(): any;+setMask(): void;+setLabelRejectMask(): void;+plugin(): void;+plugin(): void;+resize(): void;+getAltitude(): number;+getAltitudeByContainer(): number]
 [Event&lt;EventType&gt;]&lt;:-[Map]
 [&lt;type&gt;MoveToOptions|+duration?: number \| AnimationCallback;+speed?: number \| AnimationCallback;+easing: EasingCallback;+autoRotation?: boolean|]
 [&lt;type&gt;MoveAlongOptions|+duration?: number \| AnimationCallback;+speed?: number \| AnimationCallback;+easing: EasingCallback;+circlable?: boolean;+delay?: number \| AnimationCallback;+aniInterval: number;+autoRotation?: boolean|]
@@ -489,7 +489,7 @@
 <text x="0.0" y="298.5" stroke="none" data-name="Map">+getPitch(): number</text>
 <text x="0.0" y="313.5" stroke="none" data-name="Map">+setPitch(): void</text>
 <text x="0.0" y="328.5" stroke="none" data-name="Map">+getRotation(): number</text>
-<text x="0.0" y="343.5" stroke="none" data-name="Map">+setRotation(): number</text>
+<text x="0.0" y="343.5" stroke="none" data-name="Map">+setRotation(): void</text>
 <text x="0.0" y="358.5" stroke="none" data-name="Map">+getStatus(): MapStates</text>
 <text x="0.0" y="373.5" stroke="none" data-name="Map">+setStatus(): void</text>
 <text x="0.0" y="388.5" stroke="none" data-name="Map">+getDefaultCursor(): string</text>
@@ -527,8 +527,8 @@
 <text x="0.0" y="868.5" stroke="none" data-name="Map">+getMapApprovalNumber(): any</text>
 <text x="0.0" y="883.5" stroke="none" data-name="Map">+setMask(): void</text>
 <text x="0.0" y="898.5" stroke="none" data-name="Map">+setLabelRejectMask(): void</text>
-<text x="0.0" y="913.5" stroke="none" data-name="Map">+plugin(): any</text>
-<text x="0.0" y="928.5" stroke="none" data-name="Map">+plugin(): any</text>
+<text x="0.0" y="913.5" stroke="none" data-name="Map">+plugin(): void</text>
+<text x="0.0" y="928.5" stroke="none" data-name="Map">+plugin(): void</text>
 <text x="0.0" y="943.5" stroke="none" data-name="Map">+resize(): void</text>
 <text x="0.0" y="958.5" stroke="none" data-name="Map">+getAltitude(): number</text>
 <text x="0.0" y="973.5" stroke="none" data-name="Map">+getAltitudeByContainer(): number</text>

@@ -44,7 +44,7 @@ class Map{
 +getPitch() number
 +setPitch() void
 +getRotation() number
-+setRotation() number
++setRotation() void
 +getStatus() MapStates
 +setStatus() void
 +getDefaultCursor() string
@@ -82,8 +82,8 @@ class Map{
 +getMapApprovalNumber() any
 +setMask() void
 +setLabelRejectMask() void
-+plugin() any
-+plugin() any
++plugin() void
++plugin() void
 +resize() void
 +getAltitude() number
 +getAltitudeByContainer() number
