@@ -1,6 +1,9 @@
 name: test-types
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches-ignore:
       - "release-please**"
