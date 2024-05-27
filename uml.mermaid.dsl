@@ -113,7 +113,7 @@ class Bounds{
 +toJSON() number[]
 +getWidth() number
 +getHeight() number
-+from() Bounds
++from() Bounds$
         }
 Bounds  --  LngLat
 Bounds  --  LngLat
@@ -137,8 +137,8 @@ MapsEvent~EventType~  --  Pixel
 MapsEvent~EventType~  --  LngLat
 class LngLat{
             +className: string
-+lat: number*
-+lng: number*
++lat: number
++lng: number
 +pos: [number, number]
             +setLng() this
 +setLat() this
@@ -155,7 +155,7 @@ class LngLat{
 +toJSON() [number, number]
 +distance() number
 +distanceTo() number
-+from() LngLat
++from() LngLat$
         }
 class Pixel{
             +className: string
@@ -321,9 +321,9 @@ class CustomLayer{
         }
 BaseLayer~LayerEventType~<|--CustomLayer
 class DistrictLayer{
-            +World: typeof WorldLayer
-+Country: typeof CountryLayer
-+Province: typeof ProvinceLayer
+            +World: typeof WorldLayer$
++Country: typeof CountryLayer$
++Province: typeof ProvinceLayer$
             +setSOC() void
 +setDistricts() void
 +getDistricts() any
@@ -491,12 +491,12 @@ MapboxVTLayerStyle  --  CommonStyleOption
 MapboxVTLayerStyle  --  CommonStyleOption
 MapboxVTLayerStyle  --  CommonStyleOption
 class TileLayer{
-            +Traffic: typeof TrafficLayer
-+Satellite: typeof SatelliteLayer
-+RoadNet: typeof RoadNetLayer
-+WMS: typeof WMSLayer
-+WMTS: typeof WMTSLayer
-+Flexible: typeof FlexibleLayer
+            +Traffic: typeof TrafficLayer$
++Satellite: typeof SatelliteLayer$
++RoadNet: typeof RoadNetLayer$
++WMS: typeof WMSLayer$
++WMTS: typeof WMTSLayer$
++Flexible: typeof FlexibleLayer$
             +setTileUrl() void
 +reload() void
         }
@@ -784,7 +784,7 @@ class IconOptions {
 IconOptions  --  Size
 IconOptions  --  Size
 IconOptions  --  Pixel
-class InfoWindow{
+class InfoWindow~ExtraData~{
             
             +open() void
 +close() void
@@ -795,6 +795,8 @@ class InfoWindow{
 +setContent() void
 +getAnchor() string
 +setAnchor() void
++setExtData() void
++getExtData() ExtraData
         }
 class InfoWindowOptions {
             <<type>>
@@ -809,7 +811,7 @@ class InfoWindowOptions {
 +position?: LngLatLike
             
         }
-Event~EventType~<|--InfoWindow
+Event~EventType~<|--InfoWindow~ExtraData~
 InfoWindowOptions  --  Size
 InfoWindowOptions  --  Pixel
 InfoWindowOptions  --  LngLat
