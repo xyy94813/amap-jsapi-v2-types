@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.3](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.3.2...v1.3.3) (2024-05-27)
+
+
+### Bug Fixes
+
+* 类型 InfoWindow 缺少 extra data 相关方法 ([0f6b7eb](https://github.com/xyy94813/amap-jsapi-v2-types/commit/0f6b7eb837d2276493489591867d31bb7ff19125))
+
 ## [1.3.2](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.3.1...v1.3.2) (2024-04-17)
 
 
