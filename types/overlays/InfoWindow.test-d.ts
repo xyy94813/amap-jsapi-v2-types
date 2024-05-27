@@ -50,7 +50,9 @@ expectAssignable<InfoWindowEventType>('close');
 
 //
 const infoWindow = new InfoWindow();
+const infoWindow2 = new InfoWindow<{ x: string }>();
 expectType<InfoWindow>(infoWindow);
+expectType<InfoWindow<{ x: string }>>(infoWindow2);
 expectAssignable<Event<InfoWindowEventType>>(infoWindow);
 
 // InfoWindow methods
@@ -83,3 +85,8 @@ expectType<void>(infoWindow.setAnchor('bottom-left'));
 expectType<void>(infoWindow.setAnchor('bottom-center'));
 expectType<void>(infoWindow.setAnchor('bottom-right'));
 expectType<void>(infoWindow.setAnchor('others new anchor'));
+
+expectType<void>(infoWindow.setExtData({}));
+expectType<any>(infoWindow.getExtData());
+expectType<void>(infoWindow2.setExtData({ x: 'string' }));
+expectType<{ x: string }>(infoWindow2.getExtData());

@@ -45,7 +45,7 @@ export type InfoWindowEventType = 'open' | 'close';
  * 从实现来看，右键菜单作为一个地图覆盖物。很有可能继成自通用 Overlay.
  * @docs https://lbs.amap.com/api/javascript-api-v2/documentation#infowindow
  */
-export declare class InfoWindow extends Event<InfoWindowEventType> {
+export declare class InfoWindow<ExtraData = any> extends Event<InfoWindowEventType> {
   constructor(opt?: InfoWindowOptions);
   /** 打开信息窗体 */
   open(map: Map, pos: LngLatLike, height?: number): void;
@@ -65,6 +65,15 @@ export declare class InfoWindow extends Event<InfoWindowEventType> {
   getAnchor(): string;
   /** 设置信息窗体锚点 默认值：'bottom-center'。 */
   setAnchor(anchor: InfoWindowOptions['anchor']): void;
+  /**
+   * 设置自定义数据
+   * @param extData 自定义数据
+   */
+  setExtData(extData: ExtraData): void;
+  /**
+   * 获取自定义数据
+   */
+  getExtData(): ExtraData;
 }
 
 export default InfoWindow;
