@@ -74,7 +74,7 @@ class MoveToOptions {
             <<type>>
             +duration?: number | AnimationCallback
 +speed?: number | AnimationCallback
-+easing: EasingCallback
++easing?: EasingCallback
 +autoRotation?: boolean
             
         }
@@ -82,7 +82,7 @@ class MoveAlongOptions {
             <<type>>
             +duration?: number | AnimationCallback
 +speed?: number | AnimationCallback
-+easing: EasingCallback
++easing?: EasingCallback
 +circlable?: boolean
 +delay?: number | AnimationCallback
 +aniInterval: number

@@ -4,8 +4,8 @@
 #.type: fill=lightgray
 [Map||+getCenter(): LngLat;+setCenter(): void;+getBounds(): Bounds;+setBounds(): void;+getLimitBounds(): Bounds;+setLimitBounds(): void;+clearLimitBounds(): void;+getContainer(): HTMLElement;+getSize(): Size;+getZooms(): \[number, number\];+setZooms(): void;+getZoom(): number;+setZoom(): void;+setZoomAndCenter(): void;+zoomIn(): void;+zoomOut(): void;+setFitView(): Bounds;+getFitZoomAndCenterByOverlays(): \[number, LngLat\];+getFitZoomAndCenterByBounds(): \[number, LngLat\];+getPitch(): number;+setPitch(): void;+getRotation(): number;+setRotation(): void;+getStatus(): MapStates;+setStatus(): void;+getDefaultCursor(): string;+setDefaultCursor(): void;+getMapStyle(): string;+setMapStyle(): void;+getCity(): void;+setCity(): void;+getScale(): number;+addLayer(): void;+removeLayer(): void;+getLayers(): BaseLayer&lt;string&gt;\[\];+setLayers(): void;+add(): void;+remove(): void;+addControl(): void;+removeControl(): void;+getAllOverlays(): any\[\];+getFeatures(): string \| string\[\];+setFeatures(): void;+clearMap(): void;+clearInfoWindow(): void;+destroy(): void;+panTo(): void;+panBy(): void;+lngLatToCoords(): \[number, number\];+coordsToLngLat(): LngLat;+lngLatToContainer(): Pixel;+containerToLngLat(): LngLat;+coordToContainer(): \[number, number\];+containerToCoord(): \[number, number\];+pixelToLngLat(): LngLat;+lngLatToPixel(): Pixel;+getResolution(): number;+getMapApprovalNumber(): any;+setMask(): void;+setLabelRejectMask(): void;+plugin(): void;+plugin(): void;+resize(): void;+getAltitude(): number;+getAltitudeByContainer(): number]
 [Event&lt;EventType&gt;]&lt;:-[Map]
-[&lt;type&gt;MoveToOptions|+duration?: number \| AnimationCallback;+speed?: number \| AnimationCallback;+easing: EasingCallback;+autoRotation?: boolean|]
-[&lt;type&gt;MoveAlongOptions|+duration?: number \| AnimationCallback;+speed?: number \| AnimationCallback;+easing: EasingCallback;+circlable?: boolean;+delay?: number \| AnimationCallback;+aniInterval: number;+autoRotation?: boolean|]
+[&lt;type&gt;MoveToOptions|+duration?: number \| AnimationCallback;+speed?: number \| AnimationCallback;+easing?: EasingCallback;+autoRotation?: boolean|]
+[&lt;type&gt;MoveAlongOptions|+duration?: number \| AnimationCallback;+speed?: number \| AnimationCallback;+easing?: EasingCallback;+circlable?: boolean;+delay?: number \| AnimationCallback;+aniInterval: number;+autoRotation?: boolean|]
 [&lt;type&gt;MoveAnimation||+moveTo(): void;+moveAlong(): void;+startMove(): void;+stopMove(): void;+pauseMove(): void;+resumeMove(): void]
 [Bounds|+className: string;+southWest: LngLat;+northEast: LngLat|+getSouthWest(): LngLat;+getNorthEast(): LngLat;+getNorthWest(): LngLat;+getSouthEast(): LngLat;+contains(): boolean;+getCenter(): LngLat;+toString(): string;+toJSON(): number\[\];+getWidth(): number;+getHeight(): number;+static from(): Bounds]
 [Bounds]  -  [LngLat]
@@ -580,7 +580,7 @@
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="MoveToOptions">
 <text x="0.0" y="13.5" stroke="none" data-name="MoveToOptions">+duration?: number | AnimationCallback</text>
 <text x="0.0" y="28.5" stroke="none" data-name="MoveToOptions">+speed?: number | AnimationCallback</text>
-<text x="0.0" y="43.5" stroke="none" data-name="MoveToOptions">+easing: EasingCallback</text>
+<text x="0.0" y="43.5" stroke="none" data-name="MoveToOptions">+easing?: EasingCallback</text>
 <text x="0.0" y="58.5" stroke="none" data-name="MoveToOptions">+autoRotation?: boolean</text>
 
 </g>
@@ -607,7 +607,7 @@
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="MoveAlongOptions">
 <text x="0.0" y="13.5" stroke="none" data-name="MoveAlongOptions">+duration?: number | AnimationCallback</text>
 <text x="0.0" y="28.5" stroke="none" data-name="MoveAlongOptions">+speed?: number | AnimationCallback</text>
-<text x="0.0" y="43.5" stroke="none" data-name="MoveAlongOptions">+easing: EasingCallback</text>
+<text x="0.0" y="43.5" stroke="none" data-name="MoveAlongOptions">+easing?: EasingCallback</text>
 <text x="0.0" y="58.5" stroke="none" data-name="MoveAlongOptions">+circlable?: boolean</text>
 <text x="0.0" y="73.5" stroke="none" data-name="MoveAlongOptions">+delay?: number | AnimationCallback</text>
 <text x="0.0" y="88.5" stroke="none" data-name="MoveAlongOptions">+aniInterval: number</text>
