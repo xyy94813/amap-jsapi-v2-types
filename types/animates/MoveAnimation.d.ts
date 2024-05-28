@@ -13,8 +13,11 @@ export type MoveToOptions = {
    * @deprecated 已废弃
    * */
   speed?: number | AnimationCallback;
-  /** easing 时间函数 */
-  easing: EasingCallback;
+  /**
+   * easing 时间函数，未设置时为 Linear
+   * TODO: https://github.com/xyy94813/amap-jsapi-v2-types/issues/21#issuecomment-2135147341
+   */
+  easing?: EasingCallback;
   /** 覆盖物是否沿路径旋转 */
   autoRotation?: boolean;
 };
