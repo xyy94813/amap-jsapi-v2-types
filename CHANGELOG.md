@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.4](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.3.3...v1.3.4) (2024-05-28)
+
+
+### Bug Fixes
+
+* 类型 MoveAlongOptions 的 easing 属性非必填 ([de91f45](https://github.com/xyy94813/amap-jsapi-v2-types/commit/de91f45930a186fb77be3be4c2842576cbd448e1))
+* 类型 MoveToOptions 的 easing 属性非必填 ([33a3af8](https://github.com/xyy94813/amap-jsapi-v2-types/commit/33a3af8eff9015f1ce7520dc7aa9e443535d0280))
+
 ## [1.3.3](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.3.2...v1.3.3) (2024-05-27)
 
 
