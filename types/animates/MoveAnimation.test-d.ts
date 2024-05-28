@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-confusing-void-expression */
 /* eslint-disable @typescript-eslint/no-invalid-void-type */
-import { expectAssignable, expectNotAssignable, expectType } from 'tsd';
+import { expectAssignable, expectType } from 'tsd';
 import {
   AnimationCallback,
   EasingCallback,
@@ -22,8 +22,7 @@ expectAssignable<AnimationCallback>((index, data) => {
 expectAssignable<EasingCallback>(() => 1);
 expectAssignable<EasingCallback>((passedTime) => passedTime ?? 100);
 
-expectNotAssignable<MoveToOptions>({});
-expectAssignable<MoveToOptions>({ easing: () => 1 });
+expectAssignable<MoveToOptions>({ });
 
 expectAssignable<MoveToOptions['duration']>(100);
 expectAssignable<MoveToOptions['speed']>(100);
@@ -32,9 +31,7 @@ expectAssignable<MoveToOptions['speed']>(() => 1);
 expectAssignable<MoveToOptions['easing']>(((passedTime) => passedTime ?? 100));
 expectAssignable<MoveToOptions['autoRotation']>(false);
 
-expectNotAssignable<MoveAlongOptions>({});
 expectAssignable<MoveAlongOptions>({
-  easing: () => 1,
   aniInterval: 100,
 });
 
