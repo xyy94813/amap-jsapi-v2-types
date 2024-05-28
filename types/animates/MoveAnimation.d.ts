@@ -30,8 +30,11 @@ export type MoveAlongOptions = {
    * @deprecated 已废弃
    * */
   speed?: number | AnimationCallback;
-  /** easing 时间函数 */
-  easing: EasingCallback;
+  /**
+   * easing 时间函数
+   * TODO: https://github.com/xyy94813/amap-jsapi-v2-types/issues/21#issuecomment-2135147341
+   **/
+  easing?: EasingCallback;
   /** 是否循环 */
   circlable?: boolean;
   /** 延迟动画时长 */
