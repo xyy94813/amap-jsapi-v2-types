@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/no-confusing-void-expression */
 /* eslint-disable @typescript-eslint/no-invalid-void-type */
-import { expectAssignable, expectType } from 'tsd';
+import { expectAssignable, expectError, expectType } from 'tsd';
 import LabelMarker from '../overlays/LabelMarker';
-import { VectorOverlay } from '../overlays/VectorOverlay';
 import { BaseLayer } from './BaseLayer';
 import {
   LabelsLayerOption,
@@ -41,6 +40,23 @@ expectType<void>(layer.remove(labelMarker));
 expectType<void>(layer.remove([]));
 expectType<void>(layer.remove([labelMarker]));
 
-expectType<VectorOverlay[] | undefined>(layer.getAllOverlays());
+expectType<LabelMarker[] | undefined>(layer.getAllOverlays());
 
 expectType<void>(layer.clear());
+
+
+declare class LabelMarker2 extends LabelMarker {
+  a: string
+}
+
+// 验证自定义范型
+const layer2 = new LabelsLayer<LabelMarker2>();
+expectType<void>(layer2.add([]));
+expectType<void>(layer.remove([]));
+
+expectError<void>(layer2.add(labelMarker));
+expectError<void>(layer2.add([labelMarker]));
+expectError<void>(layer2.remove(labelMarker));
+expectError<void>(layer2.remove([labelMarker]));
+
+expectType<LabelMarker2[]>(layer2.getAllOverlays()!);
