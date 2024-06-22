@@ -1,4 +1,3 @@
-import type { VectorOverlay } from '../overlays/VectorOverlay';
 import type { LabelMarker } from '../overlays/LabelMarker';
 
 import type { BaseLayer, CommonLayerOptions } from './BaseLayer';
@@ -16,7 +15,9 @@ export type LabelsLayerOption = CommonLayerOptions & {
  *
  * @example new AMap.LabelsLayer(opts: LabelsLayerOptions)
  */
-export declare class LabelsLayer extends BaseLayer {
+export declare class LabelsLayer<
+  TOverlayType extends LabelMarker = LabelMarker
+> extends BaseLayer {
   constructor(options?: LabelsLayerOption);
 
   /**
@@ -41,18 +42,18 @@ export declare class LabelsLayer extends BaseLayer {
   setAllowCollision(allowCollision: boolean): void;
   /**
    * 将 labelMarker 添加到标注层上
-   * @param {LabelMarker | LabelMarker[]} labelMarkers
+   * @param {TOverlayType | TOverlayType[]} labelMarkers
    */
-  add(labelMarkers: LabelMarker | LabelMarker[]): void;
+  add(labelMarkers: TOverlayType | TOverlayType[]): void;
   /**
    * 将 labelMarker 从标注层上移除
-   * @param {LabelMarker | LabelMarker[]} labelMarkers
+   * @param {TOverlayType | TOverlayType[]} labelMarkers
    */
-  remove(labelMarkers: LabelMarker | LabelMarker[]): void;
+  remove(labelMarkers: TOverlayType | TOverlayType[]): void;
   /**
    * 获取标注层内的所有标注对象
    */
-  getAllOverlays(): VectorOverlay[] | undefined;
+  getAllOverlays(): TOverlayType[] | undefined;
   /**
    * 清空 VectorLayer
    */
