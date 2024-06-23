@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.3.4...v1.4.0) (2024-06-23)
+
+
+### Features
+
+* **labels-layer:** 支持使用范型约束方法的传参和返回值 ([6ff13c1](https://github.com/xyy94813/amap-jsapi-v2-types/commit/6ff13c17b44bf23a8a6a10f23a255fa7d466f6f5))
+
 ## [1.3.4](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.3.3...v1.3.4) (2024-05-28)
 
 
