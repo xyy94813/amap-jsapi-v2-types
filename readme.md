@@ -454,7 +454,7 @@ class IndoorMapLayerOptions {
             
         }
 BaseLayer~LayerEventType~<|--IndoorMap
-class LabelsLayer{
+class LabelsLayer~TOverlayType~{
             
             +getCollision() boolean
 +setCollision() void
@@ -462,10 +462,10 @@ class LabelsLayer{
 +setAllowCollision() void
 +add() void
 +remove() void
-+getAllOverlays() VectorOverlay[]
++getAllOverlays() TOverlayType[]
 +clear() void
         }
-BaseLayer~LayerEventType~<|--LabelsLayer
+BaseLayer~LayerEventType~<|--LabelsLayer~TOverlayType~
 class LayerGroup~Layer~{
             
             +setMap() this

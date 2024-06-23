@@ -1,4 +1,4 @@
-<svg version="1.1" baseProfile="full" width="20562.3" height="2832.0" viewbox="0 0 20562.25 2832" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+<svg version="1.1" baseProfile="full" width="20560.3" height="2832.0" viewbox="0 0 20560.25 2832" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
 <desc >#.interface: fill=lightblue
 #.enumeration: fill=lightgreen
 #.type: fill=lightgray
@@ -68,8 +68,8 @@
 [IndoorMap||+showIndoorMap(): void;+showFloor(): void;+showFloorBar(): void;+hideFloorBar(): void;+showLabels(): void;+hideLabels(): void;+getSelectedBuildingId(): string;+getSelectedBuilding(): string]
 [&lt;type&gt;IndoorMapLayerOptions|+zIndex?: number;+opacity?: number;+cursor?: string;+hideFloorBar?: boolean|]
 [BaseLayer&lt;LayerEventType&gt;]&lt;:-[IndoorMap]
-[LabelsLayer||+getCollision(): boolean;+setCollision(): void;+getAllowCollision(): boolean;+setAllowCollision(): void;+add(): void;+remove(): void;+getAllOverlays(): VectorOverlay\[\];+clear(): void]
-[BaseLayer&lt;LayerEventType&gt;]&lt;:-[LabelsLayer]
+[LabelsLayer&lt;TOverlayType&gt;||+getCollision(): boolean;+setCollision(): void;+getAllowCollision(): boolean;+setAllowCollision(): void;+add(): void;+remove(): void;+getAllOverlays(): TOverlayType\[\];+clear(): void]
+[BaseLayer&lt;LayerEventType&gt;]&lt;:-[LabelsLayer&lt;TOverlayType&gt;]
 [LayerGroup&lt;Layer&gt;||+setMap(): this;+hasLayer(): boolean;+addLayer(): void;+addLayers(): void;+removeLayer(): this;+removeLayers(): void;+getLayers(): Layer\[\];+clearLayers(): void;+eachLayer(): void;+setOptions(): this;+hide(): this;+show(): this;+reload(): this]
 [Event&lt;EventType&gt;]&lt;:-[LayerGroup&lt;Layer&gt;]
 [MapboxVectorTileLayer||+setStyles(): void;+getStyles(): MapboxVTLayerStyle;+filterByRect(): any\[\]]
@@ -249,82 +249,82 @@
 <g stroke-width="1.0" text-align="left" font="12pt Helvetica, Arial, sans-serif" font-size="12pt" font-family="Helvetica" font-weight="normal" font-style="normal">
 <g font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" stroke="#33322E">
 <g stroke="transparent" fill="transparent">
-<rect x="0.0" y="0.0" height="2832.0" width="20562.3" stroke="none"></rect>
+<rect x="0.0" y="0.0" height="2832.0" width="20560.3" stroke="none"></rect>
 </g>
 <g transform="translate(8, 8)" fill="#33322E">
 <g transform="translate(20, 20)" fill="#eee8d5" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal">
-<path d="M14772.8 414.7 L20452.25 833 L20452.25 1053 L20452.25 1053 L20452.25 1273 L20452.25 1273 L11541.5 1794.9665781622095 L11541.5 1795.0 " fill="none"></path>
+<path d="M14772.8 414.7 L20450.25 833 L20450.25 1053 L20450.25 1053 L20450.25 1273 L20450.25 1273 L11541.5 1794.9637234770705 L11541.5 1795.0 " fill="none"></path>
 <path d="M14773.2 409.3 L14772.8 414.7 L14772.4 420.0 L14759.5 413.7 Z"></path>
 <path d="M3183.0 1132.5 L3372 1273 L7650.5 1792.931289040318 L7650.5 1792.9 " fill="none"></path>
 <path d="M2969.0 1075.7 L2040.75 1273 L7650.5 1796.429910616961 L7650.5 1796.4 " fill="none"></path>
 <path d="M1670.8 1110.5 L1709.25 1273 L1709.25 1808 L1709.25 1808 L1709.25 2343 L1709.25 2343 L8310.5 2489.2527415337718 L8310.5 2489.3 " fill="none"></path>
 <path d="M1598.4 1110.5 L1432 1273 L7650.5 1797.5404020496649 L7650.5 1797.5 " fill="none"></path>
-<path d="M14772.8 415.8 L19732.5 833 L19732.5 976.5 L19732.5 976.5 " fill="none"></path>
+<path d="M14772.8 415.8 L19730.5 833 L19730.5 976.5 L19730.5 976.5 " fill="none"></path>
 <path d="M14773.2 410.5 L14772.8 415.8 L14772.3 421.1 L14759.5 414.7 Z"></path>
-<path d="M19822.5 1082.1 L20412.25 1273 L11541.5 1794.9092458691887 L11541.5 1794.9 " fill="none"></path>
-<path d="M20372.3 2534.5 L20372.25 2641 L20372.25 2661 L20372.3 2661.0 " fill="none"></path>
-<path d="M19835.1 1088.3 L20372.25 1273 L20372.25 1713 L20372.3 1713.0 " fill="none"></path>
-<path d="M19836.8 1083.2 L19835.1 1088.3 L19833.4 1093.3 L19822.5 1083.9 Z"></path>
-<path d="M20372.3 1903.0 L20372.25 2343 L20372.25 2449.5 L20372.3 2449.5 " fill="none"></path>
-<path d="M19833.9 1114.0 L20098.5 1273 L20098.5 1765.5 L20098.5 1765.5 " fill="none"></path>
-<path d="M19836.7 1109.4 L19833.9 1114.0 L19831.2 1118.5 L19822.5 1107.1 Z"></path>
-<path d="M19792.0 1140.5 L19882 1273 L19882 1754 L19882.0 1754.0 " fill="none"></path>
-<path d="M19796.4 1137.5 L19792.0 1140.5 L19787.6 1143.5 L19784.5 1129.5 Z"></path>
-<path d="M19684.2 1141.2 L19612 1273 L19612 1773 L19612.0 1773.0 " fill="none"></path>
-<path d="M19688.9 1143.8 L19684.2 1141.2 L19679.5 1138.6 L19690.6 1129.5 Z"></path>
-<path d="M19630.9 1110.2 L19342 1273 L19342 1773 L19342.0 1773.0 " fill="none"></path>
-<path d="M19633.5 1114.9 L19630.9 1110.2 L19628.3 1105.6 L19642.5 1103.7 Z"></path>
-<path d="M14772.6 426.1 L17069.75 833 L17069.75 924 L17069.8 924.0 " fill="none"></path>
-<path d="M14773.6 420.8 L14772.6 426.1 L14771.7 431.3 L14759.5 423.8 Z"></path>
-<path d="M17216.0 1068.7 L19115 1273 L19115 1773 L19115.0 1773.0 " fill="none"></path>
-<path d="M17216.6 1063.4 L17216.0 1068.7 L17215.4 1074.0 L17202.8 1067.3 Z"></path>
-<path d="M17216.0 1071.1 L18849.5 1273 L18849.5 1743 L18849.5 1743.0 " fill="none"></path>
-<path d="M17216.6 1065.8 L17216.0 1071.1 L17215.3 1076.4 L17202.8 1069.4 Z"></path>
-<path d="M17215.9 1080.4 L18242.5 1273 L18242.5 1784.5 L18242.5 1784.5 " fill="none"></path>
-<path d="M17216.8 1075.2 L17215.9 1080.4 L17214.9 1085.7 L17202.8 1077.9 Z"></path>
-<path d="M16779.6 1905.1 L17553.75 2343 L18400 2468.3080745341613 L18400.0 2468.3 " fill="none"></path>
-<path d="M16782.2 1900.4 L16779.6 1905.1 L16777.0 1909.7 L16768.0 1898.5 Z"></path>
-<path d="M18733.3 2507.9 L20185.25 2641 L20185.25 2695 L20185.3 2695.0 " fill="none"></path>
-<path d="M18733.8 2502.6 L18733.3 2507.9 L18732.8 2513.2 L18720.0 2506.7 Z"></path>
-<path d="M18733.0 2529.7 L19244 2641 L19244 2695 L19244.0 2695.0 " fill="none"></path>
-<path d="M18734.2 2524.5 L18733.0 2529.7 L18731.9 2534.9 L18720.0 2526.9 Z"></path>
-<path d="M18498.2 2602.6 L18476.75 2641 L18476.75 2695 L18476.8 2695.0 " fill="none"></path>
-<path d="M18502.8 2605.2 L18498.2 2602.6 L18493.5 2600.0 L18504.7 2591.0 Z"></path>
-<path d="M17215.8 1085.1 L18070 1273 L18070 1784.5 L18070.0 1784.5 " fill="none"></path>
-<path d="M17216.9 1079.9 L17215.8 1085.1 L17214.6 1090.3 L17202.8 1082.3 Z"></path>
+<path d="M19820.5 1082.1 L20410.25 1273 L11541.5 1794.9063660112745 L11541.5 1794.9 " fill="none"></path>
+<path d="M20370.3 2534.5 L20370.25 2641 L20370.25 2661 L20370.3 2661.0 " fill="none"></path>
+<path d="M19833.1 1088.3 L20370.25 1273 L20370.25 1713 L20370.3 1713.0 " fill="none"></path>
+<path d="M19834.8 1083.2 L19833.1 1088.3 L19831.4 1093.3 L19820.5 1083.9 Z"></path>
+<path d="M20370.3 1903.0 L20370.25 2343 L20370.25 2449.5 L20370.3 2449.5 " fill="none"></path>
+<path d="M19831.9 1114.0 L20096.5 1273 L20096.5 1765.5 L20096.5 1765.5 " fill="none"></path>
+<path d="M19834.7 1109.4 L19831.9 1114.0 L19829.2 1118.5 L19820.5 1107.1 Z"></path>
+<path d="M19790.0 1140.5 L19880 1273 L19880 1754 L19880.0 1754.0 " fill="none"></path>
+<path d="M19794.4 1137.5 L19790.0 1140.5 L19785.6 1143.5 L19782.5 1129.5 Z"></path>
+<path d="M19682.2 1141.2 L19610 1273 L19610 1773 L19610.0 1773.0 " fill="none"></path>
+<path d="M19686.9 1143.8 L19682.2 1141.2 L19677.5 1138.6 L19688.6 1129.5 Z"></path>
+<path d="M19628.9 1110.2 L19340 1273 L19340 1773 L19340.0 1773.0 " fill="none"></path>
+<path d="M19631.5 1114.9 L19628.9 1110.2 L19626.3 1105.6 L19640.5 1103.7 Z"></path>
+<path d="M14772.6 426.1 L17068.75 833 L17068.75 924 L17068.8 924.0 " fill="none"></path>
+<path d="M14773.6 420.9 L14772.6 426.1 L14771.7 431.4 L14759.5 423.8 Z"></path>
+<path d="M17215.0 1068.7 L19113 1273 L19113 1773 L19113.0 1773.0 " fill="none"></path>
+<path d="M17215.6 1063.4 L17215.0 1068.7 L17214.4 1074.0 L17201.8 1067.3 Z"></path>
+<path d="M17215.0 1071.1 L18847.5 1273 L18847.5 1743 L18847.5 1743.0 " fill="none"></path>
+<path d="M17215.6 1065.8 L17215.0 1071.1 L17214.3 1076.4 L17201.8 1069.4 Z"></path>
+<path d="M17214.9 1080.4 L18240.5 1273 L18240.5 1784.5 L18240.5 1784.5 " fill="none"></path>
+<path d="M17215.8 1075.2 L17214.9 1080.4 L17213.9 1085.7 L17201.8 1078.0 Z"></path>
+<path d="M16779.6 1905.2 L17552.75 2343 L18398 2468.284506341706 L18398.0 2468.3 " fill="none"></path>
+<path d="M16782.2 1900.5 L16779.6 1905.2 L16777.0 1909.8 L16768.0 1898.6 Z"></path>
+<path d="M18731.3 2507.9 L20183.25 2641 L20183.25 2695 L20183.3 2695.0 " fill="none"></path>
+<path d="M18731.8 2502.6 L18731.3 2507.9 L18730.8 2513.2 L18718.0 2506.7 Z"></path>
+<path d="M18731.0 2529.7 L19242 2641 L19242 2695 L19242.0 2695.0 " fill="none"></path>
+<path d="M18732.2 2524.5 L18731.0 2529.7 L18729.9 2534.9 L18718.0 2526.9 Z"></path>
+<path d="M18496.2 2602.6 L18474.75 2641 L18474.75 2695 L18474.8 2695.0 " fill="none"></path>
+<path d="M18500.8 2605.2 L18496.2 2602.6 L18491.5 2600.0 L18502.7 2591.0 Z"></path>
+<path d="M17214.8 1085.1 L18068 1273 L18068 1784.5 L18068.0 1784.5 " fill="none"></path>
+<path d="M17215.9 1079.9 L17214.8 1085.1 L17213.6 1090.4 L17201.8 1082.3 Z"></path>
 <path d="M14772.4 435.3 L16298.25 833 L16298.25 931.5 L16298.3 931.5 " fill="none"></path>
 <path d="M14773.7 430.1 L14772.4 435.3 L14771.1 440.4 L14759.5 431.9 Z"></path>
 <path d="M330.5 509.0 L330.5 833 L330.5 1003 L330.5 1003.0 " fill="none"></path>
-<path d="M17215.6 1093.5 L17861.5 1273 L17861.5 1750.5 L17861.5 1750.5 " fill="none"></path>
-<path d="M17217.0 1088.4 L17215.6 1093.5 L17214.2 1098.7 L17202.8 1090.0 Z"></path>
-<path d="M17215.0 1114.1 L17593 1273 L17593 1720.5 L17593.0 1720.5 " fill="none"></path>
-<path d="M17217.1 1109.2 L17215.0 1114.1 L17213.0 1119.0 L17202.8 1108.9 Z"></path>
-<path d="M17201.6 1191.7 L17279 1273 L17279 1720.5 L17279.0 1720.5 " fill="none"></path>
-<path d="M17205.5 1188.0 L17201.6 1191.7 L17197.8 1195.3 L17192.4 1182.0 Z"></path>
+<path d="M17214.6 1093.6 L17859.5 1273 L17859.5 1750.5 L17859.5 1750.5 " fill="none"></path>
+<path d="M17216.0 1088.4 L17214.6 1093.6 L17213.2 1098.7 L17201.8 1090.0 Z"></path>
+<path d="M17214.0 1114.2 L17591 1273 L17591 1720.5 L17591.0 1720.5 " fill="none"></path>
+<path d="M17216.1 1109.3 L17214.0 1114.2 L17212.0 1119.1 L17201.8 1109.0 Z"></path>
+<path d="M17200.6 1191.7 L17278 1273 L17278 1720.5 L17278.0 1720.5 " fill="none"></path>
+<path d="M17204.5 1188.0 L17200.6 1191.7 L17196.8 1195.3 L17191.4 1182.0 Z"></path>
 <path d="M14772.2 440.8 L16032.75 833 L16032.75 928 L16032.8 928.0 " fill="none"></path>
 <path d="M14773.8 435.7 L14772.2 440.8 L14770.6 445.9 L14759.5 436.8 Z"></path>
-<path d="M16994.7 1193.8 L16952.5 1273 L16952.5 1758 L16952.5 1758.0 " fill="none"></path>
-<path d="M16999.4 1196.3 L16994.7 1193.8 L16990.0 1191.3 L17001.0 1182.0 Z"></path>
+<path d="M16994.4 1193.8 L16952.5 1273 L16952.5 1758 L16952.5 1758.0 " fill="none"></path>
+<path d="M16999.1 1196.3 L16994.4 1193.8 L16989.6 1191.3 L17000.6 1182.0 Z"></path>
 <path d="M3608.5 464.0 L3765.75 833 L3640.7613636363635 1003 L3640.8 1003.0 " fill="none"></path>
 <path d="M3603.1 464.0 L3725.75 833 L3631.6704545454545 1003 L3631.7 1003.0 " fill="none"></path>
 <path d="M3541.7 464.0 L3270.25 833 L3528.1477272727275 1003 L3528.1 1003.0 " fill="none"></path>
 <path d="M3536.3 464.0 L3230.25 833 L3519.056818181818 1003 L3519.1 1003.0 " fill="none"></path>
-<path d="M16924.7 1122.1 L16608 1273 L16608 1716.5 L16608.0 1716.5 " fill="none"></path>
-<path d="M16927.0 1126.9 L16924.7 1122.1 L16922.4 1117.3 L16936.8 1116.4 Z"></path>
-<path d="M16753.4 1907.0 L17393.75 2343 L18200 2478.550070521862 L18200.0 2478.6 " fill="none"></path>
-<path d="M16756.4 1902.6 L16753.4 1907.0 L16750.4 1911.4 L16742.4 1899.5 Z"></path>
-<path d="M16733.8 1907.8 L17282.75 2343 L18036 2480.6685065930697 L18036.0 2480.7 " fill="none"></path>
-<path d="M16737.2 1903.6 L16733.8 1907.8 L16730.5 1912.0 L16723.4 1899.5 Z"></path>
-<path d="M16538.5 1910.5 L16245.5 2343 L17274.75 2483.1491889421977 L17274.8 2483.1 " fill="none"></path>
+<path d="M16923.7 1122.3 L16608 1273 L16608 1716.5 L16608.0 1716.5 " fill="none"></path>
+<path d="M16926.0 1127.1 L16923.7 1122.3 L16921.4 1117.4 L16935.8 1116.5 Z"></path>
+<path d="M16753.2 1907.0 L17392.75 2343 L18198 2478.5348771533463 L18198.0 2478.5 " fill="none"></path>
+<path d="M16756.2 1902.6 L16753.2 1907.0 L16750.2 1911.4 L16742.2 1899.5 Z"></path>
+<path d="M16733.7 1907.8 L17281.75 2343 L18034 2480.6545901136014 L18034.0 2480.7 " fill="none"></path>
+<path d="M16737.0 1903.6 L16733.7 1907.8 L16730.4 1912.0 L16723.2 1899.5 Z"></path>
+<path d="M16538.5 1910.5 L16245.5 2343 L17273.75 2483.141093071118 L17273.8 2483.1 " fill="none"></path>
 <path d="M16542.9 1913.5 L16538.5 1910.5 L16534.1 1907.5 L16546.0 1899.5 Z"></path>
-<path d="M16516.8 1909.4 L16127 2343 L17050.75 2478.5045532857494 L17050.8 2478.5 " fill="none"></path>
+<path d="M16516.8 1909.4 L16127 2343 L17049.75 2478.4912540034493 L17049.8 2478.5 " fill="none"></path>
 <path d="M16520.8 1913.0 L16516.8 1909.4 L16512.9 1905.8 L16525.7 1899.5 Z"></path>
-<path d="M17142.8 2562.8 L17142.75 2641 L17142.75 2695 L17142.8 2695.0 " fill="none"></path>
-<path d="M17148.1 2562.8 L17142.8 2562.8 L17137.4 2562.8 L17142.8 2549.5 Z"></path>
+<path d="M17141.8 2562.8 L17141.75 2641 L17141.75 2695 L17141.8 2695.0 " fill="none"></path>
+<path d="M17147.1 2562.8 L17141.8 2562.8 L17136.4 2562.8 L17141.8 2549.5 Z"></path>
 <path d="M16495.9 1908.4 L16010.5 2343 L16472.5 2474.621414913958 L16472.5 2474.6 " fill="none"></path>
 <path d="M16499.4 1912.4 L16495.9 1908.4 L16492.3 1904.4 L16505.8 1899.5 Z"></path>
-<path d="M16923.9 1095.0 L16305.5 1273 L16305.5 1728 L16305.5 1728.0 " fill="none"></path>
-<path d="M16925.4 1100.1 L16923.9 1095.0 L16922.5 1089.8 L16936.8 1091.3 Z"></path>
+<path d="M16922.9 1095.0 L16305.5 1273 L16305.5 1728 L16305.5 1728.0 " fill="none"></path>
+<path d="M16924.4 1100.2 L16922.9 1095.0 L16921.5 1089.9 L16935.8 1091.3 Z"></path>
 <path d="M14461.0 1071.8 L16016 1273 L16016 1713 L16016.0 1713.0 " fill="none"></path>
 <path d="M14461.7 1066.5 L14461.0 1071.8 L14460.3 1077.1 L14447.8 1070.1 Z"></path>
 <path d="M14460.8 1081.0 L15455 1273 L15455 1713 L15455.0 1713.0 " fill="none"></path>
@@ -443,9 +443,9 @@
 <path d="M14551.5 417.6 L14551.2 412.2 L14550.9 406.9 L14564.5 411.5 Z"></path>
 <path d="M14551.2 411.9 L5884 833 L5884 1010.5 L5884.0 1010.5 " fill="none"></path>
 <path d="M14551.4 417.2 L14551.2 411.9 L14550.9 406.6 L14564.5 411.2 Z"></path>
-<path d="M18656.0 1899.3 L19416.75 2343 L8558.5 2490.3176489335065 L8558.5 2490.3 " fill="none"></path>
-<path d="M18499.5 1918.0 L18499.5 2343 L8558.5 2490.1643318430206 L8558.5 2490.2 " fill="none"></path>
-<path d="M18343.0 1900.4 L17593.75 2343 L8558.5 2489.9828042689087 L8558.5 2490.0 " fill="none"></path>
+<path d="M18654.0 1899.3 L19414.75 2343 L8558.5 2490.317342501309 L8558.5 2490.3 " fill="none"></path>
+<path d="M18497.5 1918.0 L18497.5 2343 L8558.5 2490.1639670078507 L8558.5 2490.2 " fill="none"></path>
+<path d="M18341.0 1900.5 L17592.75 2343 L8558.5 2489.982584008954 L8558.5 2490.0 " fill="none"></path>
 <path d="M14551.2 411.6 L5336 833 L5336 995.5 L5336.0 995.5 " fill="none"></path>
 <path d="M14551.4 416.9 L14551.2 411.6 L14550.9 406.2 L14564.5 411.0 Z"></path>
 <g data-name="Map">
@@ -825,23 +825,23 @@
 </g>
 <g data-name="Control">
 <g fill="#eee8d5" stroke="#33322E" data-name="Control">
-<rect x="19642.5" y="976.5" height="153.0" width="180.0" data-name="Control"></rect>
-<path d="M19642.5 1007.5 L19822.5 1007.5" fill="none" data-name="Control"></path>
-<path d="M19642.5 1038.5 L19822.5 1038.5" fill="none" data-name="Control"></path>
+<rect x="19640.5" y="976.5" height="153.0" width="180.0" data-name="Control"></rect>
+<path d="M19640.5 1007.5 L19820.5 1007.5" fill="none" data-name="Control"></path>
+<path d="M19640.5 1038.5 L19820.5 1038.5" fill="none" data-name="Control"></path>
 </g>
-<g transform="translate(19642.5, 976.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Control">
+<g transform="translate(19640.5, 976.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Control">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Control">
 <a id="types/controls/Control.ts.Control" xlink:href="types/controls/Control.ts"><text x="82.0" y="13.5" stroke="none" text-anchor="middle" data-name="Control">Control</text></a>
 
 </g>
 </g>
-<g transform="translate(19642.5, 1007.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Control">
+<g transform="translate(19640.5, 1007.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Control">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Control">
 <text x="0.0" y="13.5" stroke="none" data-name="Control">+map: Map</text>
 
 </g>
 </g>
-<g transform="translate(19642.5, 1038.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Control">
+<g transform="translate(19640.5, 1038.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Control">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Control">
 <text x="0.0" y="13.5" stroke="none" data-name="Control">+addTo(): void</text>
 <text x="0.0" y="28.5" stroke="none" data-name="Control">+remove(): void</text>
@@ -854,17 +854,17 @@
 </g>
 <g data-name="ControlPositionObject">
 <g fill="lightgray" stroke="#33322E" data-name="ControlPositionObject">
-<rect x="20278.8" y="2661.0" height="115.0" width="187.0" data-name="ControlPositionObject"></rect>
-<path d="M20278.8 2692.0 L20465.8 2692.0" fill="none" data-name="ControlPositionObject"></path>
-<path d="M20278.8 2768.0 L20465.8 2768.0" fill="none" data-name="ControlPositionObject"></path>
+<rect x="20276.8" y="2661.0" height="115.0" width="187.0" data-name="ControlPositionObject"></rect>
+<path d="M20276.8 2692.0 L20463.8 2692.0" fill="none" data-name="ControlPositionObject"></path>
+<path d="M20276.8 2768.0 L20463.8 2768.0" fill="none" data-name="ControlPositionObject"></path>
 </g>
-<g transform="translate(20278.75, 2661)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ControlPositionObject">
+<g transform="translate(20276.75, 2661)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ControlPositionObject">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="ControlPositionObject">
 <a id="types/controls/Control.ts.ControlPositionObject" xlink:href="types/controls/Control.ts"><text x="85.5" y="13.5" stroke="none" text-anchor="middle" data-name="ControlPositionObject">ControlPositionObject</text></a>
 
 </g>
 </g>
-<g transform="translate(20278.75, 2692)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ControlPositionObject">
+<g transform="translate(20276.75, 2692)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ControlPositionObject">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="ControlPositionObject">
 <text x="0.0" y="13.5" stroke="none" data-name="ControlPositionObject">+top?: string</text>
 <text x="0.0" y="28.5" stroke="none" data-name="ControlPositionObject">+left?: string</text>
@@ -873,7 +873,7 @@
 
 </g>
 </g>
-<g transform="translate(20278.75, 2768)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ControlPositionObject">
+<g transform="translate(20276.75, 2768)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ControlPositionObject">
 <g transform="translate(8, 8)" fill="#33322E" data-name="ControlPositionObject">
 
 </g>
@@ -881,24 +881,24 @@
 </g>
 <g data-name="CommonControlConfig">
 <g fill="lightgray" stroke="#33322E" data-name="CommonControlConfig">
-<rect x="20257.3" y="2449.5" height="85.0" width="230.0" data-name="CommonControlConfig"></rect>
-<path d="M20257.3 2480.5 L20487.3 2480.5" fill="none" data-name="CommonControlConfig"></path>
-<path d="M20257.3 2526.5 L20487.3 2526.5" fill="none" data-name="CommonControlConfig"></path>
+<rect x="20255.3" y="2449.5" height="85.0" width="230.0" data-name="CommonControlConfig"></rect>
+<path d="M20255.3 2480.5 L20485.3 2480.5" fill="none" data-name="CommonControlConfig"></path>
+<path d="M20255.3 2526.5 L20485.3 2526.5" fill="none" data-name="CommonControlConfig"></path>
 </g>
-<g transform="translate(20257.25, 2449.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CommonControlConfig">
+<g transform="translate(20255.25, 2449.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CommonControlConfig">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="CommonControlConfig">
 <a id="types/controls/Control.ts.CommonControlConfig" xlink:href="types/controls/Control.ts"><text x="107.0" y="13.5" stroke="none" text-anchor="middle" data-name="CommonControlConfig">CommonControlConfig</text></a>
 
 </g>
 </g>
-<g transform="translate(20257.25, 2480.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CommonControlConfig">
+<g transform="translate(20255.25, 2480.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CommonControlConfig">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="CommonControlConfig">
 <text x="0.0" y="13.5" stroke="none" data-name="CommonControlConfig">+position?: ControlPosition</text>
 <text x="0.0" y="28.5" stroke="none" data-name="CommonControlConfig">+offset?: [number, number]</text>
 
 </g>
 </g>
-<g transform="translate(20257.25, 2526.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CommonControlConfig">
+<g transform="translate(20255.25, 2526.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CommonControlConfig">
 <g transform="translate(8, 8)" fill="#33322E" data-name="CommonControlConfig">
 
 </g>
@@ -906,17 +906,17 @@
 </g>
 <g data-name="ControlBar">
 <g fill="#eee8d5" stroke="#33322E" data-name="ControlBar">
-<rect x="20238.3" y="1713.0" height="190.0" width="268.0" data-name="ControlBar"></rect>
-<path d="M20238.3 1744.0 L20506.3 1744.0" fill="none" data-name="ControlBar"></path>
-<path d="M20238.3 1895.0 L20506.3 1895.0" fill="none" data-name="ControlBar"></path>
+<rect x="20236.3" y="1713.0" height="190.0" width="268.0" data-name="ControlBar"></rect>
+<path d="M20236.3 1744.0 L20504.3 1744.0" fill="none" data-name="ControlBar"></path>
+<path d="M20236.3 1895.0 L20504.3 1895.0" fill="none" data-name="ControlBar"></path>
 </g>
-<g transform="translate(20238.25, 1713)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="ControlBar">
+<g transform="translate(20236.25, 1713)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="ControlBar">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="ControlBar">
 <a id="types/controls/ControlBar.ts.ControlBar" xlink:href="types/controls/ControlBar.ts"><text x="126.0" y="13.5" stroke="none" text-anchor="middle" data-name="ControlBar">ControlBar</text></a>
 
 </g>
 </g>
-<g transform="translate(20238.25, 1744)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ControlBar">
+<g transform="translate(20236.25, 1744)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ControlBar">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="ControlBar">
 <text x="0.0" y="13.5" stroke="none" data-name="ControlBar">+_config: ControlBarConfig</text>
 <text x="0.0" y="28.5" stroke="none" data-name="ControlBar">+_container: HTMLDivElement</text>
@@ -930,7 +930,7 @@
 
 </g>
 </g>
-<g transform="translate(20238.25, 1895)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ControlBar">
+<g transform="translate(20236.25, 1895)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ControlBar">
 <g transform="translate(8, 8)" fill="#33322E" data-name="ControlBar">
 
 </g>
@@ -938,22 +938,22 @@
 </g>
 <g data-name="HawkEye">
 <g fill="#eee8d5" stroke="#33322E" data-name="HawkEye">
-<rect x="20037.0" y="1765.5" height="85.0" width="123.0" data-name="HawkEye"></rect>
-<path d="M20037.0 1796.5 L20160.0 1796.5" fill="none" data-name="HawkEye"></path>
-<path d="M20037.0 1804.5 L20160.0 1804.5" fill="none" data-name="HawkEye"></path>
+<rect x="20035.0" y="1765.5" height="85.0" width="123.0" data-name="HawkEye"></rect>
+<path d="M20035.0 1796.5 L20158.0 1796.5" fill="none" data-name="HawkEye"></path>
+<path d="M20035.0 1804.5 L20158.0 1804.5" fill="none" data-name="HawkEye"></path>
 </g>
-<g transform="translate(20037, 1765.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="HawkEye">
+<g transform="translate(20035, 1765.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="HawkEye">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="HawkEye">
 <a id="types/controls/HawkEye.ts.HawkEye" xlink:href="types/controls/HawkEye.ts"><text x="53.5" y="13.5" stroke="none" text-anchor="middle" data-name="HawkEye">HawkEye</text></a>
 
 </g>
 </g>
-<g transform="translate(20037, 1796.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="HawkEye">
+<g transform="translate(20035, 1796.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="HawkEye">
 <g transform="translate(8, 8)" fill="#33322E" data-name="HawkEye">
 
 </g>
 </g>
-<g transform="translate(20037, 1804.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="HawkEye">
+<g transform="translate(20035, 1804.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="HawkEye">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="HawkEye">
 <text x="0.0" y="13.5" stroke="none" data-name="HawkEye">+open(): void</text>
 <text x="0.0" y="28.5" stroke="none" data-name="HawkEye">+close(): void</text>
@@ -1000,23 +1000,23 @@
 </g>
 <g data-name="MapType">
 <g fill="#eee8d5" stroke="#33322E" data-name="MapType">
-<rect x="19767.0" y="1754.0" height="108.0" width="230.0" data-name="MapType"></rect>
-<path d="M19767.0 1785.0 L19997.0 1785.0" fill="none" data-name="MapType"></path>
-<path d="M19767.0 1816.0 L19997.0 1816.0" fill="none" data-name="MapType"></path>
+<rect x="19765.0" y="1754.0" height="108.0" width="230.0" data-name="MapType"></rect>
+<path d="M19765.0 1785.0 L19995.0 1785.0" fill="none" data-name="MapType"></path>
+<path d="M19765.0 1816.0 L19995.0 1816.0" fill="none" data-name="MapType"></path>
 </g>
-<g transform="translate(19767, 1754)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="MapType">
+<g transform="translate(19765, 1754)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="MapType">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="MapType">
 <a id="types/controls/MapType.ts.MapType" xlink:href="types/controls/MapType.ts"><text x="107.0" y="13.5" stroke="none" text-anchor="middle" data-name="MapType">MapType</text></a>
 
 </g>
 </g>
-<g transform="translate(19767, 1785)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="MapType">
+<g transform="translate(19765, 1785)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="MapType">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="MapType">
 <text x="0.0" y="13.5" stroke="none" data-name="MapType">+_container: HTMLElement</text>
 
 </g>
 </g>
-<g transform="translate(19767, 1816)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="MapType">
+<g transform="translate(19765, 1816)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="MapType">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="MapType">
 <text x="0.0" y="13.5" stroke="none" data-name="MapType">+addLayer(): void</text>
 <text x="0.0" y="28.5" stroke="none" data-name="MapType">+removeLayer(): void</text>
@@ -1081,23 +1081,23 @@
 </g>
 <g data-name="Scale">
 <g fill="#eee8d5" stroke="#33322E" data-name="Scale">
-<rect x="19497.0" y="1773.0" height="70.0" width="230.0" data-name="Scale"></rect>
-<path d="M19497.0 1804.0 L19727.0 1804.0" fill="none" data-name="Scale"></path>
-<path d="M19497.0 1835.0 L19727.0 1835.0" fill="none" data-name="Scale"></path>
+<rect x="19495.0" y="1773.0" height="70.0" width="230.0" data-name="Scale"></rect>
+<path d="M19495.0 1804.0 L19725.0 1804.0" fill="none" data-name="Scale"></path>
+<path d="M19495.0 1835.0 L19725.0 1835.0" fill="none" data-name="Scale"></path>
 </g>
-<g transform="translate(19497, 1773)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Scale">
+<g transform="translate(19495, 1773)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Scale">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Scale">
 <a id="types/controls/Scale.ts.Scale" xlink:href="types/controls/Scale.ts"><text x="107.0" y="13.5" stroke="none" text-anchor="middle" data-name="Scale">Scale</text></a>
 
 </g>
 </g>
-<g transform="translate(19497, 1804)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Scale">
+<g transform="translate(19495, 1804)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Scale">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Scale">
 <text x="0.0" y="13.5" stroke="none" data-name="Scale">+_container: HTMLElement</text>
 
 </g>
 </g>
-<g transform="translate(19497, 1835)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Scale">
+<g transform="translate(19495, 1835)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Scale">
 <g transform="translate(8, 8)" fill="#33322E" data-name="Scale">
 
 </g>
@@ -1105,23 +1105,23 @@
 </g>
 <g data-name="ToolBar">
 <g fill="#eee8d5" stroke="#33322E" data-name="ToolBar">
-<rect x="19227.0" y="1773.0" height="70.0" width="230.0" data-name="ToolBar"></rect>
-<path d="M19227.0 1804.0 L19457.0 1804.0" fill="none" data-name="ToolBar"></path>
-<path d="M19227.0 1835.0 L19457.0 1835.0" fill="none" data-name="ToolBar"></path>
+<rect x="19225.0" y="1773.0" height="70.0" width="230.0" data-name="ToolBar"></rect>
+<path d="M19225.0 1804.0 L19455.0 1804.0" fill="none" data-name="ToolBar"></path>
+<path d="M19225.0 1835.0 L19455.0 1835.0" fill="none" data-name="ToolBar"></path>
 </g>
-<g transform="translate(19227, 1773)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="ToolBar">
+<g transform="translate(19225, 1773)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="ToolBar">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="ToolBar">
 <a id="types/controls/ToolBar.ts.ToolBar" xlink:href="types/controls/ToolBar.ts"><text x="107.0" y="13.5" stroke="none" text-anchor="middle" data-name="ToolBar">ToolBar</text></a>
 
 </g>
 </g>
-<g transform="translate(19227, 1804)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ToolBar">
+<g transform="translate(19225, 1804)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ToolBar">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="ToolBar">
 <text x="0.0" y="13.5" stroke="none" data-name="ToolBar">+_container: HTMLElement</text>
 
 </g>
 </g>
-<g transform="translate(19227, 1835)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ToolBar">
+<g transform="translate(19225, 1835)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ToolBar">
 <g transform="translate(8, 8)" fill="#33322E" data-name="ToolBar">
 
 </g>
@@ -1129,23 +1129,23 @@
 </g>
 <g data-name="BaseLayer&lt;LayerEventType&gt;">
 <g fill="#eee8d5" stroke="#33322E" data-name="BaseLayer&lt;LayerEventType&gt;">
-<rect x="16936.8" y="924.0" height="258.0" width="266.0" data-name="BaseLayer&lt;LayerEventType&gt;"></rect>
-<path d="M16936.8 955.0 L17202.8 955.0" fill="none" data-name="BaseLayer&lt;LayerEventType&gt;"></path>
-<path d="M16936.8 986.0 L17202.8 986.0" fill="none" data-name="BaseLayer&lt;LayerEventType&gt;"></path>
+<rect x="16935.8" y="924.0" height="258.0" width="266.0" data-name="BaseLayer&lt;LayerEventType&gt;"></rect>
+<path d="M16935.8 955.0 L17201.8 955.0" fill="none" data-name="BaseLayer&lt;LayerEventType&gt;"></path>
+<path d="M16935.8 986.0 L17201.8 986.0" fill="none" data-name="BaseLayer&lt;LayerEventType&gt;"></path>
 </g>
-<g transform="translate(16936.75, 924)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="BaseLayer&lt;LayerEventType&gt;">
+<g transform="translate(16935.75, 924)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="BaseLayer&lt;LayerEventType&gt;">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="BaseLayer&lt;LayerEventType&gt;">
 <a id="types/layers/BaseLayer.ts.BaseLayer&lt;LayerEventType&gt;" xlink:href="types/layers/BaseLayer.ts"><text x="125.0" y="13.5" stroke="none" text-anchor="middle" data-name="BaseLayer&lt;LayerEventType&gt;">BaseLayer&lt;LayerEventType&gt;</text></a>
 
 </g>
 </g>
-<g transform="translate(16936.75, 955)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="BaseLayer&lt;LayerEventType&gt;">
+<g transform="translate(16935.75, 955)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="BaseLayer&lt;LayerEventType&gt;">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="BaseLayer&lt;LayerEventType&gt;">
 <text x="0.0" y="13.5" stroke="none" data-name="BaseLayer&lt;LayerEventType&gt;">+CLASS_NAME: string</text>
 
 </g>
 </g>
-<g transform="translate(16936.75, 986)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="BaseLayer&lt;LayerEventType&gt;">
+<g transform="translate(16935.75, 986)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="BaseLayer&lt;LayerEventType&gt;">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="BaseLayer&lt;LayerEventType&gt;">
 <text x="0.0" y="13.5" stroke="none" data-name="BaseLayer&lt;LayerEventType&gt;">+show(): void</text>
 <text x="0.0" y="28.5" stroke="none" data-name="BaseLayer&lt;LayerEventType&gt;">+hide(): void</text>
@@ -1192,22 +1192,22 @@
 </g>
 <g data-name="Buildings">
 <g fill="#eee8d5" stroke="#33322E" data-name="Buildings">
-<rect x="19043.0" y="1773.0" height="70.0" width="144.0" data-name="Buildings"></rect>
-<path d="M19043.0 1804.0 L19187.0 1804.0" fill="none" data-name="Buildings"></path>
-<path d="M19043.0 1812.0 L19187.0 1812.0" fill="none" data-name="Buildings"></path>
+<rect x="19041.0" y="1773.0" height="70.0" width="144.0" data-name="Buildings"></rect>
+<path d="M19041.0 1804.0 L19185.0 1804.0" fill="none" data-name="Buildings"></path>
+<path d="M19041.0 1812.0 L19185.0 1812.0" fill="none" data-name="Buildings"></path>
 </g>
-<g transform="translate(19043, 1773)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Buildings">
+<g transform="translate(19041, 1773)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Buildings">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Buildings">
 <a id="types/layers/BuildingsLayer.ts.Buildings" xlink:href="types/layers/BuildingsLayer.ts"><text x="64.0" y="13.5" stroke="none" text-anchor="middle" data-name="Buildings">Buildings</text></a>
 
 </g>
 </g>
-<g transform="translate(19043, 1804)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Buildings">
+<g transform="translate(19041, 1804)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Buildings">
 <g transform="translate(8, 8)" fill="#33322E" data-name="Buildings">
 
 </g>
 </g>
-<g transform="translate(19043, 1812)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Buildings">
+<g transform="translate(19041, 1812)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Buildings">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Buildings">
 <text x="0.0" y="13.5" stroke="none" data-name="Buildings">+setStyle(): void</text>
 
@@ -1216,22 +1216,22 @@
 </g>
 <g data-name="CanvasLayer">
 <g fill="#eee8d5" stroke="#33322E" data-name="CanvasLayer">
-<rect x="18696.0" y="1743.0" height="130.0" width="307.0" data-name="CanvasLayer"></rect>
-<path d="M18696.0 1774.0 L19003.0 1774.0" fill="none" data-name="CanvasLayer"></path>
-<path d="M18696.0 1782.0 L19003.0 1782.0" fill="none" data-name="CanvasLayer"></path>
+<rect x="18694.0" y="1743.0" height="130.0" width="307.0" data-name="CanvasLayer"></rect>
+<path d="M18694.0 1774.0 L19001.0 1774.0" fill="none" data-name="CanvasLayer"></path>
+<path d="M18694.0 1782.0 L19001.0 1782.0" fill="none" data-name="CanvasLayer"></path>
 </g>
-<g transform="translate(18696, 1743)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="CanvasLayer">
+<g transform="translate(18694, 1743)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="CanvasLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="CanvasLayer">
 <a id="types/layers/CanvasLayer.ts.CanvasLayer" xlink:href="types/layers/CanvasLayer.ts"><text x="145.5" y="13.5" stroke="none" text-anchor="middle" data-name="CanvasLayer">CanvasLayer</text></a>
 
 </g>
 </g>
-<g transform="translate(18696, 1774)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CanvasLayer">
+<g transform="translate(18694, 1774)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CanvasLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="CanvasLayer">
 
 </g>
 </g>
-<g transform="translate(18696, 1782)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CanvasLayer">
+<g transform="translate(18694, 1782)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CanvasLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="CanvasLayer">
 <text x="0.0" y="13.5" stroke="none" data-name="CanvasLayer">+setCanvas(): void</text>
 <text x="0.0" y="28.5" stroke="none" data-name="CanvasLayer">+getElement(): HTMLCanvasElement</text>
@@ -1244,22 +1244,22 @@
 </g>
 <g data-name="CustomLayer">
 <g fill="#eee8d5" stroke="#33322E" data-name="CustomLayer">
-<rect x="18182.0" y="1784.5" height="47.0" width="121.0" data-name="CustomLayer"></rect>
-<path d="M18182.0 1815.5 L18303.0 1815.5" fill="none" data-name="CustomLayer"></path>
-<path d="M18182.0 1823.5 L18303.0 1823.5" fill="none" data-name="CustomLayer"></path>
+<rect x="18180.0" y="1784.5" height="47.0" width="121.0" data-name="CustomLayer"></rect>
+<path d="M18180.0 1815.5 L18301.0 1815.5" fill="none" data-name="CustomLayer"></path>
+<path d="M18180.0 1823.5 L18301.0 1823.5" fill="none" data-name="CustomLayer"></path>
 </g>
-<g transform="translate(18182, 1784.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="CustomLayer">
+<g transform="translate(18180, 1784.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="CustomLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="CustomLayer">
 <a id="types/layers/CustomLayer.ts.CustomLayer" xlink:href="types/layers/CustomLayer.ts"><text x="52.5" y="13.5" stroke="none" text-anchor="middle" data-name="CustomLayer">CustomLayer</text></a>
 
 </g>
 </g>
-<g transform="translate(18182, 1815.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CustomLayer">
+<g transform="translate(18180, 1815.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CustomLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="CustomLayer">
 
 </g>
 </g>
-<g transform="translate(18182, 1823.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CustomLayer">
+<g transform="translate(18180, 1823.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CustomLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="CustomLayer">
 
 </g>
@@ -1267,17 +1267,17 @@
 </g>
 <g data-name="DistrictLayer">
 <g fill="#eee8d5" stroke="#33322E" data-name="DistrictLayer">
-<rect x="18400.0" y="2393.0" height="198.0" width="320.0" data-name="DistrictLayer"></rect>
-<path d="M18400.0 2424.0 L18720.0 2424.0" fill="none" data-name="DistrictLayer"></path>
-<path d="M18400.0 2485.0 L18720.0 2485.0" fill="none" data-name="DistrictLayer"></path>
+<rect x="18398.0" y="2393.0" height="198.0" width="320.0" data-name="DistrictLayer"></rect>
+<path d="M18398.0 2424.0 L18718.0 2424.0" fill="none" data-name="DistrictLayer"></path>
+<path d="M18398.0 2485.0 L18718.0 2485.0" fill="none" data-name="DistrictLayer"></path>
 </g>
-<g transform="translate(18400, 2393)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="DistrictLayer">
+<g transform="translate(18398, 2393)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="DistrictLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="DistrictLayer">
 <a id="types/layers/DistrictLayer.ts.DistrictLayer" xlink:href="types/layers/DistrictLayer.ts"><text x="152.0" y="13.5" stroke="none" text-anchor="middle" data-name="DistrictLayer">DistrictLayer</text></a>
 
 </g>
 </g>
-<g transform="translate(18400, 2424)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="DistrictLayer">
+<g transform="translate(18398, 2424)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="DistrictLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="DistrictLayer">
 <text x="0.0" y="13.5" stroke="none" data-name="DistrictLayer">+static World: typeof WorldLayer</text>
 <text x="0.0" y="28.5" stroke="none" data-name="DistrictLayer">+static Country: typeof CountryLayer</text>
@@ -1285,7 +1285,7 @@
 
 </g>
 </g>
-<g transform="translate(18400, 2485)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="DistrictLayer">
+<g transform="translate(18398, 2485)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="DistrictLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="DistrictLayer">
 <text x="0.0" y="13.5" stroke="none" data-name="DistrictLayer">+setSOC(): void</text>
 <text x="0.0" y="28.5" stroke="none" data-name="DistrictLayer">+setDistricts(): void</text>
@@ -1299,22 +1299,22 @@
 </g>
 <g data-name="WorldLayer">
 <g fill="#eee8d5" stroke="#33322E" data-name="WorldLayer">
-<rect x="20131.8" y="2695.0" height="47.0" width="107.0" data-name="WorldLayer"></rect>
-<path d="M20131.8 2726.0 L20238.8 2726.0" fill="none" data-name="WorldLayer"></path>
-<path d="M20131.8 2734.0 L20238.8 2734.0" fill="none" data-name="WorldLayer"></path>
+<rect x="20129.8" y="2695.0" height="47.0" width="107.0" data-name="WorldLayer"></rect>
+<path d="M20129.8 2726.0 L20236.8 2726.0" fill="none" data-name="WorldLayer"></path>
+<path d="M20129.8 2734.0 L20236.8 2734.0" fill="none" data-name="WorldLayer"></path>
 </g>
-<g transform="translate(20131.75, 2695)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="WorldLayer">
+<g transform="translate(20129.75, 2695)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="WorldLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="WorldLayer">
 <a id="types/layers/DistrictLayer.ts.WorldLayer" xlink:href="types/layers/DistrictLayer.ts"><text x="45.5" y="13.5" stroke="none" text-anchor="middle" data-name="WorldLayer">WorldLayer</text></a>
 
 </g>
 </g>
-<g transform="translate(20131.75, 2726)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WorldLayer">
+<g transform="translate(20129.75, 2726)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WorldLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="WorldLayer">
 
 </g>
 </g>
-<g transform="translate(20131.75, 2734)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WorldLayer">
+<g transform="translate(20129.75, 2734)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WorldLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="WorldLayer">
 
 </g>
@@ -1322,22 +1322,22 @@
 </g>
 <g data-name="CountryLayer">
 <g fill="#eee8d5" stroke="#33322E" data-name="CountryLayer">
-<rect x="19182.5" y="2695.0" height="47.0" width="123.0" data-name="CountryLayer"></rect>
-<path d="M19182.5 2726.0 L19305.5 2726.0" fill="none" data-name="CountryLayer"></path>
-<path d="M19182.5 2734.0 L19305.5 2734.0" fill="none" data-name="CountryLayer"></path>
+<rect x="19180.5" y="2695.0" height="47.0" width="123.0" data-name="CountryLayer"></rect>
+<path d="M19180.5 2726.0 L19303.5 2726.0" fill="none" data-name="CountryLayer"></path>
+<path d="M19180.5 2734.0 L19303.5 2734.0" fill="none" data-name="CountryLayer"></path>
 </g>
-<g transform="translate(19182.5, 2695)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="CountryLayer">
+<g transform="translate(19180.5, 2695)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="CountryLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="CountryLayer">
 <a id="types/layers/DistrictLayer.ts.CountryLayer" xlink:href="types/layers/DistrictLayer.ts"><text x="53.5" y="13.5" stroke="none" text-anchor="middle" data-name="CountryLayer">CountryLayer</text></a>
 
 </g>
 </g>
-<g transform="translate(19182.5, 2726)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CountryLayer">
+<g transform="translate(19180.5, 2726)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CountryLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="CountryLayer">
 
 </g>
 </g>
-<g transform="translate(19182.5, 2734)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CountryLayer">
+<g transform="translate(19180.5, 2734)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="CountryLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="CountryLayer">
 
 </g>
@@ -1345,22 +1345,22 @@
 </g>
 <g data-name="ProvinceLayer">
 <g fill="#eee8d5" stroke="#33322E" data-name="ProvinceLayer">
-<rect x="18411.8" y="2695.0" height="47.0" width="130.0" data-name="ProvinceLayer"></rect>
-<path d="M18411.8 2726.0 L18541.8 2726.0" fill="none" data-name="ProvinceLayer"></path>
-<path d="M18411.8 2734.0 L18541.8 2734.0" fill="none" data-name="ProvinceLayer"></path>
+<rect x="18409.8" y="2695.0" height="47.0" width="130.0" data-name="ProvinceLayer"></rect>
+<path d="M18409.8 2726.0 L18539.8 2726.0" fill="none" data-name="ProvinceLayer"></path>
+<path d="M18409.8 2734.0 L18539.8 2734.0" fill="none" data-name="ProvinceLayer"></path>
 </g>
-<g transform="translate(18411.75, 2695)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="ProvinceLayer">
+<g transform="translate(18409.75, 2695)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="ProvinceLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="ProvinceLayer">
 <a id="types/layers/DistrictLayer.ts.ProvinceLayer" xlink:href="types/layers/DistrictLayer.ts"><text x="57.0" y="13.5" stroke="none" text-anchor="middle" data-name="ProvinceLayer">ProvinceLayer</text></a>
 
 </g>
 </g>
-<g transform="translate(18411.75, 2726)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ProvinceLayer">
+<g transform="translate(18409.75, 2726)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ProvinceLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="ProvinceLayer">
 
 </g>
 </g>
-<g transform="translate(18411.75, 2734)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ProvinceLayer">
+<g transform="translate(18409.75, 2734)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ProvinceLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="ProvinceLayer">
 
 </g>
@@ -1430,22 +1430,22 @@
 </g>
 <g data-name="GLCustomLayer">
 <g fill="#eee8d5" stroke="#33322E" data-name="GLCustomLayer">
-<rect x="17998.0" y="1784.5" height="47.0" width="144.0" data-name="GLCustomLayer"></rect>
-<path d="M17998.0 1815.5 L18142.0 1815.5" fill="none" data-name="GLCustomLayer"></path>
-<path d="M17998.0 1823.5 L18142.0 1823.5" fill="none" data-name="GLCustomLayer"></path>
+<rect x="17996.0" y="1784.5" height="47.0" width="144.0" data-name="GLCustomLayer"></rect>
+<path d="M17996.0 1815.5 L18140.0 1815.5" fill="none" data-name="GLCustomLayer"></path>
+<path d="M17996.0 1823.5 L18140.0 1823.5" fill="none" data-name="GLCustomLayer"></path>
 </g>
-<g transform="translate(17998, 1784.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="GLCustomLayer">
+<g transform="translate(17996, 1784.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="GLCustomLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="GLCustomLayer">
 <a id="types/layers/GLCustomLayer.ts.GLCustomLayer" xlink:href="types/layers/GLCustomLayer.ts"><text x="64.0" y="13.5" stroke="none" text-anchor="middle" data-name="GLCustomLayer">GLCustomLayer</text></a>
 
 </g>
 </g>
-<g transform="translate(17998, 1815.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="GLCustomLayer">
+<g transform="translate(17996, 1815.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="GLCustomLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="GLCustomLayer">
 
 </g>
 </g>
-<g transform="translate(17998, 1823.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="GLCustomLayer">
+<g transform="translate(17996, 1823.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="GLCustomLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="GLCustomLayer">
 
 </g>
@@ -1572,22 +1572,22 @@
 </g>
 <g data-name="ImageLayer">
 <g fill="#eee8d5" stroke="#33322E" data-name="ImageLayer">
-<rect x="17765.0" y="1750.5" height="115.0" width="193.0" data-name="ImageLayer"></rect>
-<path d="M17765.0 1781.5 L17958.0 1781.5" fill="none" data-name="ImageLayer"></path>
-<path d="M17765.0 1789.5 L17958.0 1789.5" fill="none" data-name="ImageLayer"></path>
+<rect x="17763.0" y="1750.5" height="115.0" width="193.0" data-name="ImageLayer"></rect>
+<path d="M17763.0 1781.5 L17956.0 1781.5" fill="none" data-name="ImageLayer"></path>
+<path d="M17763.0 1789.5 L17956.0 1789.5" fill="none" data-name="ImageLayer"></path>
 </g>
-<g transform="translate(17765, 1750.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="ImageLayer">
+<g transform="translate(17763, 1750.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="ImageLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="ImageLayer">
 <a id="types/layers/ImageLayer.ts.ImageLayer" xlink:href="types/layers/ImageLayer.ts"><text x="88.5" y="13.5" stroke="none" text-anchor="middle" data-name="ImageLayer">ImageLayer</text></a>
 
 </g>
 </g>
-<g transform="translate(17765, 1781.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ImageLayer">
+<g transform="translate(17763, 1781.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ImageLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="ImageLayer">
 
 </g>
 </g>
-<g transform="translate(17765, 1789.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ImageLayer">
+<g transform="translate(17763, 1789.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ImageLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="ImageLayer">
 <text x="0.0" y="13.5" stroke="none" data-name="ImageLayer">+getImageUrl(): string</text>
 <text x="0.0" y="28.5" stroke="none" data-name="ImageLayer">+setImageUrl(): void</text>
@@ -1599,22 +1599,22 @@
 </g>
 <g data-name="IndoorMap">
 <g fill="#eee8d5" stroke="#33322E" data-name="IndoorMap">
-<rect x="17461.0" y="1720.5" height="175.0" width="264.0" data-name="IndoorMap"></rect>
-<path d="M17461.0 1751.5 L17725.0 1751.5" fill="none" data-name="IndoorMap"></path>
-<path d="M17461.0 1759.5 L17725.0 1759.5" fill="none" data-name="IndoorMap"></path>
+<rect x="17459.0" y="1720.5" height="175.0" width="264.0" data-name="IndoorMap"></rect>
+<path d="M17459.0 1751.5 L17723.0 1751.5" fill="none" data-name="IndoorMap"></path>
+<path d="M17459.0 1759.5 L17723.0 1759.5" fill="none" data-name="IndoorMap"></path>
 </g>
-<g transform="translate(17461, 1720.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="IndoorMap">
+<g transform="translate(17459, 1720.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="IndoorMap">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="IndoorMap">
 <a id="types/layers/IndoorMap.ts.IndoorMap" xlink:href="types/layers/IndoorMap.ts"><text x="124.0" y="13.5" stroke="none" text-anchor="middle" data-name="IndoorMap">IndoorMap</text></a>
 
 </g>
 </g>
-<g transform="translate(17461, 1751.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="IndoorMap">
+<g transform="translate(17459, 1751.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="IndoorMap">
 <g transform="translate(8, 8)" fill="#33322E" data-name="IndoorMap">
 
 </g>
 </g>
-<g transform="translate(17461, 1759.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="IndoorMap">
+<g transform="translate(17459, 1759.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="IndoorMap">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="IndoorMap">
 <text x="0.0" y="13.5" stroke="none" data-name="IndoorMap">+showIndoorMap(): void</text>
 <text x="0.0" y="28.5" stroke="none" data-name="IndoorMap">+showFloor(): void</text>
@@ -1655,33 +1655,33 @@
 </g>
 </g>
 </g>
-<g data-name="LabelsLayer">
-<g fill="#eee8d5" stroke="#33322E" data-name="LabelsLayer">
-<rect x="17137.0" y="1720.5" height="175.0" width="284.0" data-name="LabelsLayer"></rect>
-<path d="M17137.0 1751.5 L17421.0 1751.5" fill="none" data-name="LabelsLayer"></path>
-<path d="M17137.0 1759.5 L17421.0 1759.5" fill="none" data-name="LabelsLayer"></path>
+<g data-name="LabelsLayer&lt;TOverlayType&gt;">
+<g fill="#eee8d5" stroke="#33322E" data-name="LabelsLayer&lt;TOverlayType&gt;">
+<rect x="17137.0" y="1720.5" height="175.0" width="282.0" data-name="LabelsLayer&lt;TOverlayType&gt;"></rect>
+<path d="M17137.0 1751.5 L17419.0 1751.5" fill="none" data-name="LabelsLayer&lt;TOverlayType&gt;"></path>
+<path d="M17137.0 1759.5 L17419.0 1759.5" fill="none" data-name="LabelsLayer&lt;TOverlayType&gt;"></path>
 </g>
-<g transform="translate(17137, 1720.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="LabelsLayer">
-<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="LabelsLayer">
-<a id="types/layers/LabelsLayer.ts.LabelsLayer" xlink:href="types/layers/LabelsLayer.ts"><text x="134.0" y="13.5" stroke="none" text-anchor="middle" data-name="LabelsLayer">LabelsLayer</text></a>
+<g transform="translate(17137, 1720.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="LabelsLayer&lt;TOverlayType&gt;">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="LabelsLayer&lt;TOverlayType&gt;">
+<a id="types/layers/LabelsLayer.ts.LabelsLayer&lt;TOverlayType&gt;" xlink:href="types/layers/LabelsLayer.ts"><text x="133.0" y="13.5" stroke="none" text-anchor="middle" data-name="LabelsLayer&lt;TOverlayType&gt;">LabelsLayer&lt;TOverlayType&gt;</text></a>
 
 </g>
 </g>
-<g transform="translate(17137, 1751.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="LabelsLayer">
-<g transform="translate(8, 8)" fill="#33322E" data-name="LabelsLayer">
+<g transform="translate(17137, 1751.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="LabelsLayer&lt;TOverlayType&gt;">
+<g transform="translate(8, 8)" fill="#33322E" data-name="LabelsLayer&lt;TOverlayType&gt;">
 
 </g>
 </g>
-<g transform="translate(17137, 1759.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="LabelsLayer">
-<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="LabelsLayer">
-<text x="0.0" y="13.5" stroke="none" data-name="LabelsLayer">+getCollision(): boolean</text>
-<text x="0.0" y="28.5" stroke="none" data-name="LabelsLayer">+setCollision(): void</text>
-<text x="0.0" y="43.5" stroke="none" data-name="LabelsLayer">+getAllowCollision(): boolean</text>
-<text x="0.0" y="58.5" stroke="none" data-name="LabelsLayer">+setAllowCollision(): void</text>
-<text x="0.0" y="73.5" stroke="none" data-name="LabelsLayer">+add(): void</text>
-<text x="0.0" y="88.5" stroke="none" data-name="LabelsLayer">+remove(): void</text>
-<text x="0.0" y="103.5" stroke="none" data-name="LabelsLayer">+getAllOverlays(): VectorOverlay[]</text>
-<text x="0.0" y="118.5" stroke="none" data-name="LabelsLayer">+clear(): void</text>
+<g transform="translate(17137, 1759.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="LabelsLayer&lt;TOverlayType&gt;">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="LabelsLayer&lt;TOverlayType&gt;">
+<text x="0.0" y="13.5" stroke="none" data-name="LabelsLayer&lt;TOverlayType&gt;">+getCollision(): boolean</text>
+<text x="0.0" y="28.5" stroke="none" data-name="LabelsLayer&lt;TOverlayType&gt;">+setCollision(): void</text>
+<text x="0.0" y="43.5" stroke="none" data-name="LabelsLayer&lt;TOverlayType&gt;">+getAllowCollision(): boolean</text>
+<text x="0.0" y="58.5" stroke="none" data-name="LabelsLayer&lt;TOverlayType&gt;">+setAllowCollision(): void</text>
+<text x="0.0" y="73.5" stroke="none" data-name="LabelsLayer&lt;TOverlayType&gt;">+add(): void</text>
+<text x="0.0" y="88.5" stroke="none" data-name="LabelsLayer&lt;TOverlayType&gt;">+remove(): void</text>
+<text x="0.0" y="103.5" stroke="none" data-name="LabelsLayer&lt;TOverlayType&gt;">+getAllOverlays(): TOverlayType[]</text>
+<text x="0.0" y="118.5" stroke="none" data-name="LabelsLayer&lt;TOverlayType&gt;">+clear(): void</text>
 
 </g>
 </g>
@@ -1803,22 +1803,22 @@
 </g>
 <g data-name="TrafficLayer">
 <g fill="#eee8d5" stroke="#33322E" data-name="TrafficLayer">
-<rect x="18200.0" y="2457.0" height="70.0" width="160.0" data-name="TrafficLayer"></rect>
-<path d="M18200.0 2488.0 L18360.0 2488.0" fill="none" data-name="TrafficLayer"></path>
-<path d="M18200.0 2496.0 L18360.0 2496.0" fill="none" data-name="TrafficLayer"></path>
+<rect x="18198.0" y="2457.0" height="70.0" width="160.0" data-name="TrafficLayer"></rect>
+<path d="M18198.0 2488.0 L18358.0 2488.0" fill="none" data-name="TrafficLayer"></path>
+<path d="M18198.0 2496.0 L18358.0 2496.0" fill="none" data-name="TrafficLayer"></path>
 </g>
-<g transform="translate(18200, 2457)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="TrafficLayer">
+<g transform="translate(18198, 2457)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="TrafficLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="TrafficLayer">
 <a id="types/layers/TileLayer.ts.TrafficLayer" xlink:href="types/layers/TileLayer.ts"><text x="72.0" y="13.5" stroke="none" text-anchor="middle" data-name="TrafficLayer">TrafficLayer</text></a>
 
 </g>
 </g>
-<g transform="translate(18200, 2488)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TrafficLayer">
+<g transform="translate(18198, 2488)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TrafficLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="TrafficLayer">
 
 </g>
 </g>
-<g transform="translate(18200, 2496)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TrafficLayer">
+<g transform="translate(18198, 2496)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TrafficLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TrafficLayer">
 <text x="0.0" y="13.5" stroke="none" data-name="TrafficLayer">+stopFresh(): void</text>
 
@@ -1827,22 +1827,22 @@
 </g>
 <g data-name="SatelliteLayer">
 <g fill="#eee8d5" stroke="#33322E" data-name="SatelliteLayer">
-<rect x="18036.0" y="2468.5" height="47.0" width="124.0" data-name="SatelliteLayer"></rect>
-<path d="M18036.0 2499.5 L18160.0 2499.5" fill="none" data-name="SatelliteLayer"></path>
-<path d="M18036.0 2507.5 L18160.0 2507.5" fill="none" data-name="SatelliteLayer"></path>
+<rect x="18034.0" y="2468.5" height="47.0" width="124.0" data-name="SatelliteLayer"></rect>
+<path d="M18034.0 2499.5 L18158.0 2499.5" fill="none" data-name="SatelliteLayer"></path>
+<path d="M18034.0 2507.5 L18158.0 2507.5" fill="none" data-name="SatelliteLayer"></path>
 </g>
-<g transform="translate(18036, 2468.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="SatelliteLayer">
+<g transform="translate(18034, 2468.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="SatelliteLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="SatelliteLayer">
 <a id="types/layers/TileLayer.ts.SatelliteLayer" xlink:href="types/layers/TileLayer.ts"><text x="54.0" y="13.5" stroke="none" text-anchor="middle" data-name="SatelliteLayer">SatelliteLayer</text></a>
 
 </g>
 </g>
-<g transform="translate(18036, 2499.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="SatelliteLayer">
+<g transform="translate(18034, 2499.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="SatelliteLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="SatelliteLayer">
 
 </g>
 </g>
-<g transform="translate(18036, 2507.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="SatelliteLayer">
+<g transform="translate(18034, 2507.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="SatelliteLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="SatelliteLayer">
 
 </g>
@@ -1850,22 +1850,22 @@
 </g>
 <g data-name="RoadNetLayer">
 <g fill="#eee8d5" stroke="#33322E" data-name="RoadNetLayer">
-<rect x="17274.8" y="2468.5" height="47.0" width="130.0" data-name="RoadNetLayer"></rect>
-<path d="M17274.8 2499.5 L17404.8 2499.5" fill="none" data-name="RoadNetLayer"></path>
-<path d="M17274.8 2507.5 L17404.8 2507.5" fill="none" data-name="RoadNetLayer"></path>
+<rect x="17273.8" y="2468.5" height="47.0" width="130.0" data-name="RoadNetLayer"></rect>
+<path d="M17273.8 2499.5 L17403.8 2499.5" fill="none" data-name="RoadNetLayer"></path>
+<path d="M17273.8 2507.5 L17403.8 2507.5" fill="none" data-name="RoadNetLayer"></path>
 </g>
-<g transform="translate(17274.75, 2468.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="RoadNetLayer">
+<g transform="translate(17273.75, 2468.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="RoadNetLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="RoadNetLayer">
 <a id="types/layers/TileLayer.ts.RoadNetLayer" xlink:href="types/layers/TileLayer.ts"><text x="57.0" y="13.5" stroke="none" text-anchor="middle" data-name="RoadNetLayer">RoadNetLayer</text></a>
 
 </g>
 </g>
-<g transform="translate(17274.75, 2499.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="RoadNetLayer">
+<g transform="translate(17273.75, 2499.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="RoadNetLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="RoadNetLayer">
 
 </g>
 </g>
-<g transform="translate(17274.75, 2507.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="RoadNetLayer">
+<g transform="translate(17273.75, 2507.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="RoadNetLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="RoadNetLayer">
 
 </g>
@@ -1873,22 +1873,22 @@
 </g>
 <g data-name="WMSLayer">
 <g fill="#eee8d5" stroke="#33322E" data-name="WMSLayer">
-<rect x="17050.8" y="2434.5" height="115.0" width="184.0" data-name="WMSLayer"></rect>
-<path d="M17050.8 2465.5 L17234.8 2465.5" fill="none" data-name="WMSLayer"></path>
-<path d="M17050.8 2473.5 L17234.8 2473.5" fill="none" data-name="WMSLayer"></path>
+<rect x="17049.8" y="2434.5" height="115.0" width="184.0" data-name="WMSLayer"></rect>
+<path d="M17049.8 2465.5 L17233.8 2465.5" fill="none" data-name="WMSLayer"></path>
+<path d="M17049.8 2473.5 L17233.8 2473.5" fill="none" data-name="WMSLayer"></path>
 </g>
-<g transform="translate(17050.75, 2434.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="WMSLayer">
+<g transform="translate(17049.75, 2434.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="WMSLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="WMSLayer">
 <a id="types/layers/TileLayer.ts.WMSLayer" xlink:href="types/layers/TileLayer.ts"><text x="84.0" y="13.5" stroke="none" text-anchor="middle" data-name="WMSLayer">WMSLayer</text></a>
 
 </g>
 </g>
-<g transform="translate(17050.75, 2465.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WMSLayer">
+<g transform="translate(17049.75, 2465.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WMSLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="WMSLayer">
 
 </g>
 </g>
-<g transform="translate(17050.75, 2473.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WMSLayer">
+<g transform="translate(17049.75, 2473.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WMSLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="WMSLayer">
 <text x="0.0" y="13.5" stroke="none" data-name="WMSLayer">+setParams(): void</text>
 <text x="0.0" y="28.5" stroke="none" data-name="WMSLayer">+getParams(): Object</text>
@@ -1900,22 +1900,22 @@
 </g>
 <g data-name="WMTSLayer">
 <g fill="#eee8d5" stroke="#33322E" data-name="WMTSLayer">
-<rect x="17086.8" y="2695.0" height="47.0" width="112.0" data-name="WMTSLayer"></rect>
-<path d="M17086.8 2726.0 L17198.8 2726.0" fill="none" data-name="WMTSLayer"></path>
-<path d="M17086.8 2734.0 L17198.8 2734.0" fill="none" data-name="WMTSLayer"></path>
+<rect x="17085.8" y="2695.0" height="47.0" width="112.0" data-name="WMTSLayer"></rect>
+<path d="M17085.8 2726.0 L17197.8 2726.0" fill="none" data-name="WMTSLayer"></path>
+<path d="M17085.8 2734.0 L17197.8 2734.0" fill="none" data-name="WMTSLayer"></path>
 </g>
-<g transform="translate(17086.75, 2695)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="WMTSLayer">
+<g transform="translate(17085.75, 2695)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="WMTSLayer">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="WMTSLayer">
 <a id="types/layers/TileLayer.ts.WMTSLayer" xlink:href="types/layers/TileLayer.ts"><text x="48.0" y="13.5" stroke="none" text-anchor="middle" data-name="WMTSLayer">WMTSLayer</text></a>
 
 </g>
 </g>
-<g transform="translate(17086.75, 2726)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WMTSLayer">
+<g transform="translate(17085.75, 2726)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WMTSLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="WMTSLayer">
 
 </g>
 </g>
-<g transform="translate(17086.75, 2734)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WMTSLayer">
+<g transform="translate(17085.75, 2734)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WMTSLayer">
 <g transform="translate(8, 8)" fill="#33322E" data-name="WMTSLayer">
 
 </g>
@@ -3832,17 +3832,17 @@
 </g>
 <g data-name="RangingToolOptions">
 <g fill="lightgray" stroke="#33322E" data-name="RangingToolOptions">
-<rect x="18343.0" y="1698.0" height="220.0" width="313.0" data-name="RangingToolOptions"></rect>
-<path d="M18343.0 1729.0 L18656.0 1729.0" fill="none" data-name="RangingToolOptions"></path>
-<path d="M18343.0 1910.0 L18656.0 1910.0" fill="none" data-name="RangingToolOptions"></path>
+<rect x="18341.0" y="1698.0" height="220.0" width="313.0" data-name="RangingToolOptions"></rect>
+<path d="M18341.0 1729.0 L18654.0 1729.0" fill="none" data-name="RangingToolOptions"></path>
+<path d="M18341.0 1910.0 L18654.0 1910.0" fill="none" data-name="RangingToolOptions"></path>
 </g>
-<g transform="translate(18343, 1698)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="RangingToolOptions">
+<g transform="translate(18341, 1698)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="RangingToolOptions">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="RangingToolOptions">
 <a id="types/tools/RangingTool.ts.RangingToolOptions" xlink:href="types/tools/RangingTool.ts"><text x="148.5" y="13.5" stroke="none" text-anchor="middle" data-name="RangingToolOptions">RangingToolOptions</text></a>
 
 </g>
 </g>
-<g transform="translate(18343, 1729)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="RangingToolOptions">
+<g transform="translate(18341, 1729)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="RangingToolOptions">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="RangingToolOptions">
 <text x="0.0" y="13.5" stroke="none" data-name="RangingToolOptions">+startMarkerOptions?: MarkerOptions</text>
 <text x="0.0" y="28.5" stroke="none" data-name="RangingToolOptions">+midMarkerOptions?: MarkerOptions</text>
@@ -3858,7 +3858,7 @@
 
 </g>
 </g>
-<g transform="translate(18343, 1910)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="RangingToolOptions">
+<g transform="translate(18341, 1910)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="RangingToolOptions">
 <g transform="translate(8, 8)" fill="#33322E" data-name="RangingToolOptions">
 
 </g>
