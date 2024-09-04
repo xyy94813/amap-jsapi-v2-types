@@ -94,7 +94,6 @@ export type MapEventType =
   | 'zoomend'
   | 'rotatechange'
   | 'rotatestart'
-  | 'rotatestart'
   | 'mousemove'
   | 'mousewheel'
   | 'mouseover'
@@ -113,6 +112,21 @@ export type MapEventType =
 
 export declare class Map extends Event<MapEventType> {
   constructor(ele: string | HTMLElement, opts?: MapOptions);
+  /**
+   * 坐标转换工具
+   */
+  customCoords: {
+    lngLatsToCoords(pointList: Array<[number, number]>): Array<[number, number]>;
+    setCenter(point: [number, number]): void;
+    getCameraParams(): {
+      near: number;
+      far: number;
+      fov: number;
+      up: number;
+      lookAt: number;
+      position: [number, number, number];
+    };
+  };
   /**
    * 获取地图中心点经纬度坐标值。
    * @returns {LngLat} 中心点
@@ -241,7 +255,7 @@ export declare class Map extends Event<MapEventType> {
   /**
    * 根据 overlays 计算出合适的中心点和 zoom 级别
    *
-   * @param {Overlay[]} overlays 覆盖物
+   * @param overlayList 覆盖物列表
    * @param {number[]} avoid 四周边距，上、下、左、右
    * @param {number} maxZoom 最大 zoom 级别
    * @returns {[number, LngLat]} zoom 级别和中心点经纬度
@@ -332,7 +346,7 @@ export declare class Map extends Event<MapEventType> {
   setMapStyle(value: string): void;
   /**
    * 获取地图中心点所在区域，回调函数返回对象属性分别对应为{省，市，区/县}
-   * @param {Function} cb 查询成功的回调函数
+   * @param {Function} cbk 查询成功的回调函数
    * @param {LngLatLike} lnglat 查询的经纬度
    * @returns
    **/
@@ -500,7 +514,7 @@ export declare class Map extends Event<MapEventType> {
    * @param {number} zoom 某个地图级别，默认是地图当前级别
    * @returns {Pixel} 转换后的平面像素坐标
    **/
-  lngLatToPixel(lnglat: LngLatLike, z?: number): Pixel;
+  lngLatToPixel(lnglat: LngLatLike, zoom?: number): Pixel;
   /**
    * 获取指定位置的地图分辨率，单位：米/像素。
    * 参数point有指定值时，返回指定点地图分辨率，point缺省时，默认返回当前地图中心点位置的分辨率
@@ -552,6 +566,11 @@ export declare class Map extends Event<MapEventType> {
    * @param {PixelLike} pixel
    **/
   getAltitudeByContainer(pixel: PixelLike): number;
+  /**
+   * 主动渲染地图
+   * @see {@link https://lbs.amap.com/demo/javascript-api-v2/developer-example/threejs/threejs_model_pathanimation}
+   */
+  render(): void;
 }
 
 export default Map;
