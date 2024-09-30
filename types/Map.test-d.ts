@@ -326,3 +326,5 @@ expectType<number>(map.getAltitude(p2));
 
 expectType<number>(map.getAltitudeByContainer(pixel1));
 expectType<number>(map.getAltitudeByContainer(pixel2));
+
+expectType<void>(map.render());

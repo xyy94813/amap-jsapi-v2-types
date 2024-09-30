@@ -551,6 +551,11 @@ export declare class Map extends Event<MapEventType> {
    * @param {PixelLike} pixel
    **/
   getAltitudeByContainer(pixel: PixelLike): number;
+
+  /**
+   * 主动渲染地图
+   */
+  render(): void;
 }
 
 export default Map;
