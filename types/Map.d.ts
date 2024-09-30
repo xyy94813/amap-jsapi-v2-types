@@ -94,7 +94,6 @@ export type MapEventType =
   | 'zoomend'
   | 'rotatechange'
   | 'rotatestart'
-  | 'rotatestart'
   | 'mousemove'
   | 'mousewheel'
   | 'mouseover'
