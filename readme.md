@@ -87,6 +87,7 @@ class Map{
 +resize() void
 +getAltitude() number
 +getAltitudeByContainer() number
++render() void
         }
 Event~EventType~<|--Map
 class MoveToOptions {
