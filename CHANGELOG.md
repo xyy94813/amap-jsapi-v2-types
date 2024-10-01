@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.0](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.4.0...v1.5.0) (2024-10-01)
+
+
+### Features
+
+* **GLCustomLayerOption:** 完善 init 参数类型 ([bda7fb6](https://github.com/xyy94813/amap-jsapi-v2-types/commit/bda7fb67e4152f096b53a3a1cee00d7319bd44fd))
+* **Map:** 补全 render 方法 ([efeebed](https://github.com/xyy94813/amap-jsapi-v2-types/commit/efeebed5b1dfe4cbb98537e3812a6cab017e9ea7))
+
 ## [1.4.0](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.3.4...v1.4.0) (2024-06-23)
 
 
