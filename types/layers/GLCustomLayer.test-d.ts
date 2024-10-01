@@ -16,6 +16,7 @@ expectAssignable<GLCustomLayerOption['zIndex']>(1);
 // 自定义
 expectAssignable<GLCustomLayerOption['render']>(() => {});
 expectAssignable<GLCustomLayerOption['init']>(() => {});
+expectAssignable<GLCustomLayerOption['init']>((gl: WebGLRenderingContext) => {});
 
 const layer = new GLCustomLayer({});
 expectType<GLCustomLayer>(layer);
