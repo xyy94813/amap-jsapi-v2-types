@@ -1041,6 +1041,8 @@ class MassMarks{
 +getZooms() [number, number]
 +setZooms() void
 +clear() void
++show() void
++hide() void
         }
 class MassMarkersStyleOption {
             <<type>>

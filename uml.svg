@@ -180,7 +180,7 @@
 [MarkerClusterStyle]  -  [Pixel]
 [MarkerClusterStyle]  -  [Pixel]
 [MarkerClusterOptions]  - 0..* [MarkerClusterStyle]
-[MassMarks||+getMap(): Map;+setMap(): void;+addData(): void;+setData(): void;+getStyle(): MassMarkersStyleOption\[\];+setStyle(): void;+getOpacity(): number;+setOpacity(): void;+getzIndex(): number;+setzIndex(): void;+getZooms(): \[number, number\];+setZooms(): void;+clear(): void]
+[MassMarks||+getMap(): Map;+setMap(): void;+addData(): void;+setData(): void;+getStyle(): MassMarkersStyleOption\[\];+setStyle(): void;+getOpacity(): number;+setOpacity(): void;+getzIndex(): number;+setzIndex(): void;+getZooms(): \[number, number\];+setZooms(): void;+clear(): void;+show(): void;+hide(): void]
 [&lt;type&gt;MassMarkersStyleOption|+url?: string;+size?: SizeLike;+anchor?: Pixel;+zIndex?: number;+rotation?: number|]
 [&lt;type&gt;MassMarkersOptions|+zIndex?: number;+opacity?: number;+zooms?: \[number, number\];+style?: MassMarkersStyleOption \| MassMarkersStyleOption\[\]|]
 [Event&lt;EventType&gt;]&lt;:-[MassMarks]
@@ -395,7 +395,7 @@
 <path d="M10349.5 1888.0 L10106.25 2358 L8558.5 2495.948108269777 L8558.5 2495.9 " fill="none"></path>
 <text x="10395.1" y="1735.0" stroke="none">0..*</text>
 <path d="M10709.5 1137.0 L10709.5 1273 L10430.099078341014 1743 L10430.1 1743.0 " fill="none"></path>
-<path d="M14674.0 484.7 L14727.25 833 L14727.25 928 L14727.3 928.0 " fill="none"></path>
+<path d="M14674.0 484.7 L14727.25 833 L14727.25 913 L14727.3 913.0 " fill="none"></path>
 <path d="M14679.2 483.9 L14674.0 484.7 L14668.7 485.5 L14671.9 471.5 Z"></path>
 <path d="M10961.8 1865.5 L12010.5 2358 L9405.5 2500.307974335472 L9405.5 2500.3 " fill="none"></path>
 <path d="M10818.1 1880.5 L10545 2358 L8558.5 2498.2456763800046 L8558.5 2498.2 " fill="none"></path>
@@ -3117,22 +3117,22 @@
 </g>
 <g data-name="MassMarks">
 <g fill="#eee8d5" stroke="#33322E" data-name="MassMarks">
-<rect x="14567.8" y="928.0" height="250.0" width="319.0" data-name="MassMarks"></rect>
-<path d="M14567.8 959.0 L14886.8 959.0" fill="none" data-name="MassMarks"></path>
-<path d="M14567.8 967.0 L14886.8 967.0" fill="none" data-name="MassMarks"></path>
+<rect x="14567.8" y="913.0" height="280.0" width="319.0" data-name="MassMarks"></rect>
+<path d="M14567.8 944.0 L14886.8 944.0" fill="none" data-name="MassMarks"></path>
+<path d="M14567.8 952.0 L14886.8 952.0" fill="none" data-name="MassMarks"></path>
 </g>
-<g transform="translate(14567.75, 928)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="MassMarks">
+<g transform="translate(14567.75, 913)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="MassMarks">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="MassMarks">
 <a id="types/overlays/MassMarks.ts.MassMarks" xlink:href="types/overlays/MassMarks.ts"><text x="151.5" y="13.5" stroke="none" text-anchor="middle" data-name="MassMarks">MassMarks</text></a>
 
 </g>
 </g>
-<g transform="translate(14567.75, 959)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="MassMarks">
+<g transform="translate(14567.75, 944)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="MassMarks">
 <g transform="translate(8, 8)" fill="#33322E" data-name="MassMarks">
 
 </g>
 </g>
-<g transform="translate(14567.75, 967)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="MassMarks">
+<g transform="translate(14567.75, 952)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="MassMarks">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="MassMarks">
 <text x="0.0" y="13.5" stroke="none" data-name="MassMarks">+getMap(): Map</text>
 <text x="0.0" y="28.5" stroke="none" data-name="MassMarks">+setMap(): void</text>
@@ -3147,6 +3147,8 @@
 <text x="0.0" y="163.5" stroke="none" data-name="MassMarks">+getZooms(): [number, number]</text>
 <text x="0.0" y="178.5" stroke="none" data-name="MassMarks">+setZooms(): void</text>
 <text x="0.0" y="193.5" stroke="none" data-name="MassMarks">+clear(): void</text>
+<text x="0.0" y="208.5" stroke="none" data-name="MassMarks">+show(): void</text>
+<text x="0.0" y="223.5" stroke="none" data-name="MassMarks">+hide(): void</text>
 
 </g>
 </g>
