@@ -85,3 +85,5 @@ expectType<void>(markerCluster.setzIndex(1));
 expectType<[number, number]>(markerCluster.getZooms());
 expectType<void>(markerCluster.setZooms([2, 12]));
 expectType<void>(markerCluster.clear());
+expectType<void>(markerCluster.show());
+expectType<void>(markerCluster.hide());

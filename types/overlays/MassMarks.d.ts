@@ -78,6 +78,10 @@ export declare class MassMarks extends Event<MassMarksEventType> {
   setZooms(zooms: [number, number]): void;
   /** 清除海量点 */
   clear(): void;
+  /** 显示海量点图层 */
+  show(): void;
+  /** 隐藏海量点图层 */
+  hide(): void;
 }
 
 export default MassMarks;
