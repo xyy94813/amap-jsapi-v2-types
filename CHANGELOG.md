@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.5.0...v1.6.0) (2024-11-22)
+
+
+### Features
+
+* **MassMarks:** 补充 hide 和 show 声明 ([dc8ef55](https://github.com/xyy94813/amap-jsapi-v2-types/commit/dc8ef5500371a9717f1d455d80b5c547a674e467)), closes [#33](https://github.com/xyy94813/amap-jsapi-v2-types/issues/33)
+
 ## [1.5.0](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.4.0...v1.5.0) (2024-10-01)
 
 

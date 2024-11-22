@@ -1,6 +1,6 @@
 {
   "name": "amap-jsapi-v2-types",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "高德 JSAPI v2 类型声明文件",
   "types": "types/index.d.ts",
   "scripts": {
