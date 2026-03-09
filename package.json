@@ -3,6 +3,13 @@
   "version": "1.6.0",
   "description": "高德 JSAPI v2 类型声明文件",
   "types": "types/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./types/index.d.ts"
+    }
+  },
   "scripts": {
     "test": "pnpify run tsd --files './types/**/*.test-d.ts'",
     "lint:es": "eslint .",
