@@ -1,6 +1,7 @@
 
 classDiagram
 
+
 class Map{
             
             +getCenter() LngLat
