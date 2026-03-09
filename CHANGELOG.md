@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.6.0...v1.7.0) (2026-03-09)
+
+
+### Features
+
+* add exports field to package.json ([dbbe3f9](https://github.com/xyy94813/amap-jsapi-v2-types/commit/dbbe3f9852a7a03e55876fb6e5e186428ffc00f3))
+
 ## [1.6.0](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.5.0...v1.6.0) (2024-11-22)
 
 
