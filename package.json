@@ -5,6 +5,7 @@
   "types": "types/index.d.ts",
   "exports": {
     "./package.json": "./package.json",
+    "./types/*": "./types/*.d.ts",
     ".": {
       "types": "./types/index.d.ts",
       "default": "./types/index.d.ts"
