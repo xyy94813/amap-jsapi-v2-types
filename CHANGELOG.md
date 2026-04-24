@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.7.0...v1.8.0) (2026-04-24)
+
+
+### Features
+
+* 支持导出所有文件，以应对更多复杂场景 ([8c5d59e](https://github.com/xyy94813/amap-jsapi-v2-types/commit/8c5d59efba6a7e3455e57406b8b4d59b41c1d99b)), closes [#36](https://github.com/xyy94813/amap-jsapi-v2-types/issues/36)
+
 ## [1.7.0](https://github.com/xyy94813/amap-jsapi-v2-types/compare/v1.6.0...v1.7.0) (2026-03-09)
 
 
